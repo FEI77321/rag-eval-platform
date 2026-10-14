@@ -16,6 +16,19 @@ log = logging.getLogger(__name__)
 LEASE_SECONDS = 30
 
 
+class LeaseLost(Exception):
+    """旧Worker复活时，禁止覆盖新拥有者的结果。"""
+
+
+def persist_item(db, run_id, item_id, owner, **values):
+    owns_run = select(Run.id).where(Run.id == run_id, Run.owner == owner).exists()
+    changed = db.execute(update(Item).where(Item.id == item_id, Item.state == 'running', owns_run)
+                         .values(**values)).rowcount
+    if not changed:
+        raise LeaseLost()
+    db.commit()
+
+
 def claim_run(owner):
     with Session() as db:
         stale = utcnow() - timedelta(seconds=LEASE_SECONDS)
@@ -94,7 +107,8 @@ async def execute_run(run_id, owner, gateway=None):
                 except asyncio.QueueEmpty:
                     return
                 with Session() as db:
-                    changed = db.execute(update(Item).where(Item.id == item_id, Item.state == 'pending')
+                    owns_run = select(Run.id).where(Run.id == run_id, Run.owner == owner, Run.state == 'running').exists()
+                    changed = db.execute(update(Item).where(Item.id == item_id, Item.state == 'pending', owns_run)
                         .values(state='running', attempts=Item.attempts + 1, error=None)).rowcount
                     db.commit()
                     if not changed:
@@ -114,15 +128,13 @@ async def execute_run(run_id, owner, gateway=None):
                         generation.update({'chunks': chunks, 'candidates': candidates, 'timings': timings,
                             'evidence_coverage': config['parameters']['evidence_coverage']})
                         with Session() as db:
-                            db.get(Item, item_id).generation = generation
-                            db.commit()
+                            persist_item(db, run_id, item_id, owner, generation=generation)
                     if not judgement:
                         before = time.perf_counter()
                         judgement = await gateway.judge(case, generation)
                         judgement['judge_ms'] = (time.perf_counter() - before) * 1000
                         with Session() as db:
-                            db.get(Item, item_id).judgement = judgement
-                            db.commit()
+                            persist_item(db, run_id, item_id, owner, judgement=judgement)
                     prices = dict(snapshot['prices'])
                     for direction in ['input', 'output']:
                         configured = config['parameters'].get(direction + '_price')
@@ -132,23 +144,25 @@ async def execute_run(run_id, owner, gateway=None):
                             prices[f'generation_{direction}_price'] = None
                     metrics = calculate(case, generation, judgement, prices)
                     with Session() as db:
-                        item = db.get(Item, item_id)
-                        item.metrics = metrics
-                        item.tags = suggest_tags(case, metrics, generation, judgement['scores'])
-                        item.state, item.error = 'succeeded', None
-                        db.commit()
+                        persist_item(db, run_id, item_id, owner, metrics=metrics,
+                            tags=suggest_tags(case, metrics, generation, judgement['scores']), state='succeeded', error=None)
+                except LeaseLost:
+                    log.warning('lease lost; discard stale item result=%s', item_id)
                 except asyncio.CancelledError:
                     with Session() as db:
-                        db.get(Item, item_id).state = 'pending'
-                        db.commit()
+                        try:
+                            persist_item(db, run_id, item_id, owner, state='pending')
+                        except LeaseLost:
+                            pass
                     raise
                 except Exception as exc:
                     with Session() as db:
-                        item = db.get(Item, item_id)
-                        item.state = 'failed'
                         # 不保留第三方SDK的原始请求对象和可能含凭据的异常信息。
-                        item.error = str(exc)[:500] if isinstance(exc, (ValueError, RuntimeError)) else type(exc).__name__
-                        db.commit()
+                        error = str(exc)[:500] if isinstance(exc, (ValueError, RuntimeError)) else type(exc).__name__
+                        try:
+                            persist_item(db, run_id, item_id, owner, state='failed', error=error)
+                        except LeaseLost:
+                            pass
                     log.warning('item=%s failed=%s', item_id, type(exc).__name__)
                 finally:
                     CALL_CONTEXT.reset(item_token)

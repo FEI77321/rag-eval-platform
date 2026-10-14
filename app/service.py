@@ -32,6 +32,10 @@ def validate_case(case, documents):
             evidence['end'] = evidence['start'] + len(evidence['quote'])
         if evidence['end'] is None or text[evidence['start']:evidence['end']] != evidence['quote']:
             raise ValueError('标准证据坐标与原文不一致')
+    unique = {}
+    for e in payload['evidence']:
+        unique[(e['doc_id'],e['start'],e['end'])] = e
+    payload['evidence'] = list(unique.values())
     expected_docs = list(dict.fromkeys(e['doc_id'] for e in payload['evidence']))
     if payload['gold_doc'] and set(payload['gold_doc']) != set(expected_docs):
         raise ValueError('gold_doc与evidence文档不一致')

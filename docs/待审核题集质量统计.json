@@ -1,0 +1,27 @@
+{
+  "total": 100,
+  "types": {
+    "fact": 40,
+    "reasoning": 30,
+    "multihop": 20,
+    "refusal": 10
+  },
+  "statuses": {
+    "draft": 100
+  },
+  "average_question_length": 104.54,
+  "sources": {
+    "fastapi-first-steps": 14,
+    "fastapi-path-params": 14,
+    "fastapi-query-params": 14,
+    "fastapi-body": 14,
+    "fastapi-body-fields": 14,
+    "fastapi-response-model": 14,
+    "fastapi-handling-errors": 14,
+    "fastapi-dependencies": 14,
+    "fastapi-background-tasks": 14,
+    "fastapi-testing": 14
+  },
+  "leakage_matches": [],
+  "leakage_method": "去除空白、casefold后完整题目字符串包含检查；不是语义泄漏证明"
+}

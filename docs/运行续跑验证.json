@@ -1,0 +1,11 @@
+{
+  "mode": "demo",
+  "run_id": "run-2141aa7f7cbc49a5",
+  "previous_run": "run-c231dd7505054696",
+  "paused_after_successes": 3,
+  "preserved_items_checked": 3,
+  "completed": 900,
+  "successful": 900,
+  "history_comparable": true,
+  "no_paid_api_calls": true
+}

@@ -14,7 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from sqlalchemy import select, update, delete
 from sqlalchemy.exc import IntegrityError
-from .db import Session, init_db, utcnow
+from .db import Session, init_db, utcnow, engine
 from .models import Document, Dataset, Question, Config, Run, Item, ApiCall
 from .schemas import Case, Parameters, RunInput, HumanReview
 from .service import uid, validate_case, create_run, dataset_quality, TAGS
@@ -95,7 +95,7 @@ class TagInput(BaseModel):
 @app.get('/api/health')
 def health():
     return ok({'status': 'ok', 'mode': settings.provider_mode,
-        'database': 'sqlite' if settings.database_url.startswith('sqlite') else 'mysql',
+        'database': engine.dialect.name,
         'generation_ready': bool(settings.generation_api_key), 'embedding_ready': bool(settings.embedding_api_key),
         'rerank_ready': bool(settings.rerank_url and settings.rerank_api_key),
         'model': settings.generation_model, 'judge_model': settings.judge_model,
