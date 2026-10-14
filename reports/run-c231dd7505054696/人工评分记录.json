@@ -1,0 +1,3422 @@
+[
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-04:b656727562:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-08:f7e330a671:840-1340",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-06:72bf3fdae9:840-1340",
+        "demo-office-11:c8ce0869a9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:0-500",
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-01:555721bc03:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-10:1e0eea2f43:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:0-500",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-04:b656727562:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:420-920",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:840-1340",
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-09:eccd290da3:2520-2638"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-04:b656727562:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500",
+        "demo-office-11:c8ce0869a9:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-08:f7e330a671:840-1340",
+        "demo-office-08:f7e330a671:0-500",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-11:c8ce0869a9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-11:c8ce0869a9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-03:1bf8da4298:840-1340",
+        "demo-office-03:1bf8da4298:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-11:c8ce0869a9:420-920",
+        "demo-office-11:c8ce0869a9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500",
+        "demo-office-11:c8ce0869a9:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-06:72bf3fdae9:840-1340",
+        "demo-office-11:c8ce0869a9:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-06:72bf3fdae9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-07:fa0a22e8ed:840-1340",
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-11:c8ce0869a9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:0-500",
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-01:555721bc03:0-500",
+        "demo-office-01:555721bc03:420-920",
+        "demo-office-05:aa98ca8ade:1680-2180"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-10:1e0eea2f43:2100-2600",
+        "demo-office-09:eccd290da3:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-10:1e0eea2f43:2100-2600",
+        "demo-office-01:555721bc03:0-500",
+        "demo-office-11:c8ce0869a9:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-08:f7e330a671:0-500",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-12:5c6b4b695e:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-08:f7e330a671:0-500",
+        "demo-office-02:c26c996623:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:0-500",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-08:f7e330a671:0-500",
+        "demo-office-08:f7e330a671:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:840-1340",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-10:1e0eea2f43:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:420-920",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-08:f7e330a671:0-500",
+        "demo-office-06:72bf3fdae9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:840-1340",
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-07:fa0a22e8ed:840-1340",
+        "demo-office-07:fa0a22e8ed:1260-1760",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-09:eccd290da3:2520-2638",
+        "demo-office-09:eccd290da3:2100-2600",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:ad8adf3754:0-496",
+        "demo-office-04:f3be4d4032:0-492",
+        "demo-office-11:ad8adf3754:1218-1714"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:14cd86bb3f:413-910",
+        "demo-office-05:14cd86bb3f:0-493",
+        "demo-office-05:14cd86bb3f:1649-2144"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:e05a8eeb02:1649-2142",
+        "demo-office-08:e05a8eeb02:0-493",
+        "demo-office-08:e05a8eeb02:413-910"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:ad8adf3754:1218-1714",
+        "demo-office-11:ad8adf3754:0-496",
+        "demo-office-11:ad8adf3754:2027-2518"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:ad8adf3754:1218-1714",
+        "demo-office-11:ad8adf3754:0-496",
+        "demo-office-03:ea477a080d:1649-2144"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:ad8adf3754:2027-2518",
+        "demo-office-11:ad8adf3754:1218-1714",
+        "demo-office-07:4b543e1f27:1649-2144"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:14cd86bb3f:413-910",
+        "demo-office-05:14cd86bb3f:0-493",
+        "demo-office-05:14cd86bb3f:1649-2144"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:1727d0ecd5:1241-1729",
+        "demo-office-06:1727d0ecd5:413-910",
+        "demo-office-11:ad8adf3754:1218-1714"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:4b543e1f27:2064-2559",
+        "demo-office-07:4b543e1f27:413-910",
+        "demo-office-07:4b543e1f27:1649-2144"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:14cd86bb3f:1649-2144",
+        "demo-office-01:a4c888422f:1644-2140",
+        "demo-office-05:14cd86bb3f:0-493"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:695dd3ab82:0-493",
+        "demo-office-09:695dd3ab82:1648-2142",
+        "demo-office-10:af13570020:0-496"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:4b543e1f27:1649-2144",
+        "demo-office-01:a4c888422f:1644-2140",
+        "demo-office-07:4b543e1f27:0-493"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:f3be4d4032:0-492",
+        "demo-office-04:f3be4d4032:1649-2144",
+        "demo-office-10:af13570020:0-496"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:0dffd5f24c:0-491",
+        "demo-office-04:f3be4d4032:0-492",
+        "demo-office-10:af13570020:0-496"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:1727d0ecd5:0-493",
+        "demo-office-06:1727d0ecd5:1649-2144",
+        "demo-office-06:1727d0ecd5:1241-1729"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:4b543e1f27:0-493",
+        "demo-office-07:4b543e1f27:1649-2144",
+        "demo-office-08:e05a8eeb02:0-493"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:af13570020:0-496",
+        "demo-office-09:695dd3ab82:0-493",
+        "demo-office-09:695dd3ab82:1648-2142"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:f3be4d4032:1649-2144",
+        "demo-office-04:f3be4d4032:0-492",
+        "demo-office-10:af13570020:0-496"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:86bf53a01b:809-1297",
+        "demo-office-07:4b543e1f27:830-1322",
+        "demo-office-09:695dd3ab82:1242-1728"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:695dd3ab82:1242-1728",
+        "demo-office-09:695dd3ab82:413-910",
+        "demo-office-07:4b543e1f27:413-910"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:6cd3bf737b:333-385",
+        "demo-office-04:340816dfa1:1101-1153",
+        "demo-office-11:6cd3bf737b:1111-1162"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:541bb7b491:440-493",
+        "demo-office-11:6cd3bf737b:444-496",
+        "demo-office-07:8d6f3ffbb4:441-493"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:2e28139db6:771-823",
+        "demo-office-11:6cd3bf737b:777-830",
+        "demo-office-07:8d6f3ffbb4:771-823"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:79dd575027:551-603",
+        "demo-office-03:acfe6c9244:1321-1373",
+        "demo-office-01:1d0328b2e7:1097-1149"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:a00d7edf60:221-273",
+        "demo-office-11:6cd3bf737b:1111-1162",
+        "demo-office-03:acfe6c9244:1321-1373"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:6cd3bf737b:1996-2048",
+        "demo-office-11:6cd3bf737b:1111-1162",
+        "demo-office-07:8d6f3ffbb4:1101-1153"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:541bb7b491:440-493",
+        "demo-office-11:6cd3bf737b:444-496",
+        "demo-office-07:8d6f3ffbb4:441-493"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:79dd575027:551-603",
+        "demo-office-03:acfe6c9244:1321-1373",
+        "demo-office-06:79dd575027:1321-1374"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:8d6f3ffbb4:2421-2472",
+        "demo-office-07:8d6f3ffbb4:661-713",
+        "demo-office-10:2c05084048:2441-2493"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:541bb7b491:1872-1924",
+        "demo-office-01:1d0328b2e7:2308-2360",
+        "demo-office-03:acfe6c9244:1762-1814"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-01:1d0328b2e7:876-929",
+        "demo-office-02:f602898631:880-932",
+        "demo-office-10:2c05084048:888-941"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-01:1d0328b2e7:1978-2030",
+        "demo-office-07:8d6f3ffbb4:2312-2363",
+        "demo-office-12:2d4fbc9637:666-719"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:340816dfa1:2532-2585",
+        "demo-office-06:79dd575027:330-383",
+        "demo-office-10:2c05084048:2552-2604"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:f602898631:109-161",
+        "demo-office-10:2c05084048:111-163",
+        "demo-office-08:2e28139db6:110-163"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:79dd575027:1321-1374",
+        "demo-office-06:79dd575027:330-383",
+        "demo-office-04:340816dfa1:550-603"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-03:acfe6c9244:660-713",
+        "demo-office-12:2d4fbc9637:666-719",
+        "demo-office-08:2e28139db6:661-713"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:2c05084048:888-941",
+        "demo-office-09:a00d7edf60:881-933",
+        "demo-office-09:a00d7edf60:1979-2032"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:79dd575027:330-383",
+        "demo-office-10:2c05084048:1885-1938",
+        "demo-office-04:340816dfa1:1872-1924"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:79dd575027:1263-1321",
+        "demo-office-07:8d6f3ffbb4:493-551",
+        "demo-office-07:8d6f3ffbb4:1264-1322"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:a00d7edf60:493-551",
+        "demo-office-09:a00d7edf60:1594-1652",
+        "demo-office-07:8d6f3ffbb4:493-551"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500",
+        "demo-office-04:b656727562:840-1340",
+        "demo-office-04:b656727562:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-08:f7e330a671:840-1340",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-01:555721bc03:420-920",
+        "demo-office-01:555721bc03:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-03:1bf8da4298:840-1340",
+        "demo-office-03:1bf8da4298:0-500",
+        "demo-office-03:1bf8da4298:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-07:fa0a22e8ed:840-1340",
+        "demo-office-07:fa0a22e8ed:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-06:72bf3fdae9:840-1340",
+        "demo-office-06:72bf3fdae9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-07:fa0a22e8ed:840-1340",
+        "demo-office-07:fa0a22e8ed:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:1680-2180",
+        "demo-office-01:555721bc03:420-920",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:840-1340",
+        "demo-office-09:eccd290da3:1680-2180"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:2100-2600",
+        "demo-office-07:fa0a22e8ed:1680-2180",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:0-500",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-03:1bf8da4298:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-02:c26c996623:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:840-1340",
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-10:1e0eea2f43:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:420-920",
+        "demo-office-01:555721bc03:420-920",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:840-1340",
+        "demo-office-04:b656727562:1680-2180",
+        "demo-office-09:eccd290da3:1260-1760"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-09:eccd290da3:1680-2180",
+        "demo-office-09:eccd290da3:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500",
+        "demo-office-04:b656727562:840-1340",
+        "demo-office-04:b656727562:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-08:f7e330a671:840-1340",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-01:555721bc03:840-1340",
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-01:555721bc03:1260-1760"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-03:1bf8da4298:1260-1760",
+        "demo-office-03:1bf8da4298:840-1340",
+        "demo-office-03:1bf8da4298:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:420-920",
+        "demo-office-07:fa0a22e8ed:1680-2180",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-06:72bf3fdae9:840-1340",
+        "demo-office-06:72bf3fdae9:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-07:fa0a22e8ed:840-1340",
+        "demo-office-07:fa0a22e8ed:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:1680-2180",
+        "demo-office-01:555721bc03:420-920",
+        "demo-office-10:1e0eea2f43:1680-2180"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:840-1340",
+        "demo-office-09:eccd290da3:1680-2180"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:1680-2180",
+        "demo-office-07:fa0a22e8ed:2100-2600",
+        "demo-office-10:1e0eea2f43:1680-2180"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-01:555721bc03:840-1340",
+        "demo-office-12:5c6b4b695e:0-500",
+        "demo-office-04:b656727562:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-03:1bf8da4298:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-02:c26c996623:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:840-1340",
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-10:1e0eea2f43:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-01:555721bc03:420-920",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:1680-2180",
+        "demo-office-04:b656727562:1260-1760",
+        "demo-office-04:b656727562:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-09:eccd290da3:1680-2180",
+        "demo-office-09:eccd290da3:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-04:b656727562:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-08:f7e330a671:840-1340",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-06:72bf3fdae9:840-1340",
+        "demo-office-11:c8ce0869a9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:0-500",
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-01:555721bc03:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-10:1e0eea2f43:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:0-500",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-04:b656727562:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:420-920",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:840-1340",
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c08",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-09:eccd290da3:2520-2638"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-004",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-04:b656727562:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-005",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-008",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-08:f7e330a671:420-920",
+        "demo-office-08:f7e330a671:840-1340",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-013",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-015",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:0-500",
+        "demo-office-11:c8ce0869a9:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-019",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-11:c8ce0869a9:840-1340",
+        "demo-office-07:fa0a22e8ed:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-029",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-05:aa98ca8ade:840-1340",
+        "demo-office-05:aa98ca8ade:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-030",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:420-920",
+        "demo-office-06:72bf3fdae9:840-1340",
+        "demo-office-11:c8ce0869a9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-031",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-11:c8ce0869a9:2100-2600",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-041",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-05:aa98ca8ade:0-500",
+        "demo-office-05:aa98ca8ade:420-920",
+        "demo-office-01:555721bc03:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-057",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-067",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-10:1e0eea2f43:2100-2600"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-072",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-08:f7e330a671:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-074",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-02:c26c996623:0-500",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-078",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-06:72bf3fdae9:0-500",
+        "demo-office-04:b656727562:420-920",
+        "demo-office-06:72bf3fdae9:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-079",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-07:fa0a22e8ed:0-500",
+        "demo-office-07:fa0a22e8ed:420-920",
+        "demo-office-04:b656727562:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-081",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 3,
+      "completeness": 3,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-10:1e0eea2f43:0-500",
+        "demo-office-09:eccd290da3:0-500",
+        "demo-office-09:eccd290da3:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-090",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-04:b656727562:420-920",
+        "demo-office-04:b656727562:0-500",
+        "demo-office-10:1e0eea2f43:0-500"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-094",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-12:5c6b4b695e:840-1340",
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-07:fa0a22e8ed:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "DEMO-099",
+    "config_id": "config-c09",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "离线模拟评分：按标准证据原文覆盖判定；不能作为正式模型效果。",
+      "evidence_ids": [
+        "demo-office-09:eccd290da3:1260-1760",
+        "demo-office-09:eccd290da3:420-920",
+        "demo-office-09:eccd290da3:2520-2638"
+      ]
+    },
+    "sampled": true
+  }
+]
