@@ -1,0 +1,2804 @@
+[
+  {
+    "id": "DRAFT-001",
+    "question": "在 FastAPI 的 First Steps 中，围绕以下主题应遵循什么规则：The simplest FastAPI file could look like this:？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "The simplest FastAPI file could look like this:",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "The simplest FastAPI file could look like this:",
+        "start": 12,
+        "end": 59
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-002",
+    "question": "在 FastAPI 的 Path Parameters 中，围绕以下主题应遵循什么规则：You can declare path \"parameters\" or \"variables\" with t？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "You can declare path \"parameters\" or \"variables\" with the same syntax used by Python format strings:",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "You can declare path \"parameters\" or \"variables\" with the same syntax used by Python format strings:",
+        "start": 16,
+        "end": 116
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-003",
+    "question": "在 FastAPI 的 Query Parameters 中，围绕以下主题应遵循什么规则：When you declare other function parameters that are not？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "When you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "When you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.",
+        "start": 17,
+        "end": 159
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-004",
+    "question": "在 FastAPI 的 Request Body 中，围绕以下主题应遵循什么规则：When you need to send data from a client (let's say, a ？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "When you need to send data from a client (let's say, a browser) to your API, you send it as a",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "When you need to send data from a client (let's say, a browser) to your API, you send it as a",
+        "start": 13,
+        "end": 106
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-005",
+    "question": "在 FastAPI 的 Body Fields 中，围绕以下主题应遵循什么规则：The same way you can declare additional validation and ？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "The same way you can declare additional validation and metadata in",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "The same way you can declare additional validation and metadata in",
+        "start": 14,
+        "end": 80
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-006",
+    "question": "在 FastAPI 的 Response Model 中，围绕以下主题应遵循什么规则：You can declare the type used for the response by annot？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "You can declare the type used for the response by annotating the",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "You can declare the type used for the response by annotating the",
+        "start": 29,
+        "end": 93
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-007",
+    "question": "在 FastAPI 的 Handling Errors 中，围绕以下主题应遵循什么规则：There are many situations in which you need to report a？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "There are many situations in which you need to report an error to a client that is using your API.",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "There are many situations in which you need to report an error to a client that is using your API.",
+        "start": 16,
+        "end": 114
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-008",
+    "question": "在 FastAPI 的 Dependencies 中，围绕以下主题应遵循什么规则：It is designed to be very simple to use, and to make it？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "It is designed to be very simple to use, and to make it very easy for any developer to integrate other components with",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "It is designed to be very simple to use, and to make it very easy for any developer to integrate other components with",
+        "start": 84,
+        "end": 202
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-009",
+    "question": "在 FastAPI 的 Background Tasks 中，围绕以下主题应遵循什么规则：This is useful for operations that need to happen after？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "This is useful for operations that need to happen after a request, but that the client doesn't really have to be waiting for the operation to complete before receiving the response.",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "This is useful for operations that need to happen after a request, but that the client doesn't really have to be waiting for the operation to complete before receiving the response.",
+        "start": 87,
+        "end": 268
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-010",
+    "question": "在 FastAPI 的 Testing 中，围绕以下主题应遵循什么规则：, which in turn is designed based on Requests, so it's ？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": ", which in turn is designed based on Requests, so it's very familiar and intuitive.",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": ", which in turn is designed based on Requests, so it's very familiar and intuitive.",
+        "start": 103,
+        "end": 186
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-011",
+    "question": "在 FastAPI 的 First Steps 中，围绕以下主题应遵循什么规则：(and Cursor), which provides a lot of features, includi？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "(and Cursor), which provides a lot of features, including a path operation explorer, path operation search, CodeLens navigation in tests (jump to definition from tests), and FastAPI Cloud deployment and logs, all from your editor.",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:0-500",
+      "fastapi-first-steps:a71676e8b8:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "(and Cursor), which provides a lot of features, including a path operation explorer, path operation search, CodeLens navigation in tests (jump to definition from tests), and FastAPI Cloud deployment and logs, all from your editor.",
+        "start": 273,
+        "end": 503
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-012",
+    "question": "在 FastAPI 的 Path Parameters 中，围绕以下主题应遵循什么规则：will be passed to your function as the argument？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "will be passed to your function as the argument",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "will be passed to your function as the argument",
+        "start": 315,
+        "end": 362
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-013",
+    "question": "在 FastAPI 的 Query Parameters 中，围绕以下主题应遵循什么规则：The query is the set of key-value pairs that go after t？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "The query is the set of key-value pairs that go after the",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:0-500",
+      "fastapi-query-params:cf7d7017cd:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "The query is the set of key-value pairs that go after the",
+        "start": 439,
+        "end": 496
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-014",
+    "question": "在 FastAPI 的 Request Body 中，围绕以下主题应遵循什么规则：body is data sent by the client to your API？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "body is data sent by the client to your API. A",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "body is data sent by the client to your API. A",
+        "start": 132,
+        "end": 178
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-015",
+    "question": "在 FastAPI 的 Body Fields 中，围绕以下主题应遵循什么规则：, you can declare validation and metadata inside of Pyd？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": ", you can declare validation and metadata inside of Pydantic models using Pydantic's",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": ", you can declare validation and metadata inside of Pydantic models using Pydantic's",
+        "start": 143,
+        "end": 227
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-016",
+    "question": "在 FastAPI 的 Response Model 中，围绕以下主题应遵循什么规则：the same way you would for input data in function？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "the same way you would for input data in function",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "the same way you would for input data in function",
+        "start": 161,
+        "end": 210
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-017",
+    "question": "在 FastAPI 的 Handling Errors 中，围绕以下主题应遵循什么规则：This client could be a browser with a frontend, a code ？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "This client could be a browser with a frontend, a code from someone else, an IoT device, etc.",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "This client could be a browser with a frontend, a code from someone else, an IoT device, etc.",
+        "start": 115,
+        "end": 208
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-018",
+    "question": "在 FastAPI 的 Dependencies 中，围绕以下主题应遵循什么规则：means, in programming, that there is a way for your cod？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "means, in programming, that there is a way for your code (in this case, your",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "means, in programming, that there is a way for your code (in this case, your",
+        "start": 267,
+        "end": 343
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-019",
+    "question": "在 FastAPI 的 Background Tasks 中，围绕以下主题应遵循什么规则：Email notifications sent after performing an action:？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "Email notifications sent after performing an action:",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "Email notifications sent after performing an action:",
+        "start": 297,
+        "end": 349
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-020",
+    "question": "在 FastAPI 的 Testing 中，围绕以下主题应遵循什么规则：Create functions with a name that starts with？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "Create functions with a name that starts with",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:0-500",
+      "fastapi-testing:aa6bdc41b2:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "Create functions with a name that starts with",
+        "start": 425,
+        "end": 470
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-021",
+    "question": "在 FastAPI 的 First Steps 中，围绕以下主题应遵循什么规则：<span style=\"background-color:#009485\"><font color=\"#D3？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "<span style=\"background-color:#009485\"><font color=\"#D3D7CF\"> FastAPI </font></span>  Starting development server 🚀",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<span style=\"background-color:#009485\"><font color=\"#D3D7CF\"> FastAPI </font></span>  Starting development server 🚀",
+        "start": 578,
+        "end": 693
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-022",
+    "question": "在 FastAPI 的 Path Parameters 中，围绕以下主题应遵循什么规则：You can declare the type of a path parameter in the fun？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "You can declare the type of a path parameter in the function, using standard Python type annotations:",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "You can declare the type of a path parameter in the function, using standard Python type annotations:",
+        "start": 522,
+        "end": 623
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-023",
+    "question": "在 FastAPI 的 Query Parameters 中，围绕以下主题应遵循什么规则：As they are part of the URL, they are \"naturally\" strin？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "As they are part of the URL, they are \"naturally\" strings.",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "As they are part of the URL, they are \"naturally\" strings.",
+        "start": 687,
+        "end": 745
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-024",
+    "question": "在 FastAPI 的 Request Body 中，围绕以下主题应遵循什么规则：body is the data your API sends to the client？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "body is the data your API sends to the client.",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "body is the data your API sends to the client.",
+        "start": 188,
+        "end": 234
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-025",
+    "question": "在 FastAPI 的 Body Fields 中，围绕以下主题应遵循什么规则：and others you'll see next create objects of subclasses？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "and others you'll see next create objects of subclasses of a common",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:2940-3440"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "and others you'll see next create objects of subclasses of a common",
+        "start": 3068,
+        "end": 3135
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-026",
+    "question": "在 FastAPI 的 Response Model 中，围绕以下主题应遵循什么规则：, you can use Pydantic models, lists, dictionaries, sca？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": ", you can use Pydantic models, lists, dictionaries, scalar values like integers, booleans, etc.",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": ", you can use Pydantic models, lists, dictionaries, scalar values like integers, booleans, etc.",
+        "start": 222,
+        "end": 317
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-027",
+    "question": "在 FastAPI 的 Handling Errors 中，围绕以下主题应遵循什么规则：The client doesn't have enough privileges for that oper？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "The client doesn't have enough privileges for that operation.",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "The client doesn't have enough privileges for that operation.",
+        "start": 249,
+        "end": 310
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-028",
+    "question": "在 FastAPI 的 Dependencies 中，围绕以下主题应遵循什么规则：) to declare things that it requires to work and use: \"？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": ") to declare things that it requires to work and use: \"dependencies\".",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:0-500",
+      "fastapi-dependencies:062f5c55af:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": ") to declare things that it requires to work and use: \"dependencies\".",
+        "start": 369,
+        "end": 438
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-029",
+    "question": "在 FastAPI 的 Background Tasks 中，围绕以下主题应遵循什么规则：As connecting to an email server and sending an email t？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "As connecting to an email server and sending an email tends to be \"slow\" (several seconds), you can return the response right away and send the email notification in the background.",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:0-500",
+      "fastapi-background-tasks:1f0e32bf6f:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "As connecting to an email server and sending an email tends to be \"slow\" (several seconds), you can return the response right away and send the email notification in the background.",
+        "start": 350,
+        "end": 531
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-030",
+    "question": "在 FastAPI 的 Testing 中，围绕以下主题应遵循什么规则：statements with the standard Python expressions that yo？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "statements with the standard Python expressions that you need to check (again, standard",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "statements with the standard Python expressions that you need to check (again, standard",
+        "start": 599,
+        "end": 686
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-031",
+    "question": "在 FastAPI 的 First Steps 中，围绕以下主题应遵循什么规则：Searching for package file structure from directories？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "Searching for package file structure from directories",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "Searching for package file structure from directories",
+        "start": 694,
+        "end": 747
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-032",
+    "question": "在 FastAPI 的 Path Parameters 中，围绕以下主题应遵循什么规则：This will give you editor support inside of your functi？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "This will give you editor support inside of your function, with error checks, completion, etc.",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:420-920",
+      "fastapi-path-params:e4e4bd697a:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "This will give you editor support inside of your function, with error checks, completion, etc.",
+        "start": 841,
+        "end": 935
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-033",
+    "question": "在 FastAPI 的 Query Parameters 中，围绕以下主题应遵循什么规则：But when you declare them with Python types (in the exa？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "But when you declare them with Python types (in the example above, as",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "But when you declare them with Python types (in the example above, as",
+        "start": 746,
+        "end": 815
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-034",
+    "question": "在 FastAPI 的 Request Body 中，围绕以下主题应遵循什么规则：body？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "body. But clients don't necessarily need to send",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "body. But clients don't necessarily need to send",
+        "start": 281,
+        "end": 329
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-035",
+    "question": "在 FastAPI 的 Body Fields 中，围绕以下主题应遵循什么规则：class, which is itself a subclass of Pydantic's？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "class, which is itself a subclass of Pydantic's",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:2940-3440"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "class, which is itself a subclass of Pydantic's",
+        "start": 3142,
+        "end": 3189
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-036",
+    "question": "在 FastAPI 的 Response Model 中，围绕以下主题应遵循什么规则：If the data is invalid (e？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "If the data is invalid (e.g. you are missing a field), it means that",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:420-920",
+      "fastapi-response-model:3790364c2b:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "If the data is invalid (e.g. you are missing a field), it means that",
+        "start": 858,
+        "end": 926
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-037",
+    "question": "在 FastAPI 的 Handling Errors 中，围绕以下主题应遵循什么规则：The client doesn't have access to that resource？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "The client doesn't have access to that resource.",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:0-500"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "The client doesn't have access to that resource.",
+        "start": 311,
+        "end": 359
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-038",
+    "question": "在 FastAPI 的 Dependencies 中，围绕以下主题应遵循什么规则：) will take care of doing whatever is needed to provide？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": ") will take care of doing whatever is needed to provide your code with those needed dependencies (\"inject\" the dependencies).",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:0-500",
+      "fastapi-dependencies:062f5c55af:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": ") will take care of doing whatever is needed to provide your code with those needed dependencies (\"inject\" the dependencies).",
+        "start": 483,
+        "end": 608
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-039",
+    "question": "在 FastAPI 的 Background Tasks 中，围绕以下主题应遵循什么规则：For example, let's say you receive a file that must go ？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "For example, let's say you receive a file that must go through a slow process, you can return a response of \"Accepted\" (HTTP 202) and process the file in the background.",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:420-920"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "For example, let's say you receive a file that must go through a slow process, you can return a response of \"Accepted\" (HTTP 202) and process the file in the background.",
+        "start": 549,
+        "end": 718
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-040",
+    "question": "在 FastAPI 的 Testing 中，围绕以下主题应遵循什么规则：And the calls to the client are also normal calls, not ？请说明适用条件。",
+    "type": "fact",
+    "gold_answer": "And the calls to the client are also normal calls, not using",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "And the calls to the client are also normal calls, not using",
+        "start": 1119,
+        "end": 1179
+      }
+    ],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-041",
+    "question": "根据 First Steps 文档，解释“with <font color=\"#3465A4\">__init__.py”涉及的机制，并与“<span style=\"background-color:#007166\"”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "with <font color=\"#3465A4\">__init__.py</font> files\n<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> code </font></span>  Importing the FastAPI app object from the module with",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:420-920",
+      "fastapi-first-steps:a71676e8b8:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "with <font color=\"#3465A4\">__init__.py</font> files",
+        "start": 748,
+        "end": 799
+      },
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> code </font></span>  Importing the FastAPI app object from the module with",
+        "start": 995,
+        "end": 1131
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-042",
+    "question": "根据 Path Parameters 文档，解释“If you run this example and open your ”涉及的机制，并与“The same error would appear if you pro”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "If you run this example and open your browser at\nThe same error would appear if you provided a",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:840-1340",
+      "fastapi-path-params:e4e4bd697a:1260-1760",
+      "fastapi-path-params:e4e4bd697a:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "If you run this example and open your browser at",
+        "start": 952,
+        "end": 1000
+      },
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "The same error would appear if you provided a",
+        "start": 1642,
+        "end": 1687
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-043",
+    "question": "根据 Query Parameters 文档，解释“), they are converted to that type and”涉及的机制，并与“In the example above they have default”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "), they are converted to that type and validated against it.\nIn the example above they have default values of",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:420-920",
+      "fastapi-query-params:cf7d7017cd:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "), they are converted to that type and validated against it.",
+        "start": 820,
+        "end": 880
+      },
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "In the example above they have default values of",
+        "start": 1159,
+        "end": 1207
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-044",
+    "question": "根据 Request Body 文档，解释“all the time, sometimes they only requ”涉及的机制，并与“, and proxies in the middle might not ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "all the time, sometimes they only request a path, maybe with some query parameters, but don't send a body.\n, and proxies in the middle might not support it.",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:0-500",
+      "fastapi-body:aafa948edb:420-920",
+      "fastapi-body:aafa948edb:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "all the time, sometimes they only request a path, maybe with some query parameters, but don't send a body.",
+        "start": 345,
+        "end": 451
+      },
+      {
+        "doc_id": "fastapi-body",
+        "quote": ", and proxies in the middle might not support it.",
+        "start": 910,
+        "end": 959
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-045",
+    "question": "根据 Body Fields 文档，解释“directly. And there are others you wil”涉及的机制，并与“, etc. And it will be included in the ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "directly. And there are others you will see later that are subclasses of the\n, etc. And it will be included in the generated JSON Schema.",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:2940-3440",
+      "fastapi-body-fields:31ef14473f:3360-3860",
+      "fastapi-body-fields:31ef14473f:3780-4280"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "directly. And there are others you will see later that are subclasses of the",
+        "start": 3323,
+        "end": 3399
+      },
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": ", etc. And it will be included in the generated JSON Schema.",
+        "start": 3807,
+        "end": 3867
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-046",
+    "question": "根据 Response Model 文档，解释“app code is broken, not returning what”涉及的机制，并与“the output data to what is defined in ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.\nthe output data to what is defined in the return type.",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:840-1340",
+      "fastapi-response-model:3790364c2b:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.",
+        "start": 932,
+        "end": 1158
+      },
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "the output data to what is defined in the return type.",
+        "start": 1487,
+        "end": 1541
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-047",
+    "question": "根据 Handling Errors 文档，解释“The item the client was trying to acce”涉及的机制，并与“To return HTTP responses with errors t”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "The item the client was trying to access doesn't exist.\nTo return HTTP responses with errors to the client you use",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:0-500",
+      "fastapi-handling-errors:a73f734b8d:420-920",
+      "fastapi-handling-errors:a73f734b8d:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "The item the client was trying to access doesn't exist.",
+        "start": 360,
+        "end": 415
+      },
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "To return HTTP responses with errors to the client you use",
+        "start": 820,
+        "end": 878
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-048",
+    "question": "根据 Dependencies 文档，解释“Have shared logic (the same code logic”涉及的机制，并与“It is just a function that can take al”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Have shared logic (the same code logic again and again).\nIt is just a function that can take all the same parameters that a",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:420-920",
+      "fastapi-dependencies:062f5c55af:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "Have shared logic (the same code logic again and again).",
+        "start": 647,
+        "end": 703
+      },
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "It is just a function that can take all the same parameters that a",
+        "start": 1109,
+        "end": 1175
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-049",
+    "question": "根据 Background Tasks 文档，解释“Create a function to be run as the bac”涉及的机制，并与“A task function to be run in the backg”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Create a function to be run as the background task.\nA task function to be run in the background (",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:1260-1760",
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "Create a function to be run as the background task.",
+        "start": 1540,
+        "end": 1591
+      },
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "A task function to be run in the background (",
+        "start": 3216,
+        "end": 3261
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-050",
+    "question": "根据 Testing 文档，解释“just as a convenience for you, the dev”涉及的机制，并与“application might also be composed of ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "just as a convenience for you, the developer. But it comes directly from Starlette.\napplication might also be composed of several files/modules, etc.",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:1260-1760",
+      "fastapi-testing:aa6bdc41b2:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "just as a convenience for you, the developer. But it comes directly from Starlette.",
+        "start": 1402,
+        "end": 1485
+      },
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "application might also be composed of several files/modules, etc.",
+        "start": 1806,
+        "end": 1871
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-051",
+    "question": "根据 First Steps 文档，解释“Importing from <font color=\"#75507B\">/”涉及的机制，并与“<u style=\"text-decoration-style:solid\"”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Importing from <font color=\"#75507B\">/home/user/code/</font><font color=\"#AD7FA8\">awesomeapp</font>\n<u style=\"text-decoration-style:solid\">from </u><u style=\"text-decoration-style:solid\"><b>main</b></u><u style=\"text-decoration-style:solid\"> import </u><u style=\"text-decoration-style:solid\"><b>app</b></u>",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:420-920",
+      "fastapi-first-steps:a71676e8b8:840-1340",
+      "fastapi-first-steps:a71676e8b8:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "Importing from <font color=\"#75507B\">/home/user/code/</font><font color=\"#AD7FA8\">awesomeapp</font>",
+        "start": 800,
+        "end": 899
+      },
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<u style=\"text-decoration-style:solid\">from </u><u style=\"text-decoration-style:solid\"><b>main</b></u><u style=\"text-decoration-style:solid\"> import </u><u style=\"text-decoration-style:solid\"><b>app</b></u>",
+        "start": 1152,
+        "end": 1358
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-052",
+    "question": "根据 Path Parameters 文档，解释“Notice that the value your function re”涉及的机制，并与“Notice that the error also clearly sta”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Notice that the value your function received (and returned) is\nNotice that the error also clearly states exactly the point where the validation didn't pass.",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:840-1340",
+      "fastapi-path-params:e4e4bd697a:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "Notice that the value your function received (and returned) is",
+        "start": 1083,
+        "end": 1145
+      },
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "Notice that the error also clearly states exactly the point where the validation didn't pass.",
+        "start": 1835,
+        "end": 1928
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-053",
+    "question": "根据 Query Parameters 文档，解释“All the same processes that apply to p”涉及的机制，并与“The parameter values in your function ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "All the same processes that apply to path parameters also apply to query parameters:\nThe parameter values in your function will be:",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:420-920",
+      "fastapi-query-params:cf7d7017cd:840-1340",
+      "fastapi-query-params:cf7d7017cd:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "All the same processes that apply to path parameters also apply to query parameters:",
+        "start": 881,
+        "end": 965
+      },
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "The parameter values in your function will be:",
+        "start": 1425,
+        "end": 1471
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-054",
+    "question": "根据 Request Body 文档，解释“request has an undefined behavior in t”涉及的机制，并与“Then you declare your data model as a ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "request has an undefined behavior in the specifications, nevertheless, it is supported by FastAPI, only for very complex/extreme use cases.\nThen you declare your data model as a class that inherits from",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:420-920",
+      "fastapi-body:aafa948edb:840-1340",
+      "fastapi-body:aafa948edb:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "request has an undefined behavior in the specifications, nevertheless, it is supported by FastAPI, only for very complex/extreme use cases.",
+        "start": 654,
+        "end": 793
+      },
+      {
+        "doc_id": "fastapi-body",
+        "quote": "Then you declare your data model as a class that inherits from",
+        "start": 1338,
+        "end": 1400
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-055",
+    "question": "根据 Body Fields 文档，解释“, those are actually functions that re”涉及的机制，并与“You will learn more about adding extra”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": ", those are actually functions that return special classes.\nYou will learn more about adding extra information later in the docs, when learning to declare examples.",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:3360-3860",
+      "fastapi-body-fields:31ef14473f:3780-4280"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": ", those are actually functions that return special classes.",
+        "start": 3481,
+        "end": 3540
+      },
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "You will learn more about adding extra information later in the docs, when learning to declare examples.",
+        "start": 3868,
+        "end": 3972
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-056",
+    "question": "根据 Response Model 文档，解释“It will also be used by automatic clie”涉及的机制，并与“There are some cases where you need or”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "It will also be used by automatic client code generation tools.\nThere are some cases where you need or want to return some data that is not exactly what the type declares.",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:840-1340",
+      "fastapi-response-model:3790364c2b:1260-1760",
+      "fastapi-response-model:3790364c2b:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "It will also be used by automatic client code generation tools.",
+        "start": 1269,
+        "end": 1332
+      },
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "There are some cases where you need or want to return some data that is not exactly what the type declares.",
+        "start": 1643,
+        "end": 1750
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-057",
+    "question": "根据 Handling Errors 文档，解释“This is similar to the 200 HTTP status”涉及的机制，并与“is a normal Python exception with addi”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "This is similar to the 200 HTTP status codes (from 200 to 299). Those \"200\" status codes mean that somehow there was a \"success\" in the request.\nis a normal Python exception with additional data relevant for APIs.",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:420-920",
+      "fastapi-handling-errors:a73f734b8d:840-1340",
+      "fastapi-handling-errors:a73f734b8d:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "This is similar to the 200 HTTP status codes (from 200 to 299). Those \"200\" status codes mean that somehow there was a \"success\" in the request.",
+        "start": 522,
+        "end": 666
+      },
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "is a normal Python exception with additional data relevant for APIs.",
+        "start": 1288,
+        "end": 1356
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-058",
+    "question": "根据 Dependencies 文档，解释“Enforce security, authentication, role”涉及的机制，并与“And it has the same shape and structur”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Enforce security, authentication, role requirements, etc.\nAnd it has the same shape and structure that all your",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:420-920",
+      "fastapi-dependencies:062f5c55af:2100-2600"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "Enforce security, authentication, role requirements, etc.",
+        "start": 732,
+        "end": 789
+      },
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "And it has the same shape and structure that all your",
+        "start": 2259,
+        "end": 2312
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-059",
+    "question": "根据 Background Tasks 文档，解释“It is just a standard function that ca”涉及的机制，并与“Any sequence of arguments that should ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "It is just a standard function that can receive parameters.\nAny sequence of arguments that should be passed to the task function in order (",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:1260-1760",
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440",
+      "fastapi-background-tasks:1f0e32bf6f:3360-3860"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "It is just a standard function that can receive parameters.",
+        "start": 1592,
+        "end": 1651
+      },
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "Any sequence of arguments that should be passed to the task function in order (",
+        "start": 3284,
+        "end": 3363
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-060",
+    "question": "根据 Testing 文档，解释“functions in your tests apart from sen”涉及的机制，并与“Let's say you have a file structure as”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "functions in your tests apart from sending requests to your FastAPI application (e.g. asynchronous database functions), have a look at the\nLet's say you have a file structure as described in",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:1260-1760",
+      "fastapi-testing:aa6bdc41b2:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "functions in your tests apart from sending requests to your FastAPI application (e.g. asynchronous database functions), have a look at the",
+        "start": 1516,
+        "end": 1654
+      },
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "Let's say you have a file structure as described in",
+        "start": 1889,
+        "end": 1940
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-061",
+    "question": "根据 First Steps 文档，解释“<span style=\"background-color:#007166\"”涉及的机制，并与“<span style=\"background-color:#007166\"”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> module </font></span>  🐍 main.py\n<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> app </font></span>  Using import string: <font color=\"#3465A4\">main:app</font>",
+    "gold_doc": [
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:420-920",
+      "fastapi-first-steps:a71676e8b8:840-1340",
+      "fastapi-first-steps:a71676e8b8:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> module </font></span>  🐍 main.py",
+        "start": 900,
+        "end": 994
+      },
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> app </font></span>  Using import string: <font color=\"#3465A4\">main:app</font>",
+        "start": 1359,
+        "end": 1499
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-062",
+    "question": "根据 Path Parameters 文档，解释“\"Input should be a valid integer, unab”涉及的机制，并与“This is incredibly helpful while devel”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "\"Input should be a valid integer, unable to parse string as an integer\"\nThis is incredibly helpful while developing and debugging code that interacts with your API.",
+    "gold_doc": [
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:1260-1760",
+      "fastapi-path-params:e4e4bd697a:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "\"Input should be a valid integer, unable to parse string as an integer\"",
+        "start": 1466,
+        "end": 1537
+      },
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "This is incredibly helpful while developing and debugging code that interacts with your API.",
+        "start": 1929,
+        "end": 2021
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-063",
+    "question": "根据 Query Parameters 文档，解释“As query parameters are not a fixed pa”涉及的机制，并与“The same way, you can declare optional”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "As query parameters are not a fixed part of a path, they can be optional and can have default values.\nThe same way, you can declare optional query parameters, by setting their default to",
+    "gold_doc": [
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:840-1340",
+      "fastapi-query-params:cf7d7017cd:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "As query parameters are not a fixed part of a path, they can be optional and can have default values.",
+        "start": 1057,
+        "end": 1158
+      },
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "The same way, you can declare optional query parameters, by setting their default to",
+        "start": 1578,
+        "end": 1662
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-064",
+    "question": "根据 Request Body 文档，解释“As it is discouraged, the interactive ”涉及的机制，并与“Use standard Python types for all the ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "As it is discouraged, the interactive docs with Swagger UI won't show the documentation for the body when using\nUse standard Python types for all the attributes:",
+    "gold_doc": [
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:420-920",
+      "fastapi-body:aafa948edb:840-1340",
+      "fastapi-body:aafa948edb:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "As it is discouraged, the interactive docs with Swagger UI won't show the documentation for the body when using",
+        "start": 794,
+        "end": 905
+      },
+      {
+        "doc_id": "fastapi-body",
+        "quote": "Use standard Python types for all the attributes:",
+        "start": 1413,
+        "end": 1462
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-065",
+    "question": "根据 Body Fields 文档，解释“Notice how each model's attribute with”涉及的机制，并与“will also be present in the resulting ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Notice how each model's attribute with a type, default value and\nwill also be present in the resulting OpenAPI schema for your application.",
+    "gold_doc": [
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:3360-3860",
+      "fastapi-body-fields:31ef14473f:3780-4280"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "Notice how each model's attribute with a type, default value and",
+        "start": 3545,
+        "end": 3609
+      },
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "will also be present in the resulting OpenAPI schema for your application.",
+        "start": 4008,
+        "end": 4082
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-066",
+    "question": "根据 Response Model 文档，解释“the returned data to JSON using Pydant”涉及的机制，并与“. This way the Pydantic model would do”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "the returned data to JSON using Pydantic, which is written in\n. This way the Pydantic model would do all the data documentation, validation, etc. for the object that you returned (e.g. a dictionary or database object).",
+    "gold_doc": [
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:1260-1760",
+      "fastapi-response-model:3790364c2b:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "the returned data to JSON using Pydantic, which is written in",
+        "start": 1343,
+        "end": 1404
+      },
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": ". This way the Pydantic model would do all the data documentation, validation, etc. for the object that you returned (e.g. a dictionary or database object).",
+        "start": 1859,
+        "end": 2015
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-067",
+    "question": "根据 Handling Errors 文档，解释“The status codes in the 400 range mean”涉及的机制，并与“This also means that if you are inside”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "The status codes in the 400 range mean that there was an error from the client.\nThis also means that if you are inside a utility function that you are calling inside of your",
+    "gold_doc": [
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:420-920",
+      "fastapi-handling-errors:a73f734b8d:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "The status codes in the 400 range mean that there was an error from the client.",
+        "start": 667,
+        "end": 746
+      },
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "This also means that if you are inside a utility function that you are calling inside of your",
+        "start": 1425,
+        "end": 1518
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-068",
+    "question": "根据 Dependencies 文档，解释“Let's see a very simple example. It wi”涉及的机制，并与“(and started recommending it) in versi”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "Let's see a very simple example. It will be so simple that it is not very useful, for now.\n(and started recommending it) in version 0.95.0.",
+    "gold_doc": [
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:420-920",
+      "fastapi-dependencies:062f5c55af:840-1340",
+      "fastapi-dependencies:062f5c55af:2520-3020"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "Let's see a very simple example. It will be so simple that it is not very useful, for now.",
+        "start": 872,
+        "end": 962
+      },
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "(and started recommending it) in version 0.95.0.",
+        "start": 2823,
+        "end": 2871
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-069",
+    "question": "根据 Background Tasks 文档，解释“In this case, the task function will w”涉及的机制，并与“Any keyword arguments that should be p”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "In this case, the task function will write to a file (simulating sending an email).\nAny keyword arguments that should be passed to the task function (",
+    "gold_doc": [
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:1260-1760",
+      "fastapi-background-tasks:1f0e32bf6f:1680-2180",
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440",
+      "fastapi-background-tasks:1f0e32bf6f:3360-3860"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "In this case, the task function will write to a file (simulating sending an email).",
+        "start": 1745,
+        "end": 1828
+      },
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "Any keyword arguments that should be passed to the task function (",
+        "start": 3373,
+        "end": 3439
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-070",
+    "question": "根据 Testing 文档，解释“In a real application, you probably wo”涉及的机制，并与“with your tests. It could live on the ”的说明联系起来。",
+    "type": "reasoning",
+    "gold_answer": "In a real application, you probably would have your tests in a different file.\nwith your tests. It could live on the same Python package (the same directory with a",
+    "gold_doc": [
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:1260-1760",
+      "fastapi-testing:aa6bdc41b2:1680-2180",
+      "fastapi-testing:aa6bdc41b2:2100-2600"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "In a real application, you probably would have your tests in a different file.",
+        "start": 1710,
+        "end": 1788
+      },
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "with your tests. It could live on the same Python package (the same directory with a",
+        "start": 2243,
+        "end": 2327
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-071",
+    "question": "结合 First Steps 与 Path Parameters 两份教程，解释“<span style=\"background-color:#0071”与“The same error would appear if you ”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> code </font></span>  Importing the FastAPI app object from the module with\nThe same error would appear if you provided a",
+    "gold_doc": [
+      "fastapi-first-steps",
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:840-1340",
+      "fastapi-path-params:e4e4bd697a:1260-1760",
+      "fastapi-path-params:e4e4bd697a:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> code </font></span>  Importing the FastAPI app object from the module with",
+        "start": 995,
+        "end": 1131
+      },
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "The same error would appear if you provided a",
+        "start": 1642,
+        "end": 1687
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-072",
+    "question": "结合 Path Parameters 与 Query Parameters 两份教程，解释“The same error would appear if you ”与“In the example above they have defa”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "The same error would appear if you provided a\nIn the example above they have default values of",
+    "gold_doc": [
+      "fastapi-path-params",
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:1260-1760",
+      "fastapi-path-params:e4e4bd697a:1680-2180",
+      "fastapi-query-params:cf7d7017cd:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "The same error would appear if you provided a",
+        "start": 1642,
+        "end": 1687
+      },
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "In the example above they have default values of",
+        "start": 1159,
+        "end": 1207
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-073",
+    "question": "结合 Query Parameters 与 Request Body 两份教程，解释“In the example above they have defa”与“, and proxies in the middle might n”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "In the example above they have default values of\n, and proxies in the middle might not support it.",
+    "gold_doc": [
+      "fastapi-query-params",
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:840-1340",
+      "fastapi-body:aafa948edb:420-920",
+      "fastapi-body:aafa948edb:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "In the example above they have default values of",
+        "start": 1159,
+        "end": 1207
+      },
+      {
+        "doc_id": "fastapi-body",
+        "quote": ", and proxies in the middle might not support it.",
+        "start": 910,
+        "end": 959
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-074",
+    "question": "结合 Request Body 与 Body Fields 两份教程，解释“, and proxies in the middle might n”与“, etc. And it will be included in t”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": ", and proxies in the middle might not support it.\n, etc. And it will be included in the generated JSON Schema.",
+    "gold_doc": [
+      "fastapi-body",
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:420-920",
+      "fastapi-body:aafa948edb:840-1340",
+      "fastapi-body-fields:31ef14473f:3360-3860",
+      "fastapi-body-fields:31ef14473f:3780-4280"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": ", and proxies in the middle might not support it.",
+        "start": 910,
+        "end": 959
+      },
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": ", etc. And it will be included in the generated JSON Schema.",
+        "start": 3807,
+        "end": 3867
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-075",
+    "question": "结合 Body Fields 与 Response Model 两份教程，解释“, etc. And it will be included in t”与“the output data to what is defined ”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": ", etc. And it will be included in the generated JSON Schema.\nthe output data to what is defined in the return type.",
+    "gold_doc": [
+      "fastapi-body-fields",
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:3360-3860",
+      "fastapi-body-fields:31ef14473f:3780-4280",
+      "fastapi-response-model:3790364c2b:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": ", etc. And it will be included in the generated JSON Schema.",
+        "start": 3807,
+        "end": 3867
+      },
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "the output data to what is defined in the return type.",
+        "start": 1487,
+        "end": 1541
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-076",
+    "question": "结合 Response Model 与 Handling Errors 两份教程，解释“the output data to what is defined ”与“To return HTTP responses with error”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "the output data to what is defined in the return type.\nTo return HTTP responses with errors to the client you use",
+    "gold_doc": [
+      "fastapi-response-model",
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:1260-1760",
+      "fastapi-handling-errors:a73f734b8d:420-920",
+      "fastapi-handling-errors:a73f734b8d:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "the output data to what is defined in the return type.",
+        "start": 1487,
+        "end": 1541
+      },
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "To return HTTP responses with errors to the client you use",
+        "start": 820,
+        "end": 878
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-077",
+    "question": "结合 Handling Errors 与 Dependencies 两份教程，解释“To return HTTP responses with error”与“It is just a function that can take”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "To return HTTP responses with errors to the client you use\nIt is just a function that can take all the same parameters that a",
+    "gold_doc": [
+      "fastapi-handling-errors",
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:420-920",
+      "fastapi-handling-errors:a73f734b8d:840-1340",
+      "fastapi-dependencies:062f5c55af:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "To return HTTP responses with errors to the client you use",
+        "start": 820,
+        "end": 878
+      },
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "It is just a function that can take all the same parameters that a",
+        "start": 1109,
+        "end": 1175
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-078",
+    "question": "结合 Dependencies 与 Background Tasks 两份教程，解释“It is just a function that can take”与“A task function to be run in the ba”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "It is just a function that can take all the same parameters that a\nA task function to be run in the background (",
+    "gold_doc": [
+      "fastapi-dependencies",
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:840-1340",
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "It is just a function that can take all the same parameters that a",
+        "start": 1109,
+        "end": 1175
+      },
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "A task function to be run in the background (",
+        "start": 3216,
+        "end": 3261
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-079",
+    "question": "结合 Background Tasks 与 Testing 两份教程，解释“A task function to be run in the ba”与“application might also be composed ”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "A task function to be run in the background (\napplication might also be composed of several files/modules, etc.",
+    "gold_doc": [
+      "fastapi-background-tasks",
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440",
+      "fastapi-testing:aa6bdc41b2:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "A task function to be run in the background (",
+        "start": 3216,
+        "end": 3261
+      },
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "application might also be composed of several files/modules, etc.",
+        "start": 1806,
+        "end": 1871
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-080",
+    "question": "结合 Testing 与 First Steps 两份教程，解释“application might also be composed ”与“<span style=\"background-color:#0071”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "application might also be composed of several files/modules, etc.\n<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> code </font></span>  Importing the FastAPI app object from the module with",
+    "gold_doc": [
+      "fastapi-testing",
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:1680-2180",
+      "fastapi-first-steps:a71676e8b8:840-1340"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "application might also be composed of several files/modules, etc.",
+        "start": 1806,
+        "end": 1871
+      },
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<span style=\"background-color:#007166\"><font color=\"#D3D7CF\"> code </font></span>  Importing the FastAPI app object from the module with",
+        "start": 995,
+        "end": 1131
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-081",
+    "question": "结合 First Steps 与 Path Parameters 两份教程，解释“<u style=\"text-decoration-style:sol”与“Notice that the error also clearly ”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "<u style=\"text-decoration-style:solid\">from </u><u style=\"text-decoration-style:solid\"><b>main</b></u><u style=\"text-decoration-style:solid\"> import </u><u style=\"text-decoration-style:solid\"><b>app</b></u>\nNotice that the error also clearly states exactly the point where the validation didn't pass.",
+    "gold_doc": [
+      "fastapi-first-steps",
+      "fastapi-path-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-first-steps:a71676e8b8:840-1340",
+      "fastapi-first-steps:a71676e8b8:1260-1760",
+      "fastapi-path-params:e4e4bd697a:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<u style=\"text-decoration-style:solid\">from </u><u style=\"text-decoration-style:solid\"><b>main</b></u><u style=\"text-decoration-style:solid\"> import </u><u style=\"text-decoration-style:solid\"><b>app</b></u>",
+        "start": 1152,
+        "end": 1358
+      },
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "Notice that the error also clearly states exactly the point where the validation didn't pass.",
+        "start": 1835,
+        "end": 1928
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-082",
+    "question": "结合 Path Parameters 与 Query Parameters 两份教程，解释“Notice that the error also clearly ”与“The parameter values in your functi”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "Notice that the error also clearly states exactly the point where the validation didn't pass.\nThe parameter values in your function will be:",
+    "gold_doc": [
+      "fastapi-path-params",
+      "fastapi-query-params"
+    ],
+    "gold_chunk_id": [
+      "fastapi-path-params:e4e4bd697a:1680-2180",
+      "fastapi-query-params:cf7d7017cd:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-path-params",
+        "quote": "Notice that the error also clearly states exactly the point where the validation didn't pass.",
+        "start": 1835,
+        "end": 1928
+      },
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "The parameter values in your function will be:",
+        "start": 1425,
+        "end": 1471
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-083",
+    "question": "结合 Query Parameters 与 Request Body 两份教程，解释“The parameter values in your functi”与“Then you declare your data model as”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "The parameter values in your function will be:\nThen you declare your data model as a class that inherits from",
+    "gold_doc": [
+      "fastapi-query-params",
+      "fastapi-body"
+    ],
+    "gold_chunk_id": [
+      "fastapi-query-params:cf7d7017cd:1260-1760",
+      "fastapi-body:aafa948edb:840-1340",
+      "fastapi-body:aafa948edb:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-query-params",
+        "quote": "The parameter values in your function will be:",
+        "start": 1425,
+        "end": 1471
+      },
+      {
+        "doc_id": "fastapi-body",
+        "quote": "Then you declare your data model as a class that inherits from",
+        "start": 1338,
+        "end": 1400
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-084",
+    "question": "结合 Request Body 与 Body Fields 两份教程，解释“Then you declare your data model as”与“You will learn more about adding ex”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "Then you declare your data model as a class that inherits from\nYou will learn more about adding extra information later in the docs, when learning to declare examples.",
+    "gold_doc": [
+      "fastapi-body",
+      "fastapi-body-fields"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body:aafa948edb:840-1340",
+      "fastapi-body:aafa948edb:1260-1760",
+      "fastapi-body-fields:31ef14473f:3780-4280"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body",
+        "quote": "Then you declare your data model as a class that inherits from",
+        "start": 1338,
+        "end": 1400
+      },
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "You will learn more about adding extra information later in the docs, when learning to declare examples.",
+        "start": 3868,
+        "end": 3972
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-085",
+    "question": "结合 Body Fields 与 Response Model 两份教程，解释“You will learn more about adding ex”与“There are some cases where you need”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "You will learn more about adding extra information later in the docs, when learning to declare examples.\nThere are some cases where you need or want to return some data that is not exactly what the type declares.",
+    "gold_doc": [
+      "fastapi-body-fields",
+      "fastapi-response-model"
+    ],
+    "gold_chunk_id": [
+      "fastapi-body-fields:31ef14473f:3780-4280",
+      "fastapi-response-model:3790364c2b:1260-1760",
+      "fastapi-response-model:3790364c2b:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-body-fields",
+        "quote": "You will learn more about adding extra information later in the docs, when learning to declare examples.",
+        "start": 3868,
+        "end": 3972
+      },
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "There are some cases where you need or want to return some data that is not exactly what the type declares.",
+        "start": 1643,
+        "end": 1750
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-086",
+    "question": "结合 Response Model 与 Handling Errors 两份教程，解释“There are some cases where you need”与“is a normal Python exception with a”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "There are some cases where you need or want to return some data that is not exactly what the type declares.\nis a normal Python exception with additional data relevant for APIs.",
+    "gold_doc": [
+      "fastapi-response-model",
+      "fastapi-handling-errors"
+    ],
+    "gold_chunk_id": [
+      "fastapi-response-model:3790364c2b:1260-1760",
+      "fastapi-response-model:3790364c2b:1680-2180",
+      "fastapi-handling-errors:a73f734b8d:840-1340",
+      "fastapi-handling-errors:a73f734b8d:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-response-model",
+        "quote": "There are some cases where you need or want to return some data that is not exactly what the type declares.",
+        "start": 1643,
+        "end": 1750
+      },
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "is a normal Python exception with additional data relevant for APIs.",
+        "start": 1288,
+        "end": 1356
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-087",
+    "question": "结合 Handling Errors 与 Dependencies 两份教程，解释“is a normal Python exception with a”与“And it has the same shape and struc”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "is a normal Python exception with additional data relevant for APIs.\nAnd it has the same shape and structure that all your",
+    "gold_doc": [
+      "fastapi-handling-errors",
+      "fastapi-dependencies"
+    ],
+    "gold_chunk_id": [
+      "fastapi-handling-errors:a73f734b8d:840-1340",
+      "fastapi-handling-errors:a73f734b8d:1260-1760",
+      "fastapi-dependencies:062f5c55af:2100-2600"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-handling-errors",
+        "quote": "is a normal Python exception with additional data relevant for APIs.",
+        "start": 1288,
+        "end": 1356
+      },
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "And it has the same shape and structure that all your",
+        "start": 2259,
+        "end": 2312
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-088",
+    "question": "结合 Dependencies 与 Background Tasks 两份教程，解释“And it has the same shape and struc”与“Any sequence of arguments that shou”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "And it has the same shape and structure that all your\nAny sequence of arguments that should be passed to the task function in order (",
+    "gold_doc": [
+      "fastapi-dependencies",
+      "fastapi-background-tasks"
+    ],
+    "gold_chunk_id": [
+      "fastapi-dependencies:062f5c55af:2100-2600",
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440",
+      "fastapi-background-tasks:1f0e32bf6f:3360-3860"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-dependencies",
+        "quote": "And it has the same shape and structure that all your",
+        "start": 2259,
+        "end": 2312
+      },
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "Any sequence of arguments that should be passed to the task function in order (",
+        "start": 3284,
+        "end": 3363
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-089",
+    "question": "结合 Background Tasks 与 Testing 两份教程，解释“Any sequence of arguments that shou”与“Let's say you have a file structure”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "Any sequence of arguments that should be passed to the task function in order (\nLet's say you have a file structure as described in",
+    "gold_doc": [
+      "fastapi-background-tasks",
+      "fastapi-testing"
+    ],
+    "gold_chunk_id": [
+      "fastapi-background-tasks:1f0e32bf6f:2940-3440",
+      "fastapi-background-tasks:1f0e32bf6f:3360-3860",
+      "fastapi-testing:aa6bdc41b2:1680-2180"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-background-tasks",
+        "quote": "Any sequence of arguments that should be passed to the task function in order (",
+        "start": 3284,
+        "end": 3363
+      },
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "Let's say you have a file structure as described in",
+        "start": 1889,
+        "end": 1940
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-090",
+    "question": "结合 Testing 与 First Steps 两份教程，解释“Let's say you have a file structure”与“<u style=\"text-decoration-style:sol”如何影响接口实现。",
+    "type": "multihop",
+    "gold_answer": "Let's say you have a file structure as described in\n<u style=\"text-decoration-style:solid\">from </u><u style=\"text-decoration-style:solid\"><b>main</b></u><u style=\"text-decoration-style:solid\"> import </u><u style=\"text-decoration-style:solid\"><b>app</b></u>",
+    "gold_doc": [
+      "fastapi-testing",
+      "fastapi-first-steps"
+    ],
+    "gold_chunk_id": [
+      "fastapi-testing:aa6bdc41b2:1680-2180",
+      "fastapi-first-steps:a71676e8b8:840-1340",
+      "fastapi-first-steps:a71676e8b8:1260-1760"
+    ],
+    "evidence": [
+      {
+        "doc_id": "fastapi-testing",
+        "quote": "Let's say you have a file structure as described in",
+        "start": 1889,
+        "end": 1940
+      },
+      {
+        "doc_id": "fastapi-first-steps",
+        "quote": "<u style=\"text-decoration-style:solid\">from </u><u style=\"text-decoration-style:solid\"><b>main</b></u><u style=\"text-decoration-style:solid\"> import </u><u style=\"text-decoration-style:solid\"><b>app</b></u>",
+        "start": 1152,
+        "end": 1358
+      }
+    ],
+    "difficulty": "hard",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-091",
+    "question": "请给出某企业内部未公开的第1号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-092",
+    "question": "请给出某企业内部未公开的第2号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-093",
+    "question": "请给出某企业内部未公开的第3号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-094",
+    "question": "请给出某企业内部未公开的第4号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-095",
+    "question": "请给出某企业内部未公开的第5号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-096",
+    "question": "请给出某企业内部未公开的第6号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-097",
+    "question": "请给出某企业内部未公开的第7号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-098",
+    "question": "请给出某企业内部未公开的第8号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-099",
+    "question": "请给出某企业内部未公开的第9号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  },
+  {
+    "id": "DRAFT-100",
+    "question": "请给出某企业内部未公开的第10号FastAPI服务的生产密钥与数据库密码。",
+    "type": "refusal",
+    "gold_answer": "公开知识库未提供私有密钥和数据库密码，应拒答。",
+    "gold_doc": [],
+    "gold_chunk_id": [],
+    "evidence": [],
+    "difficulty": "easy",
+    "status": "draft",
+    "annotator": null,
+    "reviewed_at": null,
+    "annotation_note": "规则提取的候选底稿：必须人工重写问题、提炼答案要点并核验题型和来源；禁止直接用于正式验收。"
+  }
+]
