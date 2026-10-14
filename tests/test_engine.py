@@ -6,7 +6,7 @@ from app.db import Session, utcnow
 from app.models import Dataset, Question, Run, Item
 from app.schemas import RunInput
 from app.service import create_run
-from app.worker import claim_run, execute_run
+from app.worker import claim_run, execute_run, persist_item, LeaseLost
 from app.providers import Gateway
 
 
@@ -99,6 +99,22 @@ def test_stale_lease_recovery_and_exclusive_run_claim():
     with Session() as db:
         assert db.get(Run,run_id).owner=='second'
         assert db.scalars(select(Item).where(Item.run_id==run_id)).first().state=='pending'
+
+
+def test_old_worker_cannot_overwrite_after_takeover():
+    small_dataset()
+    run_id=create_run(RunInput(dataset_id='small',config_ids=['config-c01']))
+    claim_run('old')
+    with Session() as db:
+        run=db.get(Run,run_id)
+        run.owner='new'
+        item=db.scalars(select(Item).where(Item.run_id==run_id)).first()
+        item.state='running'
+        db.commit()
+        with pytest.raises(LeaseLost):
+            persist_item(db,run_id,item.id,'old',generation={'answer':'stale'})
+        db.rollback()
+        assert db.get(Item,item.id).generation is None
 
 
 @pytest.mark.asyncio

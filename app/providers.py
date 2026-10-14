@@ -7,6 +7,8 @@ import re
 import time
 import uuid
 from contextvars import ContextVar
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from collections import deque
 import httpx
 import numpy as np
@@ -101,14 +103,20 @@ class Gateway:
                 if status not in {408, 409, 429, 500, 502, 503, 504} or attempt == settings.max_retries:
                     raise RuntimeError(f'云API返回HTTP {status}；请检查模型、权限和额度') from None
                 header = exc.response.headers.get('retry-after', '')
-                wait = float(header) if header.replace('.', '', 1).isdigit() else 2 ** attempt
+                if header.replace('.', '', 1).isdigit():
+                    wait = float(header)
+                else:
+                    try:
+                        wait = max(0, (parsedate_to_datetime(header) - datetime.now(timezone.utc)).total_seconds())
+                    except (ValueError, TypeError):
+                        wait = 2 ** attempt
             except (APIConnectionError, APITimeoutError, httpx.TransportError):
                 self.record_call(role, model, attempt, 'failed', started, error_code='network')
                 if attempt == settings.max_retries:
                     raise RuntimeError('云API网络请求在重试后失败') from None
                 wait = 2 ** attempt
             self.retries += 1
-            await asyncio.sleep(min(wait, 120) + random.uniform(0, 0.4))
+            await asyncio.sleep(wait + random.uniform(0, 0.4))
 
     def client(self, role):
         if role not in self.clients:

@@ -3,6 +3,7 @@ import { ref, computed, onMounted, onBeforeUnmount, watch } from 'vue'
 import { FlaskConical, LayoutDashboard, Library, SlidersHorizontal, Play, CircleAlert, BookOpen, ArrowUpRight, Plus, Download, Search, X, ChevronRight, Pause, RotateCcw, Check, LoaderCircle, GitCompareArrows, FileCheck2, ExternalLink, Layers3 } from 'lucide-vue-next'
 import Chart from './components/Chart.vue'
 
+const pageLoading=ref(false)
 const page = ref('results'), loading = ref(true), error = ref(''), busy = ref(false), toast = ref('')
 const health = ref({}), datasets = ref([]), configs = ref([]), runs = ref([]), docs = ref([])
 const selectedDataset = ref(''), selectedRun = ref(''), selectedType = ref(''), search = ref('')
@@ -79,8 +80,11 @@ async function loadResults() {
   await loadItems()
 }
 async function refreshPage() {
-  if (page.value === 'datasets') await loadDataset()
-  if (['results', 'bad'].includes(page.value)) await loadResults()
+  pageLoading.value=true;error.value='';
+  try {
+    if (page.value === 'datasets') await loadDataset()
+    if (['results', 'bad'].includes(page.value)) await loadResults()
+  } catch(e) { error.value=e.message; throw e } finally { pageLoading.value=false }
 }
 watch(page, () => { itemPage.value = 1; search.value = ''; act(refreshPage) })
 watch(selectedDataset, () => { if (page.value === 'datasets') act(loadDataset) })
@@ -165,6 +169,7 @@ const pie = computed(() => ({color:['#2c7657','#a7b98a','#d6a150','#b96e58','#82
         <div v-if="error" class="alert error"><CircleAlert :size="18"/><span>{{error}}</span><button @click="bootstrap">重试</button></div>
         <div v-if="loading" class="empty"><LoaderCircle class="spin"/>正在加载工作空间…</div>
         <template v-else>
+          <div v-if="pageLoading" class="alert"><LoaderCircle :size="16" class="spin"/>正在刷新数据…</div>
           <template v-if="['results','bad'].includes(page)">
             <div class="toolbar"><div class="select-group"><span>评测任务</span><select v-model="selectedRun"><option value="" disabled>选择任务</option><option v-for="r in runs" :value="r.id">{{r.name}} · {{stateNames[r.state]}} {{r.mode==='demo'?'[模拟]':''}}</option></select></div><span v-if="run" class="pill" :class="run.state">{{stateNames[run.state]}}</span><div class="grow"></div><button v-if="run" class="outline" @click="download(`/api/runs/${run.id}/export?format=csv`)"><Download :size="14"/>导出指标</button><button v-if="run" class="outline" @click="download(`/api/runs/${run.id}/export?format=markdown`)">生成报告<ArrowUpRight :size="14"/></button></div>
             <div v-if="run?.mode==='demo'" class="demo-banner"><FlaskConical :size="17"/><span><strong>本地模拟实验</strong> · 检索、答案和评分用于验证工程流程；这些数据不代表云端模型效果。</span></div>

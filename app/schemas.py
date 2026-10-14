@@ -1,4 +1,5 @@
 from typing import Literal
+from datetime import datetime
 from pydantic import BaseModel, Field, model_validator, ConfigDict
 
 
@@ -35,6 +36,13 @@ class Case(StrictModel):
             raise ValueError('回答题必须标注稳定标准证据')
         if self.status == 'reviewed' and (not self.annotator or not self.reviewed_at):
             raise ValueError('人工审核题必须记录审核人和审核时间')
+        if self.status == 'reviewed':
+            try:
+                stamp = datetime.fromisoformat(self.reviewed_at.replace('Z', '+00:00'))
+            except ValueError:
+                raise ValueError('审核时间必须为带时区的ISO 8601时间') from None
+            if stamp.tzinfo is None:
+                raise ValueError('审核时间必须包含时区')
         return self
 
 
