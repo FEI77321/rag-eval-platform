@@ -28,6 +28,7 @@ for label,base,treat in pairs:
 _,label,delta=max(deltas)
 text+=f'\n本轮受控配对中，答案正确率绝对变化最大的因素为{label}（{delta:+.2f}个百分点）。这个结论只描述当前题集/语料/服务快照；题集由AI策划且未人工审核，不能作为无偏的生产泛化效果。\n'
 text+='\n延迟含API限流等待、按配置顺序执行，时段和共享RPM队列存在混杂；成本为USD公开参考，不含Embedding/Rerank、失败尝试与人民币实际扣费。人工评分0条，一致率N/A。\n'
+text+='\n## 使用建议与评分协议说明\n\nR07与R03的非拒答正确率同为64/90（71.11%），全题任务成功率同为74/100；按MRR优先的规则选R07（0.5315，对照R03为0.4437）。R03可作为简单链路备选，当前观测延迟更低；因配置按顺序跑且含限流等待，不将其延迟差归因为配置本身。R07的对话参考成本更低，但另有Rerank费用，不据此宣称总成本更低。\n\n七配置都在10道拒答题中正确拒答10/10；小样本不能证明线上拒答零错误。人工抽样尚未完成，Judge判断仍可能有误，尤其需复核普通标量参数在路径/查询来源上的题干歧义。\n\n全部700条使用同一deepseek-v4-pro与冻结评分提示词；680条为原请求协议，19条补充合法引用ID列表，最后1条另经引用格式反馈纠正。评分阈值与标准答案未改变，协议差异仍需作为实验局限披露。失败和纠正请求在调用账本，最终1条保存纠正前原始JSON。不能把HTTP成功调用790次当成790条有效答案。\n'
 with (ROOT/'docs/配置对比报告.md').open('a',encoding='utf-8') as f:f.write(text)
 manifest={'run_id':run_id,'state':'completed','succeeded':run['total'],'total':run['total'],
           'evaluation_level':'ai_preliminary','human_reviewed':0,'human_scores':0,

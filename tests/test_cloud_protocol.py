@@ -90,3 +90,21 @@ async def test_dashscope_native_rerank(monkeypatch):
     assert result[0]['id']=='c1' and result[0]['rerank_score']==0.9
     assert requests[0]['json']=={'model':'qwen3-rerank','input':{'query':'query','documents':['a','b']},
                                 'parameters':{'top_n':1,'return_documents':False}}
+
+
+@pytest.mark.asyncio
+async def test_judge_citation_feedback_preserves_invalid_attempt_audit():
+    calls=[]
+    class Completion:
+        async def create(self,**kwargs):
+            calls.append(len(kwargs['messages']))
+            if len(calls)>1:assert '仅修正evidence_ids' in kwargs['messages'][-1]['content']
+            output={'accuracy':4,'completeness':4,'refused':False,'unsupported':False,
+                    'factually_incorrect':None,'reason':'fixture','evidence_ids':['wrong' if len(calls)==1 else 'valid']}
+            return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(content=json.dumps(output)))],usage=Usage(),model='judge')
+    gateway=Gateway('cloud');gateway.client=lambda role:SimpleNamespace(chat=SimpleNamespace(completions=Completion()))
+    result=await gateway.judge({'question':'q','type':'fact','gold_answer':'a','evidence':[]},
+                               {'answer':'a','chunks':[{'id':'valid','text':'a'}]})
+    assert calls==[2,4] and result['scores']['evidence_ids']==['valid']
+    assert len(result['validation_attempts'])==1
+    assert json.loads(result['validation_attempts'][0]['raw'])['evidence_ids']==['wrong']

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "FAULT-01",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-001",
+    "question": "FastAPI使用哪个标准描述整套API结构？",
+    "target_tag": "分块问题",
+    "trigger": "将完整标准证据切成两个各覆盖50%的候选块",
+    "suggested_tags": [
+      "召回失败",
+      "分块问题"
+    ],
+    "observed_metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "扩大块或增加重叠，避免证据被切断"
+  },
+  {
+    "id": "FAULT-02",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-002",
+    "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+    "target_tag": "分块问题",
+    "trigger": "将完整标准证据切成两个各覆盖50%的候选块",
+    "suggested_tags": [
+      "召回失败",
+      "分块问题"
+    ],
+    "observed_metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "扩大块或增加重叠，避免证据被切断"
+  },
+  {
+    "id": "FAULT-03",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-001",
+    "question": "FastAPI使用哪个标准描述整套API结构？",
+    "target_tag": "召回失败",
+    "trigger": "从候选与最终上下文移除标准证据",
+    "suggested_tags": [
+      "召回失败"
+    ],
+    "observed_metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "检查分词/跨语言向量，比较混合检索与Top-K"
+  },
+  {
+    "id": "FAULT-04",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-002",
+    "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+    "target_tag": "召回失败",
+    "trigger": "从候选与最终上下文移除标准证据",
+    "suggested_tags": [
+      "召回失败"
+    ],
+    "observed_metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "检查分词/跨语言向量，比较混合检索与Top-K"
+  },
+  {
+    "id": "FAULT-05",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-001",
+    "question": "FastAPI使用哪个标准描述整套API结构？",
+    "target_tag": "排序问题",
+    "trigger": "标准证据留在候选池，但最终上下文只保留不相关块",
+    "suggested_tags": [
+      "召回失败",
+      "排序问题"
+    ],
+    "observed_metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "扩大候选池，采用真实重排并做单变量回归"
+  },
+  {
+    "id": "FAULT-06",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-002",
+    "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+    "target_tag": "排序问题",
+    "trigger": "标准证据留在候选池，但最终上下文只保留不相关块",
+    "suggested_tags": [
+      "召回失败",
+      "排序问题"
+    ],
+    "observed_metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "扩大候选池，采用真实重排并做单变量回归"
+  },
+  {
+    "id": "FAULT-07",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-001",
+    "question": "FastAPI使用哪个标准描述整套API结构？",
+    "target_tag": "生成幻觉",
+    "trigger": "提供完整证据，但模拟答案添加经人工设定为错误的主张",
+    "suggested_tags": [
+      "生成幻觉"
+    ],
+    "observed_metrics": {
+      "recall": 1.0,
+      "hit": 1.0,
+      "all_evidence": 1.0,
+      "mrr": 1.0,
+      "hit1": 1.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 1.0,
+      "unsupported": 1.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "收紧来源引用，抽检事实错误；检查生成与评分"
+  },
+  {
+    "id": "FAULT-08",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-002",
+    "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+    "target_tag": "生成幻觉",
+    "trigger": "提供完整证据，但模拟答案添加经人工设定为错误的主张",
+    "suggested_tags": [
+      "生成幻觉"
+    ],
+    "observed_metrics": {
+      "recall": 1.0,
+      "hit": 1.0,
+      "all_evidence": 1.0,
+      "mrr": 1.0,
+      "hit1": 1.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 1.0,
+      "unsupported": 1.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "收紧来源引用，抽检事实错误；检查生成与评分"
+  },
+  {
+    "id": "FAULT-09",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-001",
+    "question": "FastAPI使用哪个标准描述整套API结构？",
+    "target_tag": "提示词问题",
+    "trigger": "证据完整但模拟输出拒答，制造过严约束",
+    "suggested_tags": [
+      "提示词问题"
+    ],
+    "observed_metrics": {
+      "recall": 1.0,
+      "hit": 1.0,
+      "all_evidence": 1.0,
+      "mrr": 1.0,
+      "hit1": 1.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "允许依规则分析假设条件，并对拒答边界回归"
+  },
+  {
+    "id": "FAULT-10",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-002",
+    "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+    "target_tag": "提示词问题",
+    "trigger": "证据完整但模拟输出拒答，制造过严约束",
+    "suggested_tags": [
+      "提示词问题"
+    ],
+    "observed_metrics": {
+      "recall": 1.0,
+      "hit": 1.0,
+      "all_evidence": 1.0,
+      "mrr": 1.0,
+      "hit1": 1.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "允许依规则分析假设条件，并对拒答边界回归"
+  },
+  {
+    "id": "FAULT-11",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-091",
+    "question": "飞的公司生产FastAPI服务今天的部署版本号是什么？",
+    "target_tag": "知识库缺失",
+    "trigger": "范围外拒答题被模拟模型强行回答",
+    "suggested_tags": [
+      "知识库缺失",
+      "提示词问题"
+    ],
+    "observed_metrics": {
+      "recall": null,
+      "hit": null,
+      "all_evidence": null,
+      "mrr": null,
+      "hit1": null,
+      "correct": null,
+      "refusal_correct": 0.0,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "refusal",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "明确知识库范围；不足时拒答，另行补充真实资料"
+  },
+  {
+    "id": "FAULT-12",
+    "origin": "controlled_fault_injection",
+    "judge": "fixture-not-cloud",
+    "case_id": "AI-092",
+    "question": "我们学校内部FastAPI选课系统下周具体哪一天停机维护？",
+    "target_tag": "知识库缺失",
+    "trigger": "范围外拒答题被模拟模型强行回答",
+    "suggested_tags": [
+      "知识库缺失",
+      "提示词问题"
+    ],
+    "observed_metrics": {
+      "recall": null,
+      "hit": null,
+      "all_evidence": null,
+      "mrr": null,
+      "hit1": null,
+      "correct": null,
+      "refusal_correct": 0.0,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "refusal",
+      "qa_ms": 0,
+      "judge_ms": 0,
+      "generation_tokens": null,
+      "judge_tokens": null,
+      "dialogue_cost": null
+    },
+    "suggestion": "明确知识库范围；不足时拒答，另行补充真实资料"
+  }
+]

@@ -1,0 +1,2339 @@
+[
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值。引用的证据支持该说法，且没有包含知识库不支持的主张或事实错误。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-query-params:d6085563d4:3780-4280"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明JSON请求体数据结构的方法，包括定义BaseModel子类、在路径操作函数参数中声明类型，以及FastAPI自动处理JSON读取、类型转换和校验。这些内容与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:2520-3020",
+        "official-v2-body:fe95b080f7:5040-5540"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确表示可以同时声明路径参数和请求体，但回答以知识库依据不足为由拒绝回答，属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出FastAPI内部抛出RequestValidationError，与标准答案一致，并有证据支持。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:5460-5960"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准证据明确说明BackgroundTasks在返回响应之后执行，因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出使用Pydantic的HttpUrl类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出UUID在请求和响应中表示为str（字符串）类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.timedelta在请求和响应中默认表示为总秒数的浮点数，并提及Pydantic允许ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确说明limit是查询参数且有默认值20，客户端省略时使用默认值，不报缺失错误。知识库证据已包含相关规则，因此拒绝回答是错误的。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:5040-5451",
+        "official-v2-query-params-str-validations:5e64d09084:5880-6380"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确指出204表示无内容，响应不应有body，因此返回JSON不合适。标准证据中明确说明204响应必须没有body。被评答案与标准答案一致，且完全基于标准证据。",
+      "evidence_ids": [
+        "official-v2-response-status-code:3592b8e56a:0-500",
+        "official-v2-response-status-code:3592b8e56a:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确区分了请求字段错误（客户端输入校验）与返回模型字段错误（服务端代码问题），与标准答案一致，并引用了相关证据。",
+      "evidence_ids": [
+        "official-v2-response-model:0f3c988f4c:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒答，但标准答案和标准证据表明知识库中有足够信息回答该问题，因此拒答不正确。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准答案和标准证据表明知识库中存在相关证据（HttpUrl用于URL验证，无效数据触发RequestValidationError），因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明知识库中已有足够信息回答该问题：响应模型会过滤输出数据，而204状态码要求响应体为空，因此返回空字典不满足204。回答未提供任何实质性答案，属于错误拒答。",
+      "evidence_ids": [
+        "official-v2-response-model:0f3c988f4c:8400-8900",
+        "official-v2-response-model:0f3c988f4c:840-1340",
+        "official-v2-response-model:0f3c988f4c:20160-20439"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "该回答以知识库依据不足为由拒绝回答，但标准答案和标准证据明确提供了datetime序列化为ISO 8601字符串以及响应模型过滤未声明字段的规则，因此拒绝回答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答声称知识库依据不足，但提供的证据中明确包含无默认值即必填以及请求校验错误的相关内容，因此拒答不正确。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地推导出UUID在JSON中表示为字符串，以及审计字段是否输出取决于响应模型声明。引用的证据支持这两个要点。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920",
+        "official-v2-response-model:0f3c988f4c:8400-8900"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问未公开企业内部API的月度实际调用账单金额，属于私有业务信息，知识库中无相关证据。答案正确拒答，说明依据不足，符合标准答案。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问私有账户余额，知识库不包含此类信息，回答正确拒答并说明依据不足。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值，并给出了正确示例和解释，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明请求体，并给出了具体示例和FastAPI的处理过程，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:2520-3020"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确表示可以同时声明路径参数和请求体，但被评答案以知识库依据不足为由拒绝回答，属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出FastAPI内部抛出RequestValidationError，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:5460-5960"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准答案明确说明BackgroundTasks在返回响应之后执行，且标准证据中直接包含该信息。因此该拒答是错误的，属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出使用Pydantic的HttpUrl类型替代str，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出UUID在请求和响应中表示为字符串类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.timedelta默认表示为总秒数的浮点数，并提及Pydantic允许ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准答案和标准证据明确说明：非路径参数自动解释为查询参数，且声明默认值后该参数不是必需的，因此客户端省略limit时应使用默认值20，不报缺失错误。该拒答属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答声称知识库依据不足而拒答，但标准证据明确说明204状态码表示无内容且响应不应有body，因此拒答不合理，属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但提供的证据中明确区分了请求字段错误（客户端传参错误）和返回模型字段错误（服务端代码错误），因此拒绝回答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒答，但提供的证据足以回答该问题，因此属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒答，但标准答案和标准证据表明知识库中有足够信息回答该问题，因此拒答错误。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以基于响应模型过滤和204状态语义进行推理，因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "The answer refuses to answer, claiming insufficient knowledge base evidence. However, the gold evidence provides sufficient information to answer the question: datetime is serialized as ISO 8601 string, and response model filters out undeclared internal fields. Therefore, the refusal is incorrect.",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确给出了定位链条：无默认值的查询参数是必填，缺少必填请求输入属于请求校验错误，可定位RequestValidationError。知识库中实际存在相关证据（official-v2-query-params和official-v2-handling-errors），因此拒答不正确。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答声称知识库依据不足，但提供的证据中包含了UUID表示为字符串以及响应模型过滤输出字段的明确信息，足以回答该问题，因此属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题涉及未公开企业内部API的私有账单信息，知识库不包含此类数据，回答正确拒答并说明依据不足。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-02",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "该问题涉及私有账户余额，知识库无相关信息，回答正确拒答并说明依据不足。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值。引用的证据支持该说法，且没有事实错误。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-query-params:d6085563d4:3780-4280",
+        "official-v2-query-params:d6085563d4:3360-3860"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明JSON请求体，并提供了示例和细节，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:2520-3020",
+        "official-v2-body:fe95b080f7:5040-5540",
+        "official-v2-body-nested-models:c72a0d320b:3780-4280"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确回答了可以同时声明路径参数和请求体，并提供了相关证据支持。",
+      "evidence_ids": [
+        "official-v2-body-multiple-params:ecd0b3ed65:8400-8900",
+        "official-v2-body:fe95b080f7:7140-7263"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地给出了FastAPI内部抛出的校验异常类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:5460-5960"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准证据明确说明BackgroundTasks在返回响应之后执行，因此拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出使用Pydantic的HttpUrl类型，与标准答案一致，并引用了相关证据。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700",
+        "official-v2-body-nested-models:c72a0d320b:4620-5120"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出UUID在请求和响应中表示为字符串类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.timedelta在请求和响应中默认表示为总秒数的浮点数，并提及Pydantic允许ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确说明该参数是查询参数且有默认值，因此应使用默认值20且不报缺失错误。知识库中已有证据支持这一点，故拒绝回答是错误的。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:3360-3860",
+        "official-v2-query-params:d6085563d4:5040-5451"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准证据明确说明204状态码表示无内容，响应不应有body，因此该拒答是错误的。",
+      "evidence_ids": [
+        "official-v2-response-status-code:3592b8e56a:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答正确拒答，说明知识库依据不足，并准确引用证据指出请求校验错误与响应模型错误性质不同，不能都描述为“客户端没传对参数”。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:420-920",
+        "official-v2-handling-errors:0d3e0d1db1:8820-9320",
+        "official-v2-response-model:0f3c988f4c:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒答，但标准答案和标准证据表明知识库中存在相关依据，因此拒答不正确。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准答案和标准证据表明知识库中存在相关证据（HttpUrl用于URL验证，无效数据触发RequestValidationError），因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出输出模型只过滤响应体字段，不决定状态码；204要求无响应体，空字典仍会产生body。引用的证据支持这些观点。",
+      "evidence_ids": [
+        "official-v2-response-model:0f3c988f4c:8400-8900",
+        "official-v2-response-model:0f3c988f4c:840-1340",
+        "official-v2-response-status-code:3592b8e56a:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以回答：datetime序列化为ISO 8601字符串，响应模型会过滤未声明字段。因此拒答错误。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地按照“必填判定→输入异常”链条定位问题，引用了正确的证据，并补充了Annotated使用注意事项。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-query-params:d6085563d4:4200-4700",
+        "official-v2-query-params-str-validations:5e64d09084:5880-6380"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确给出了UUID以字符串表示、审计字段仅在响应模型声明时输出的结论，且标准证据支持该结论。因此该拒答是错误的，准确性为完全错误，完整性缺失全部要点。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920",
+        "official-v2-response-model:0f3c988f4c:8400-8900"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问未公开企业内部API的月度实际调用账单金额，属于私有业务信息，知识库中无相关证据。回答正确拒答，说明依据不足，未编造内容。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-03",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问私有账户余额，知识库不包含此类信息，回答正确拒答并说明依据不足。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值。引用的证据支持该说法，并提供了示例和错误信息。",
+      "evidence_ids": [
+        "official-v2-query-params:81acb2c1b6:3509-3952",
+        "official-v2-query-params:81acb2c1b6:4281-4772",
+        "official-v2-query-params:81acb2c1b6:5066-5451"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明JSON请求体，包括定义模型、在路径操作中声明参数类型，并提及FastAPI的自动处理。补充的Form说明与问题不冲突。",
+      "evidence_ids": [
+        "official-v2-body:ec973a8773:2336-2821",
+        "official-v2-body:ec973a8773:2741-3219"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确回答了问题，并提供了额外的相关细节，与标准答案一致。",
+      "evidence_ids": [
+        "official-v2-body-multiple-params:ef146421b9:8575-8979",
+        "official-v2-body-multiple-params:ef146421b9:8161-8655",
+        "official-v2-request-forms:e6b72c270d:2255-2751"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出FastAPI内部抛出RequestValidationError，与标准答案一致，并有证据支持。",
+      "evidence_ids": [
+        "official-v2-handling-errors:54396639a9:5681-6178"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒答，但知识库中明确包含相关证据，因此属于错误拒答。",
+      "evidence_ids": [
+        "official-v2-background-tasks:d4d2e1efe4:1256-1726"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出使用Pydantic的HttpUrl类型替代str，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:2bcf39e367:4230-4719"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出UUID在请求和响应中表示为字符串（str）类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:58ba4b55f6:361-795"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:58ba4b55f6:361-795"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了默认表示为总秒数的浮点数，并提及Pydantic允许的ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:58ba4b55f6:715-1154",
+        "official-v2-extra-data-types:58ba4b55f6:1074-1565"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确说明limit是查询参数且有默认值20，客户端省略时使用默认值，不报缺失错误。知识库证据虽未直接提及默认值20，但已说明非路径参数声明默认值后不是必填项，且limit可作为可选查询参数，足以支持标准答案。因此拒绝回答是错误的。",
+      "evidence_ids": [
+        "official-v2-query-params:81acb2c1b6:3509-3952",
+        "official-v2-query-params:81acb2c1b6:5066-5451"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案指出不合适，204表示无内容，响应不应有body。被评答案以知识库依据不足为由拒答，属于正确拒答，因为知识库证据未直接说明删除接口声明204后返回JSON是否合适。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确指出不能将两者都描述为“客户端没传对参数”，并区分了请求错误是输入校验，返回模型错误是服务端代码问题。被评答案正确拒答，说明知识库依据不足，未给出错误结论。",
+      "evidence_ids": [
+        "official-v2-response-model:e59eaeab55:807-1270",
+        "official-v2-response-status-code:8da628ef71:1959-2457"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以回答：普通非路径参数自动解释为查询参数，依赖的请求声明、校验和需求会集成到OpenAPI schema中，因此文档会描述该查询输入。拒绝回答导致准确性完全错误，且未覆盖任何要点。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明知识库中存在相关证据（HttpUrl用于URL验证，无效数据触发RequestValidationError），因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出响应模型过滤仍是在组织响应数据，而204要求无响应体，空JSON对象也不是无body，与标准答案一致。",
+      "evidence_ids": [
+        "official-v2-response-status-code:8da628ef71:791-1237",
+        "official-v2-response-model:e59eaeab55:807-1270"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以回答：datetime序列化为ISO 8601字符串，响应模型会过滤未声明字段。因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 4,
+      "completeness": 4,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确指出无默认值的查询参数是必填，漏传会触发请求校验错误，并引用了相关证据。但未明确提及RequestValidationError，完整性略有不足。",
+      "evidence_ids": [
+        "official-v2-query-params:81acb2c1b6:3509-3952",
+        "official-v2-query-params:81acb2c1b6:5066-5451",
+        "official-v2-query-params:81acb2c1b6:647-1147"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据明确支持：UUID在JSON中表示为字符串，响应模型会过滤输出仅包含声明的字段。因此拒绝回答是错误的，未提供任何正确信息。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问未公开企业内部API的月度实际调用账单金额，属于私有业务信息，知识库中无相关证据。答案正确拒答，说明依据不足，未编造信息。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-04",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "用户询问私有账户余额，知识库不包含该信息，回答正确拒答并说明依据不足。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值。引用的证据支持这一说法，并给出了具体示例。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-query-params:d6085563d4:3780-4280"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明JSON请求体，并给出了具体示例和FastAPI的处理行为，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:2520-3020"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确表示可以同时声明路径参数和请求体，但回答以知识库依据不足为由拒绝回答，属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出FastAPI内部抛出RequestValidationError，与标准答案一致。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:9240-9740",
+        "official-v2-handling-errors:0d3e0d1db1:5880-6380"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但知识库中实际包含相关证据（如官方文档片段明确说明后台任务在返回响应后执行），因此属于错误拒答。",
+      "evidence_ids": [
+        "official-v2-background-tasks:f795592ff7:2520-3020",
+        "official-v2-background-tasks:f795592ff7:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出使用Pydantic的HttpUrl类型替代str，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出UUID在请求和响应中表示为字符串类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地描述了datetime.timedelta在请求和响应中的默认表示（总秒数的浮点数），并提及了Pydantic允许的ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准答案明确：该参数是查询参数且有默认值，因此客户端省略时使用默认值20，不报缺失错误。标准证据已覆盖此场景，拒答不正确。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:1260-1760",
+        "official-v2-query-params:d6085563d4:5040-5451"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确指出不合适，且标准证据中明确说明204响应不应有body，因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确区分了请求字段错误（客户端输入校验）与返回模型字段错误（服务端代码问题），与标准答案一致。",
+      "evidence_ids": [
+        "official-v2-response-model:0f3c988f4c:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但知识库中实际包含相关证据：普通非路径参数自动解释为查询参数，且依赖的请求声明、校验和需求会集成到OpenAPI schema中，因此文档会描述该查询输入。标准答案要求说明这一链条，而回答未提供任何信息，属于错误拒答。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:5040-5451",
+        "official-v2-dependencies:c60006b30f:5040-5540"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准答案明确指出应解释为HttpUrl用于URL验证，无效数据触发RequestValidationError。知识库中确实包含相关证据（如HttpUrl声明和RequestValidationError），因此拒答不合理，属于错误拒答。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4620-5120",
+        "official-v2-body-nested-models:c72a0d320b:5040-5540"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以基于响应模型过滤和204无body的语义进行推导，因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime字段序列化为ISO 8601字符串，以及响应模型会过滤未声明字段，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920",
+        "official-v2-response-model:0f3c988f4c:20160-20439",
+        "official-v2-response-model:0f3c988f4c:8400-8900"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地沿“必填判定→输入异常”链条定位：无默认值即必填，漏传触发输入校验异常，未进入业务逻辑。与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确给出了UUID以字符串表示、审计字段仅在响应模型声明时输出的结论，且标准证据支持该结论。因此该拒答是错误的，准确性为完全错误，完整性缺失全部要点。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920",
+        "official-v2-response-model:0f3c988f4c:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问未公开企业内部API的月度实际调用账单金额，属于私有业务信息，知识库中无相关证据。回答正确拒答，说明依据不足，未编造内容。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问私有账户余额，知识库不包含该信息，回答正确拒答并说明依据不足。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值。同时正确指出声明默认值（包括None）会使参数可选，并给出了代码示例。所有主张均有证据支持。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-query-params:d6085563d4:3780-4280"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明JSON请求体数据结构的方法，包括定义BaseModel子类、在路径操作函数中标注参数类型，以及FastAPI据此读取、转换和校验数据，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:2520-3020",
+        "official-v2-body:fe95b080f7:5040-5540"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确表示可以同时声明路径参数和请求体，但回答以知识库依据不足为由拒绝回答，属于错误拒答。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出FastAPI内部抛出的校验异常是RequestValidationError，与标准答案一致，并有证据支持。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:5460-5960"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案以知识库依据不足为由拒绝回答，但标准证据明确说明后台任务在返回响应之后执行，因此拒绝回答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出使用Pydantic的HttpUrl类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确指出UUID在请求和响应中表示为字符串类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.timedelta默认表示为总秒数的浮点数，并提及Pydantic允许ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确说明limit是查询参数且有默认值20，客户端省略时使用默认值，不报缺失错误。标准证据已包含相关规则，因此拒绝回答是错误的。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:5040-5451"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确指出204表示无内容，响应不应有body，因此返回JSON不合适。标准证据支持这一点。被评答案正确回答了问题，且与标准答案一致。",
+      "evidence_ids": [
+        "official-v2-response-status-code:3592b8e56a:0-500",
+        "official-v2-response-status-code:3592b8e56a:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确指出不能将两者都描述为“客户端没传对参数”，并区分了请求错误是输入校验、返回模型错误是服务端代码问题。被评答案以知识库依据不足为由拒答，且说明现有证据未覆盖该问题，属于合理拒答，与标准答案的结论一致。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒答，但标准答案和证据表明知识库中存在相关依据，因此拒答不正确。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明知识库中存在相关证据（HttpUrl用于URL验证，无效数据触发RequestValidationError），因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以回答：响应模型过滤仍是在组织响应数据，而204要求根本没有响应体，空JSON对象也不是无body。因此拒答错误。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "该回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以回答：datetime字段序列化为ISO 8601字符串，响应模型会过滤未声明字段。因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但知识库中实际包含相关证据：无默认值的查询参数为必填，缺少必填参数会触发RequestValidationError。因此该拒答不正确，应视为错误拒答。",
+      "evidence_ids": [
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地推导出UUID在JSON中表示为字符串，以及审计字段仅在响应模型中声明时才输出，未声明则被过滤。与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920",
+        "official-v2-response-model:0f3c988f4c:8400-8900"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问未公开企业内部API的月度实际调用账单金额，属于私有信息，知识库中无相关证据。回答明确表示依据不足无法回答，符合正确拒答要求。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-06",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答正确拒答，说明知识库依据不足，与标准答案一致。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-004",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了让查询参数成为必填项的方法：不声明默认值。提供了具体写法示例，并引用了相关证据。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:3780-4280",
+        "official-v2-query-params-str-validations:5e64d09084:10500-11000",
+        "official-v2-query-params:d6085563d4:4200-4700"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-005",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了使用Pydantic模型声明JSON请求体，并给出了示例和解释，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:2520-3020",
+        "official-v2-body:fe95b080f7:5040-5540",
+        "official-v2-body-nested-models:c72a0d320b:3780-4280"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-008",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确回答了问题，并提供了与标准答案一致的说明，还补充了表单/文件编码的限制，该限制有证据支持。",
+      "evidence_ids": [
+        "official-v2-body:fe95b080f7:5040-5540",
+        "official-v2-request-forms:c58d5b393f:2520-2876",
+        "official-v2-request-files:04ebb283d7:5880-6380"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-013",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地给出了FastAPI内部抛出的校验异常为RequestValidationError，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-handling-errors:0d3e0d1db1:5460-5960"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-015",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答声称知识库依据不足而拒答，但知识库中明确包含答案（BackgroundTasks在返回响应之后执行），因此拒答是错误的。",
+      "evidence_ids": [
+        "official-v2-background-tasks:f795592ff7:3360-3860"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-019",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出使用Pydantic的HttpUrl类型替代str来验证HTTP URL，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700",
+        "official-v2-body-nested-models:c72a0d320b:4620-5120"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-029",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地指出UUID在请求和响应中表示为字符串类型，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-030",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.datetime在请求和响应中表示为ISO 8601格式的字符串，并给出了示例，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-031",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime.timedelta在请求和响应中默认表示为总秒数的浮点数，并提及Pydantic允许ISO 8601时差编码，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:840-1340"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-041",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案正确指出limit是查询参数，有默认值20，省略时取默认值而不报缺失错误，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:840-1340",
+        "official-v2-query-params:d6085563d4:1260-1760"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-057",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准证据明确说明204状态码表示无内容，响应不应有body，因此该拒答是错误的。",
+      "evidence_ids": [
+        "official-v2-response-status-code:3592b8e56a:0-500",
+        "official-v2-response-status-code:3592b8e56a:420-920"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-067",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答正确拒答，说明知识库依据不足，无法判断返回模型字段错误是否应描述为客户端没传对参数。标准答案指出不能，但回答未给出结论，而是合理说明依据不足，符合拒答要求。",
+      "evidence_ids": [
+        "official-v2-response-model:0f3c988f4c:840-1340",
+        "official-v2-handling-errors:0d3e0d1db1:6300-6800",
+        "official-v2-query-param-models:965a802b3a:2940-3440"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-072",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以回答：普通非路径参数作为查询参数，依赖参数和校验纳入OpenAPI，文档会描述这一查询输入。因此拒答错误。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-074",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案明确指出应解释为HttpUrl用于URL验证，无效数据触发RequestValidationError。知识库中确实包含相关证据，因此拒绝回答是错误的。",
+      "evidence_ids": [
+        "official-v2-body-nested-models:c72a0d320b:4200-4700",
+        "official-v2-body-nested-models:c72a0d320b:4620-5120"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-078",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据明确给出了判断：响应模型过滤仍是在组织响应数据，而204要求根本没有响应体，空JSON对象也不是无body。因此该拒答是错误的，未提供任何有效信息。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-079",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地说明了datetime字段序列化为ISO 8601字符串，以及响应模型会过滤未声明字段，并给出了结合两者的方法。",
+      "evidence_ids": [
+        "official-v2-extra-data-types:24bded9c78:420-920",
+        "official-v2-response-model:0f3c988f4c:8400-8900"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-081",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确且完整地按照“必填判定→输入异常”链条定位：无默认值的查询参数为必填，漏传时触发RequestValidationError，并给出了具体错误示例。引用的证据与标准答案一致。",
+      "evidence_ids": [
+        "official-v2-query-params:d6085563d4:3360-3860",
+        "official-v2-query-params:d6085563d4:4200-4700",
+        "official-v2-query-params:d6085563d4:5040-5451"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-090",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答以知识库依据不足为由拒绝回答，但标准答案和标准证据表明可以推导出UUID以字符串表示，且响应模型会过滤未声明字段。因此拒绝回答是错误的，未提供任何正确信息。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-094",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "问题询问未公开企业内部API的月度实际调用账单金额，属于私有业务信息，知识库中无相关证据。回答正确拒答，说明依据不足，未编造内容。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-099",
+    "config_id": "cloud-v2-07",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "回答正确拒答，说明知识库依据不足，与标准答案一致。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  }
+]

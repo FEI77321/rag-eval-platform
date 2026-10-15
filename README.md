@@ -2,7 +2,7 @@
 
 面向RAG配置对比的独立开发项目：知识库来源 → 人工标注题集 → 配置化检索与生成 → 批量评测 → 指标 / 证据 / Bad Case / 人工核验。
 
-**当前状态：可运行的工程版本。正式云端验收尚需完成真实题集逐题审核、服务凭据配置、MySQL实测、云端全量跑批与人工核验。** 本地模拟结果不能当作模型效果或正式600次问答交付。
+**当前状态（2026-10-15）：工程已运行，23项测试通过，真实云服务全部连通；两轮10题×2配置试跑完成，100题×7配置真实云预评测700/700成功。** 候选R07与R03非拒答正确率均71.11%，按MRR选择R07；题集为AI辅助核验，尚需真实人工审核与评分。MySQL实测、远程PR和他人评审未完成。最新交付入口见`docs/交付入口.md`，不得把demo或AI审核记录当作正式验收。
 
 ## 快速启动
 
@@ -41,7 +41,8 @@ Linux/macOS使用`python -m venv .venv`、`.venv/bin/python`、`npm`及`cp .env.
 ## 演示与真实资产
 
 - 演示：12份合成办事文档、100道demo题（40/30/20/10）、9套候选配置。Hash向量、抽取式答案、规则Judge均明确标为demo。
-- 真实语料：`data/corpus/`中的12份FastAPI官方教程，固定500/重叠80的基线共334块，详情见`docs/数据来源清单.md`。它们与模拟语料隔离。
+- 真实语料v2：`data/corpus_v2/`中的23份FastAPI官方教程，固定500/重叠80的基线共714块，详情见`docs/数据来源清单.md`。旧v1保留历史复现，运行使用document_ids明确隔离。
+- `data/eval_set_ai_verified.json`：100题来源约束的AI辅助核验题集，40事实/30推理/20多跳/10拒答；人工审核0题。`docs/AI题集核验记录.json`记录100题坐标检查与全文泄漏检查，`docs/人工标注复核底稿.csv`保留空白人工记录栏。
 - `data/eval_candidates.json`：100题待审核底稿。规则提取可能不自然或不符合推理/多跳定义，**每题须人工重写问题、提炼答案要点、检查题型和全部来源**。没有任何伪造审核人/时间。
 - 实际题集以数据库/界面为准；用题集导出接口取得正式`eval_set.json`与真实审核记录。草稿文件不是验收题集。
 
@@ -53,7 +54,7 @@ Linux/macOS使用`python -m venv .venv`、`.venv/bin/python`、`npm`及`cp .env.
 
 在本地`.env`填写`GENERATION_API_KEY`，Judge Key可留空复用同一凭据。Embedding单独填写`EMBEDDING_API_KEY/BASE_URL/MODEL`。示例给出百炼兼容接口参数，端点和地区以账号实际可用服务为准；每批最多10条，参考[百炼Embedding API](https://www.alibabacloud.com/help/en/model-studio/text-embedding-synchronous-api)。
 
-Rerank适配器要求请求`model/query/documents/top_n`，响应`results[{index,relevance_score}]`的HTTP接口。在`.env`填写`RERANK_URL/API_KEY/MODEL`；其他厂商协议需在`app/providers.py`加适配。没有配置时不要选C07做云评测。
+Rerank支持百炼原生`/api/v1/services/rerank/text-rerank/text-rerank`（model/input/parameters请求、output.results响应）及model/query/documents/top_n兼容接口。百炼qwen3-rerank已真实验证。在`.env`填写`RERANK_URL/API_KEY/MODEL`；密钥属于百炼账号，不使用DeepSeek Key。
 
 价格单位为**每百万Token**，币种由`CURRENCY`指定。全局价格适用于默认生成模型；其他模型需要在配置版本填入输入/输出单价，否则成本显示N/A。只计算成功生成和Judge的对话成本；Embedding、Rerank和失败尝试的计费不能忽略，应结合调用账本和厂商账单结算。
 

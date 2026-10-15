@@ -238,16 +238,24 @@ class Gateway:
         payload = {'question': case['question'], 'type': case['type'], 'gold_answer': case['gold_answer'],
                    'gold_evidence': case['evidence'], 'answer': generation['answer'], 'retrieved': generation['chunks'],
                    'allowed_evidence_ids':[c['id'] for c in generation['chunks']]}
-        reply = await self.call(lambda: self.client('judge').chat.completions.create(
-            model=settings.judge_model, temperature=0, max_tokens=900, response_format={'type': 'json_object'},
-            extra_body={'thinking': {'type': 'disabled'}} if 'api.deepseek.com' in settings.judge_base_url else None,
-            messages=[{'role': 'system', 'content': self.judge_prompt},
-                      {'role': 'user', 'content': json.dumps(payload, ensure_ascii=False)}]), 'judge', settings.judge_model)
-        raw = reply.choices[0].message.content or ''
-        output = JudgeOutput.model_validate_json(raw)
         allowed = {c['id'] for c in generation['chunks']}
-        if any(i not in allowed for i in output.evidence_ids):
-            raise ValueError('Judge引用了不存在的检索证据')
+        messages=[{'role':'system','content':self.judge_prompt},
+                  {'role':'user','content':json.dumps(payload,ensure_ascii=False)}]
+        validation_attempts=[]
+        for validation_attempt in range(3):
+            reply = await self.call(lambda: self.client('judge').chat.completions.create(
+                model=settings.judge_model, temperature=0, max_tokens=900, response_format={'type': 'json_object'},
+                extra_body={'thinking': {'type': 'disabled'}} if 'api.deepseek.com' in settings.judge_base_url else None,
+                messages=messages), 'judge', settings.judge_model)
+            raw = reply.choices[0].message.content or ''
+            output = JudgeOutput.model_validate_json(raw)
+            if all(i in allowed for i in output.evidence_ids):break
+            validation_attempts.append({'raw':raw,'error':'unknown_retrieved_evidence_id',
+                                        'usage':reply.usage.model_dump() if reply.usage else None})
+            if validation_attempt==2:
+                raise ValueError('Judge引用了不存在的检索证据')
+            messages.extend([{'role':'assistant','content':raw},
+                {'role':'user','content':'输出未通过引用ID校验。仅修正evidence_ids的格式：只能逐字选取allowed_evidence_ids中的完整块ID；不得填写gold_evidence的doc_id或自行缩写。没有相关检索块可使用空数组。保持原评分标准，返回完整JSON。合法ID列表：'+json.dumps(sorted(allowed),ensure_ascii=False)}])
         usage = {'input_tokens': reply.usage.prompt_tokens, 'output_tokens': reply.usage.completion_tokens} if reply.usage else {'input_tokens': None, 'output_tokens': None}
         return {'scores': output.model_dump(), 'usage': usage, 'model': reply.model, 'raw': raw,
-                'request_version':'judge-json-v2-allowed-ids'}
+                'request_version':'judge-json-v3-citation-feedback','validation_attempts':validation_attempts}

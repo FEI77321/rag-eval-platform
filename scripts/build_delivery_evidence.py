@@ -1,5 +1,5 @@
 """离线校验及汇总：不调用模型，不填写人工审核，不导出全部问答大文件。"""
-import argparse,csv,json,sys
+import argparse,csv,json,re,sys
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -33,7 +33,8 @@ def main(run_id=None):
         checked.append({'case_id':case['id'],'type':case['type'],'evidence_count':len(case['evidence']),
                         'coordinates_valid':True,'human_reviewed':False})
         for d in docs:
-            if case['question'].casefold() in d['content'].casefold():leaks.append({'case_id':case['id'],'doc_id':d['id']})
+            if re.sub(r'\s+','',case['question']).casefold() in re.sub(r'\s+','',d['content']).casefold():
+                leaks.append({'case_id':case['id'],'doc_id':d['id']})
     audit={'checked_at':datetime.now(timezone.utc).isoformat(),'dataset_id':manifest['dataset_id'],
            'documents':len(docs),'baseline_chunks':sum(len(list(fixed_spans(d['content'],500,80))) for d in docs),
            'cases':len(cases),'types':dict(Counter(c['type'] for c in cases)),
@@ -76,7 +77,8 @@ def main(run_id=None):
                   'status':'observed-ai-preliminary','buildStatus':'creating','filters':[],
                   'run':run,'metrics':metrics,'audit':audit,
                   'report':{'asOf':'2026-10-15'},
-                  'queries':{'config_results':{'rows':clean_rows,'source':source},
+                  'queries':{'config_results':{'rows':clean_rows,'source':source,'methods':[{'language':'Python',
+                    'code':f'python scripts/build_delivery_evidence.py --run {run_id}\n# GET /api/runs/{run_id}/metrics recomputes app.metrics.aggregate over persisted run_items.\n# Chart aliases recallRate=recall and correctRate=correct preserve the raw 0-1 values.'}]},
                              'sample_answers':{'rows':[{'case_id':e['case']['id'],'config_id':e['config_id'],'question':e['case']['question'],
                                                          'answer':e['generation']['answer'],'reason':e['judgement']['scores']['reason']} for e in examples],
                                                'source':{**source,'label':'前20条成功问答样本','evidenceFlow':source['evidenceFlow']+[{'title':'样本边界','detail':'按接口排序取前20条成功结果，仅用于故障观察，不能代替固定种子的人工抽样。'}]}}}}
