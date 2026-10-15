@@ -6,7 +6,7 @@ from datetime import timedelta
 from sqlalchemy import select, update, or_, and_
 from .db import Session, init_db, utcnow
 from .models import Run, Item
-from .providers import Gateway, CALL_CONTEXT
+from .providers import Gateway, CALL_CONTEXT, QuotaExhausted
 from .rag import RagIndex
 from .metrics import calculate, suggest_tags
 from .service import uid
@@ -84,6 +84,9 @@ async def execute_run(run_id, owner, gateway=None):
         return
     own_gateway = gateway is None
     gateway = gateway or Gateway(mode)
+    # 使用任务冻结的Prompt；代码升级也不能悄悄改变旧任务续跑的实验条件。
+    gateway.generation_prompt = snapshot.get('generation_prompt',gateway.generation_prompt)
+    gateway.judge_prompt = snapshot.get('judge_prompt',gateway.judge_prompt)
     context_token = CALL_CONTEXT.set((run_id, None))
     beat = asyncio.create_task(heartbeat(run_id, owner))
     try:
@@ -161,6 +164,10 @@ async def execute_run(run_id, owner, gateway=None):
                         error = str(exc)[:500] if isinstance(exc, (ValueError, RuntimeError)) else type(exc).__name__
                         try:
                             persist_item(db, run_id, item_id, owner, state='failed', error=error)
+                            if isinstance(exc, QuotaExhausted):
+                                db.execute(update(Run).where(Run.id==run_id,Run.owner==owner,Run.state=='running')
+                                           .values(state='pausing',error=error))
+                                db.commit()
                         except LeaseLost:
                             pass
                     log.warning('item=%s failed=%s', item_id, type(exc).__name__)

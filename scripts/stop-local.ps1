@@ -1,4 +1,4 @@
-$projectRoot = Split-Path -Parent $PSScriptRoot
+﻿$projectRoot = Split-Path -Parent $PSScriptRoot
 $pidFile = Join-Path $projectRoot 'runtime\local-processes.json'
 if (Test-Path -LiteralPath $pidFile) {
     $taskPids = Get-Content -LiteralPath $pidFile -Raw | ConvertFrom-Json

@@ -23,7 +23,7 @@ class Case(StrictModel):
     gold_chunk_id: list[str] = Field(default_factory=list)
     evidence: list[Evidence] = Field(default_factory=list)
     difficulty: Literal['easy', 'medium', 'hard'] = 'medium'
-    status: Literal['draft', 'reviewed', 'demo'] = 'draft'
+    status: Literal['draft', 'ai_reviewed', 'reviewed', 'demo'] = 'draft'
     annotator: str | None = None
     reviewed_at: str | None = None
     annotation_note: str = ''
@@ -104,3 +104,5 @@ class RunInput(StrictModel):
     mode: Literal['demo', 'cloud'] = 'demo'
     concurrency: int = Field(default=3, ge=1, le=20)
     sample_seed: int = 42
+    allow_ai_reviewed: bool = False
+    document_ids: list[str] | None = None

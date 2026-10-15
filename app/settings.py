@@ -31,6 +31,7 @@ class Settings(BaseSettings):
     judge_input_price: float | None = None
     judge_output_price: float | None = None
     currency: str = 'CNY'
+    cost_reference_note: str = '配置单价×API实际用量的参考估算，不是账户账单；不含Embedding/Rerank及失败尝试。'
     api_concurrency: int = Field(default=3, ge=1, le=100)
     requests_per_minute: int = Field(default=30, ge=1, le=10000)
     max_retries: int = Field(default=4, ge=0, le=10)
