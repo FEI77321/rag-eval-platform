@@ -1,0 +1,719 @@
+{
+  "checked_at": "2026-10-15T07:55:50.695234+00:00",
+  "dataset_id": "dataset-ai-verified-v2",
+  "documents": 23,
+  "baseline_chunks": 714,
+  "cases": 100,
+  "types": {
+    "fact": 40,
+    "reasoning": 30,
+    "multihop": 20,
+    "refusal": 10
+  },
+  "exact_question_copy_matches": [],
+  "human_reviewed": 0,
+  "human_scores": 0,
+  "scope": "机器检查来源哈希、证据坐标、字段与问题全文复制；不证明人工审核或答案语义正确。",
+  "cases_checked": [
+    {
+      "case_id": "AI-001",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-002",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-003",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-004",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-005",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-006",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-007",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-008",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-009",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-010",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-011",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-012",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-013",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-014",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-015",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-016",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-017",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-018",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-019",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-020",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-021",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-022",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-023",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-024",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-025",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-026",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-027",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-028",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-029",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-030",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-031",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-032",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-033",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-034",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-035",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-036",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-037",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-038",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-039",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-040",
+      "type": "fact",
+      "evidence_count": 1,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-041",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-042",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-043",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-044",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-045",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-046",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-047",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-048",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-049",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-050",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-051",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-052",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-053",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-054",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-055",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-056",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-057",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-058",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-059",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-060",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-061",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-062",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-063",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-064",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-065",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-066",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-067",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-068",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-069",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-070",
+      "type": "reasoning",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-071",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-072",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-073",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-074",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-075",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-076",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-077",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-078",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-079",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-080",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-081",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-082",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-083",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-084",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-085",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-086",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-087",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-088",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-089",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-090",
+      "type": "multihop",
+      "evidence_count": 2,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-091",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-092",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-093",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-094",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-095",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-096",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-097",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-098",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-099",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    },
+    {
+      "case_id": "AI-100",
+      "type": "refusal",
+      "evidence_count": 0,
+      "coordinates_valid": true,
+      "human_reviewed": false
+    }
+  ]
+}

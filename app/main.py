@@ -299,6 +299,7 @@ def run_summary(db, run):
     eta = ((sum(latencies) / len(latencies)) / 1000 * (len(items) - done) / run.concurrency) if latencies else None
     current = list(dict.fromkeys(i.config_id for i in items if i.state == 'running'))
     return {'id': run.id, 'name': run.name, 'state': run.state, 'mode': run.mode,
+            'evaluation_level': run.snapshot.get('evaluation_level','demo' if run.mode=='demo' else 'human_reviewed'),
             'dataset_id': run.dataset_id, 'dataset_name': run.snapshot['dataset_name'],
             'total': len(items), 'done': done, 'counts': dict(counts), 'eta_seconds': eta,
             'current_configs': current, 'created_at': run.created_at.isoformat() + 'Z',
@@ -357,7 +358,8 @@ def run_metrics(run_id: str):
             row['name'] = configs_by_id[row['config_id']]['name']
             row['parameters'] = configs_by_id[row['config_id']]['parameters']
         calls = db.scalars(select(ApiCall).where(ApiCall.run_id==run_id)).all()
-        return ok({'mode': run.mode, 'rows': summaries, 'currency': run.snapshot['prices']['currency'],
+        return ok({'mode': run.mode, 'evaluation_level':run.snapshot.get('evaluation_level'), 'rows': summaries, 'currency': run.snapshot['prices']['currency'],
+                   'cost_reference_note':run.snapshot.get('cost_reference_note','配置单价×API实际用量的参考估算，不是账户账单；不含Embedding/Rerank及失败尝试。'),
                    'api_calls':dict(Counter(c.role for c in calls)), 'failed_api_attempts':sum(c.status=='failed' for c in calls)})
 
 
@@ -470,27 +472,34 @@ def export_run(run_id: str, format: str = 'csv'):
         if format == 'csv':
             columns = ['config_id', 'name', 'total', 'succeeded', 'success_coverage', 'recall', 'mrr', 'hit1',
                        'correct', 'refusal_correct', 'hallucination', 'hallucination_n', 'qa_ms', 'p95_ms',
-                       'generation_tokens', 'judge_tokens', 'dialogue_cost', 'score_agreement', 'agreement_n']
+                       'generation_tokens', 'judge_tokens', 'dialogue_cost', 'currency', 'cost_reference_note', 'score_agreement', 'agreement_n']
             buffer = io.StringIO()
             writer = csv.DictWriter(buffer, fieldnames=columns, extrasaction='ignore')
             writer.writeheader()
-            writer.writerows({**row, 'name': names[row['config_id']]} for row in summaries)
+            writer.writerows({**row, 'name': names[row['config_id']], 'currency':run.snapshot['prices']['currency'],
+                              'cost_reference_note':run.snapshot.get('cost_reference_note','参考估算，不是账户账单。')} for row in summaries)
             text = '\ufeff' + buffer.getvalue()
             media = 'text/csv; charset=utf-8'
         elif format == 'markdown':
             text = f"# 配置对比报告：{run.name}\n\n运行ID：{run.id}；模式：{run.mode}；状态：{run.state}。\n"
+            if run.snapshot.get('evaluation_level')=='ai_preliminary':
+                text += '\n> 真实云端AI辅助预评测：题集由AI编写核验，尚未完成人工审核；不满足作业人工标注验收要求。\n'
             text += '\n> 模拟数据仅验证工程流程，不证明真实模型效果。\n' if run.mode == 'demo' else '\n'
             text += '\n|配置|成功/总数|Recall|MRR|正确率|拒答率|平均ms|P95ms|\n|---|---|---|---|---|---|---|---|\n'
             fmt = lambda x: 'N/A' if x is None else f'{x:.4f}'
             for row in summaries:
                 text += f"|{names[row['config_id']]}|{row['succeeded']}/{row['total']}|" + '|'.join(fmt(row[k]) for k in ['recall', 'mrr', 'correct', 'refusal_correct', 'qa_ms', 'p95_ms']) + '|\n'
-            eligible = [r for r in summaries if r['success_coverage'] == 1 and r['task_success'] is not None]
+            complete = run.state == 'completed' and all(r['success_coverage'] == 1 for r in summaries)
+            eligible = [r for r in summaries if r['task_success'] is not None] if complete else []
             if eligible:
                 best = max(eligible, key=lambda r: (r['task_success'], r['mrr'] or 0, -(r['qa_ms'] or 0)))
                 text += f"\n## 候选推荐\n\n按全题任务成功率优先、MRR其次、延迟最后排序：{names[best['config_id']]}。"
                 text += '此为模拟流程推荐，正式推荐须由云端评测、人工核验、成本约束支持。\n' if run.mode == 'demo' else '此为自动候选，需结合人工核验、幻觉率与成本约束审核后作为最终推荐。\n'
+            else:
+                text += '\n## 推荐状态\n\n对照尚未全部成功完成，成功样本覆盖不同，暂不选择最优配置；需补齐失败项后做配对比较。\n'
             text += '\n## Bad Case标签分布\n\n' + json.dumps(dict(Counter(t for i in items if i.metrics and not i.metrics['task_success'] for t in i.tags)), ensure_ascii=False)
             text += '\n\n## 实验边界\n\n正确率阈值为准确性≥4、完整性≥4；拒答题检索指标N/A；失败项不进入质量均值，成功覆盖率另列。延迟不含Judge和建索引。对话成本不包含Embedding/Rerank。\n'
+            text += '\n费用币种：'+run.snapshot['prices']['currency']+'；'+run.snapshot.get('cost_reference_note','配置单价×API用量的参考估算，不是账户账单。')+'\n'
             media = 'text/markdown; charset=utf-8'
         elif format == 'human':
             rows = [{'case_id': i.case_id, 'config_id': i.config_id, 'human_review': i.human_review,

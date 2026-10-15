@@ -1,0 +1,42 @@
+{
+  "run_id": "run-54107b88329d40c8",
+  "state": "completed",
+  "succeeded": 700,
+  "total": 700,
+  "evaluation_level": "ai_preliminary",
+  "human_reviewed": 0,
+  "human_scores": 0,
+  "source_api": "/api/runs/run-54107b88329d40c8/metrics",
+  "sample_seed": 42,
+  "sample_cases": [
+    "AI-008",
+    "AI-041",
+    "AI-079",
+    "AI-094",
+    "AI-030",
+    "AI-019",
+    "AI-099",
+    "AI-015",
+    "AI-090",
+    "AI-072",
+    "AI-013",
+    "AI-078",
+    "AI-057",
+    "AI-005",
+    "AI-004",
+    "AI-029",
+    "AI-031",
+    "AI-067",
+    "AI-081",
+    "AI-074"
+  ],
+  "config_ids": [
+    "cloud-v2-01",
+    "cloud-v2-02",
+    "cloud-v2-03",
+    "cloud-v2-04",
+    "cloud-v2-05",
+    "cloud-v2-06",
+    "cloud-v2-07"
+  ]
+}

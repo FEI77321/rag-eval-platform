@@ -1,0 +1,43 @@
+{
+  "run_id": "run-54107b88329d40c8",
+  "state": "completed",
+  "total": 700,
+  "states": {
+    "succeeded": 700
+  },
+  "generation_models": {
+    "deepseek-flash": 700
+  },
+  "judge_models": {
+    "deepseek-v4-pro": 700
+  },
+  "successful_generation_call_count": 700,
+  "max_successful_generation_calls_per_item": 1,
+  "calls_by_role_status": {
+    "embedding/succeeded": 258,
+    "generation/succeeded": 700,
+    "judge/failed": 11,
+    "judge/succeeded": 790,
+    "generation/failed": 197,
+    "rerank/succeeded": 100
+  },
+  "http402_attempts": 205,
+  "attempt_distribution": {
+    "1": 473,
+    "2": 194,
+    "3": 13,
+    "5": 8,
+    "8": 1,
+    "6": 1,
+    "4": 10
+  },
+  "judge_request_versions": {
+    "judge-json-v1": 680,
+    "judge-json-v2-allowed-ids": 19,
+    "judge-json-v3-citation-feedback": 1
+  },
+  "final_saved_validation_feedback_count": 1,
+  "human_scores": 0,
+  "human_reviewed": 0,
+  "scope": "每项成功生成API调用仅1次；失败402、格式校验与Judge补跑另列。API成功状态表示HTTP成功，不等于Judge结构校验成功；最终结果均通过结构与引用校验。"
+}

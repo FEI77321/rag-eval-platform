@@ -1,0 +1,1132 @@
+[
+  {
+    "id": "item-c73358e749d84217",
+    "case": {
+      "id": "AI-002",
+      "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+      "type": "fact",
+      "gold_answer": "普通参数默认解释为查询参数。",
+      "gold_doc": [
+        "official-v2-query-params"
+      ],
+      "gold_chunk_id": [
+        "official-v2-query-params:d6085563d4:0-500"
+      ],
+      "evidence": [
+        {
+          "doc_id": "official-v2-query-params",
+          "quote": "When you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.",
+          "start": 18,
+          "end": 160
+        }
+      ],
+      "difficulty": "medium",
+      "status": "ai_reviewed",
+      "annotator": null,
+      "reviewed_at": null,
+      "annotation_note": "Codex逐项编写及来源定位；AI辅助核验，未经人工审核。单一来源规则问答。"
+    },
+    "config_id": "cloud-v2-01",
+    "state": "succeeded",
+    "generation": {
+      "answer": "知识库依据不足，无法回答。",
+      "usage": {
+        "input_tokens": 635,
+        "output_tokens": 8
+      },
+      "model": "deepseek-flash",
+      "finish_reason": "stop",
+      "chunks": [
+        {
+          "id": "official-v2-path-params:155981889f:4200-4700",
+          "doc_id": "official-v2-path-params",
+          "start": 4200,
+          "end": 4700,
+          "text": "ce the path matches first.\n\nPredefined values\n\nIf you have a path operation that receives a path parameter , but you want the possible valid path parameter values to be predefined, you can use a standard Python Enum .\n\nCreate an Enum class\n\nImport Enum and create a sub-class that inherits from str and from Enum .\n\nBy inheriting from str the API docs will be able to know that the values must be of type string and will be able to render correctly.\n\nThen create class attributes with fixed values, w",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.575487049132221,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5637431010107439,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params:155981889f:5880-6380",
+          "doc_id": "official-v2-path-params",
+          "start": 5880,
+          "end": 6380,
+          "text": "\n    if model_name.value == \"lenet\":\n        return {\"model_name\": model_name, \"message\": \"LeCNN all the images\"}\n\n    return {\"model_name\": model_name, \"message\": \"Have some residuals\"}\n\nCheck the docs\n\nBecause the available values for the path parameter are predefined, the interactive docs can show them nicely:\n\nWorking with Python enumerations\n\nThe value of the path parameter will be an enumeration member .\n\nCompare enumeration members\n\nYou can compare it with the enumeration member in your c",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5535380261246512,
+          "fusion_score": null
+        }
+      ],
+      "candidates": [
+        {
+          "id": "official-v2-path-params:155981889f:4200-4700",
+          "doc_id": "official-v2-path-params",
+          "start": 4200,
+          "end": 4700,
+          "text": "ce the path matches first.\n\nPredefined values\n\nIf you have a path operation that receives a path parameter , but you want the possible valid path parameter values to be predefined, you can use a standard Python Enum .\n\nCreate an Enum class\n\nImport Enum and create a sub-class that inherits from str and from Enum .\n\nBy inheriting from str the API docs will be able to know that the values must be of type string and will be able to render correctly.\n\nThen create class attributes with fixed values, w",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.575487049132221,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5637431010107439,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params:155981889f:5880-6380",
+          "doc_id": "official-v2-path-params",
+          "start": 5880,
+          "end": 6380,
+          "text": "\n    if model_name.value == \"lenet\":\n        return {\"model_name\": model_name, \"message\": \"LeCNN all the images\"}\n\n    return {\"model_name\": model_name, \"message\": \"Have some residuals\"}\n\nCheck the docs\n\nBecause the available values for the path parameter are predefined, the interactive docs can show them nicely:\n\nWorking with Python enumerations\n\nThe value of the path parameter will be an enumeration member .\n\nCompare enumeration members\n\nYou can compare it with the enumeration member in your c",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5535380261246512,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-body-fields:70f3fc18e3:3360-3860",
+          "doc_id": "official-v2-body-fields",
+          "start": 3360,
+          "end": 3860,
+          "text": "turn special classes.\n\nTip\n\nNotice how each model's attribute with a type, default value and Field has the same structure as a path operation function's parameter, with Field instead of Path , Query and Body .\n\nAdd extra information\n\nYou can declare extra information in Field , Query , Body , etc. And it will be included in the generated JSON Schema.\n\nYou will learn more about adding extra information later in the docs, when learning to declare examples.\n\nWarning\n\nExtra keys passed to Field will",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/body-fields/",
+          "vector_score": 0.5530937860514555,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-dependencies:c60006b30f:5040-5540",
+          "doc_id": "official-v2-dependencies",
+          "start": 5040,
+          "end": 5540,
+          "text": "way you use Body , Query , etc, Depends works a bit differently.\n\nYou only give Depends a single parameter.\n\nThis parameter must be something like a function.\n\nYou don't call it directly (don't add the parenthesis at the end), you just pass it as a parameter to Depends() .\n\nAnd that function takes parameters in the same way that path operation functions do.\n\nTip\n\nYou'll see what other \"things\", apart from functions, can be used as dependencies in the next chapter.\n\nWhenever a new request arrives",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "vector_score": 0.550676652880931,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params:155981889f:0-500",
+          "doc_id": "official-v2-path-params",
+          "start": 0,
+          "end": 500,
+          "text": "Path Parameters\n\nYou can declare path \"parameters\" or \"variables\" with the same syntax used by Python format strings:\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def read_item(item_id):\n    return {\"item_id\": item_id}\n\nThe value of the path parameter item_id will be passed to your function as the argument item_id .\n\nSo, if you run this example and go to http://127.0.0.1:8000/items/foo , you will see a response of:\n\n{\"item_id\":\"foo\"}\n\nPath parameters with ty",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5498443628801103,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:2940-3440",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 2940,
+          "end": 3440,
+          "text": "ue that doesn't have a \"default\".\n\nBut you can re-order them, and have the value without a default (the query parameter q ) first.\n\nIt doesn't matter for FastAPI . It will detect the parameters by their names, types and default declarations ( Query , Path , etc), it doesn't care about the order.\n\nSo, you can declare your function as:\n\nfrom fastapi import FastAPI, Path\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def read_items(q: str, item_id: int = Path(title=\"The ID of the item to get",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5486648402776966,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params:155981889f:2940-3440",
+          "doc_id": "official-v2-path-params",
+          "start": 2940,
+          "end": 3440,
+          "text": "u can use the same type declarations with str , float , bool and many other complex data types.\n\nSeveral of these are explored in the next chapters of the tutorial.\n\nOrder matters\n\nWhen creating path operations , you can find situations where you have a fixed path.\n\nLike /users/me , let's say that it's to get data about the current user.\n\nAnd then you can also have a path /users/{user_id} to get data about a specific user by some user ID.\n\nBecause path operations are evaluated in order, you need",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5462888603990314,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:4620-5120",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 4620,
+          "end": 5120,
+          "text": "lts.update({\"q\": q})\n    return results\n\nOrder the parameters as you need, tricks\n\nTip\n\nThis is probably not as important or necessary if you use Annotated .\n\nHere's a small trick that can be handy, but you won't need it often.\n\nIf you want to:\n\ndeclare the q query parameter without a Query nor any default value\n\ndeclare the path parameter item_id using Path\n\nhave them in a different order\n\nnot use Annotated\n\n...Python has a little special syntax for that.\n\nPass * , as the first parameter of the",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5421795361052881,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:2520-3020",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 2520,
+          "end": 3020,
+          "text": " as important or necessary if you use Annotated .\n\nLet's say that you want to declare the query parameter q as a required str .\n\nAnd you don't need to declare anything else for that parameter, so you don't really need to use Query .\n\nBut you still need to use Path for the item_id path parameter. And you don't want to use Annotated for some reason.\n\nPython will complain if you put a value with a \"default\" before a value that doesn't have a \"default\".\n\nBut you can re-order them, and have the value",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5407339431010649,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:2100-2600",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 2100,
+          "end": 2600,
+          "text": "   q: str | None = Query(default=None, alias=\"item-query\"),\n):\n    results = {\"item_id\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results\n\nNote\n\nA path parameter is always required as it has to be part of the path. Even if you declared it with None or set a default value, it would not affect anything, it would still be always required.\n\nOrder the parameters as you need\n\nTip\n\nThis is probably not as important or necessary if you use Annotated .\n\nLet's say that you want to de",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5381405020774244,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:3360-3860",
+          "doc_id": "official-v2-query-params",
+          "start": 3360,
+          "end": 3860,
+          "text": "def read_user_item(\n    user_id: int, item_id: str, q: str | None = None, short: bool = False\n):\n    item = {\"item_id\": item_id, \"owner_id\": user_id}\n    if q:\n        item.update({\"q\": q})\n    if not short:\n        item.update(\n            {\"description\": \"This is an amazing item that has a long description\"}\n        )\n    return item\n\nRequired query parameters\n\nWhen you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.\n\nIf y",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5374223340073848,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params:155981889f:8820-9320",
+          "doc_id": "official-v2-path-params",
+          "start": 8820,
+          "end": 9320,
+          "text": "for that file would be something like: /files/home/johndoe/myfile.txt .\n\nOpenAPI support\n\nOpenAPI doesn't support a way to declare a path parameter to contain a path inside, as that could lead to scenarios that are difficult to test and define.\n\nNevertheless, you can still do it in FastAPI , using one of the internal tools from Starlette.\n\nAnd the docs would still work, although not adding any documentation telling that the parameter should contain a path.\n\nPath convertor\n\nUsing an option direct",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5358200951488759,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params:155981889f:9240-9740",
+          "doc_id": "official-v2-path-params",
+          "start": 9240,
+          "end": 9740,
+          "text": "hat the parameter should contain a path.\n\nPath convertor\n\nUsing an option directly from Starlette you can declare a path parameter containing a path using a URL like:\n\n/files/{file_path:path}\n\nIn this case, the name of the parameter is file_path , and the last part, :path , tells it that the parameter should match any path .\n\nSo, you can use it with:\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/files/{file_path:path}\")\nasync def read_file(file_path: str):\n    return {\"file_path\": f",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5334146146947628,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:3780-4280",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 3780,
+          "end": 4280,
+          "text": "\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results\n\nBut keep in mind that if you use Annotated , you won't have this problem, it won't matter as you're not using the function parameter default values for Query() or Path() .\n\nfrom typing import Annotated\n\nfrom fastapi import FastAPI, Path\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def read_items(\n    q: str, item_id: Annotated[int, Path(title=\"The ID of the item to get\")]\n):\n    results = {\"item_id\": item_id}\n   ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5288095066826402,
+          "fusion_score": null
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 417.75509999934,
+        "rerank_ms": 0,
+        "generation_ms": 542.0059999996738,
+        "qa_ms": 959.7830999991857
+      },
+      "evidence_coverage": 0.8
+    },
+    "judgement": {
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "The answer refuses to answer, claiming insufficient knowledge base evidence. However, the gold evidence clearly states that non-path parameters are automatically interpreted as query parameters, so the refusal is incorrect.",
+        "evidence_ids": []
+      },
+      "usage": {
+        "input_tokens": 1005,
+        "output_tokens": 89
+      },
+      "model": "deepseek-v4-pro",
+      "raw": "{\n  \"accuracy\": 1,\n  \"completeness\": 1,\n  \"refused\": true,\n  \"unsupported\": false,\n  \"factually_incorrect\": null,\n  \"reason\": \"The answer refuses to answer, claiming insufficient knowledge base evidence. However, the gold evidence clearly states that non-path parameters are automatically interpreted as query parameters, so the refusal is incorrect.\",\n  \"evidence_ids\": []\n}",
+      "judge_ms": 2281.336799998826
+    },
+    "metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "retrieval_ms": 417.75509999934,
+      "rerank_ms": 0,
+      "generation_ms": 542.0059999996738,
+      "qa_ms": 959.7830999991857,
+      "judge_ms": 2281.336799998826,
+      "generation_tokens": 643,
+      "judge_tokens": 1094,
+      "dialogue_cost": 0.00187914
+    },
+    "tags": [
+      "召回失败"
+    ],
+    "note": "",
+    "human_review": null,
+    "attempts": 1,
+    "error": null,
+    "mode": "cloud"
+  },
+  {
+    "id": "item-75089d6d40ed43d2",
+    "case": {
+      "id": "AI-002",
+      "question": "路径函数里，未出现在路径模板中的普通参数默认被当成什么？",
+      "type": "fact",
+      "gold_answer": "普通参数默认解释为查询参数。",
+      "gold_doc": [
+        "official-v2-query-params"
+      ],
+      "gold_chunk_id": [
+        "official-v2-query-params:d6085563d4:0-500"
+      ],
+      "evidence": [
+        {
+          "doc_id": "official-v2-query-params",
+          "quote": "When you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.",
+          "start": 18,
+          "end": 160
+        }
+      ],
+      "difficulty": "medium",
+      "status": "ai_reviewed",
+      "annotator": null,
+      "reviewed_at": null,
+      "annotation_note": "Codex逐项编写及来源定位；AI辅助核验，未经人工审核。单一来源规则问答。"
+    },
+    "config_id": "cloud-v2-05",
+    "state": "succeeded",
+    "generation": {
+      "answer": "知识库依据不足，无法回答。",
+      "usage": {
+        "input_tokens": 635,
+        "output_tokens": 8
+      },
+      "model": "deepseek-flash",
+      "finish_reason": "stop",
+      "chunks": [
+        {
+          "id": "official-v2-path-params:155981889f:4200-4700",
+          "doc_id": "official-v2-path-params",
+          "start": 4200,
+          "end": 4700,
+          "text": "ce the path matches first.\n\nPredefined values\n\nIf you have a path operation that receives a path parameter , but you want the possible valid path parameter values to be predefined, you can use a standard Python Enum .\n\nCreate an Enum class\n\nImport Enum and create a sub-class that inherits from str and from Enum .\n\nBy inheriting from str the API docs will be able to know that the values must be of type string and will be able to render correctly.\n\nThen create class attributes with fixed values, w",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.575487049132221,
+          "fusion_score": 0.01639344262295082
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5637431010107439,
+          "fusion_score": 0.016129032258064516
+        },
+        {
+          "id": "official-v2-path-params:155981889f:5880-6380",
+          "doc_id": "official-v2-path-params",
+          "start": 5880,
+          "end": 6380,
+          "text": "\n    if model_name.value == \"lenet\":\n        return {\"model_name\": model_name, \"message\": \"LeCNN all the images\"}\n\n    return {\"model_name\": model_name, \"message\": \"Have some residuals\"}\n\nCheck the docs\n\nBecause the available values for the path parameter are predefined, the interactive docs can show them nicely:\n\nWorking with Python enumerations\n\nThe value of the path parameter will be an enumeration member .\n\nCompare enumeration members\n\nYou can compare it with the enumeration member in your c",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5535380261246512,
+          "fusion_score": 0.015873015873015872
+        }
+      ],
+      "candidates": [
+        {
+          "id": "official-v2-path-params:155981889f:4200-4700",
+          "doc_id": "official-v2-path-params",
+          "start": 4200,
+          "end": 4700,
+          "text": "ce the path matches first.\n\nPredefined values\n\nIf you have a path operation that receives a path parameter , but you want the possible valid path parameter values to be predefined, you can use a standard Python Enum .\n\nCreate an Enum class\n\nImport Enum and create a sub-class that inherits from str and from Enum .\n\nBy inheriting from str the API docs will be able to know that the values must be of type string and will be able to render correctly.\n\nThen create class attributes with fixed values, w",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.575487049132221,
+          "fusion_score": 0.01639344262295082
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5637431010107439,
+          "fusion_score": 0.016129032258064516
+        },
+        {
+          "id": "official-v2-path-params:155981889f:5880-6380",
+          "doc_id": "official-v2-path-params",
+          "start": 5880,
+          "end": 6380,
+          "text": "\n    if model_name.value == \"lenet\":\n        return {\"model_name\": model_name, \"message\": \"LeCNN all the images\"}\n\n    return {\"model_name\": model_name, \"message\": \"Have some residuals\"}\n\nCheck the docs\n\nBecause the available values for the path parameter are predefined, the interactive docs can show them nicely:\n\nWorking with Python enumerations\n\nThe value of the path parameter will be an enumeration member .\n\nCompare enumeration members\n\nYou can compare it with the enumeration member in your c",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5535380261246512,
+          "fusion_score": 0.015873015873015872
+        },
+        {
+          "id": "official-v2-body-fields:70f3fc18e3:3360-3860",
+          "doc_id": "official-v2-body-fields",
+          "start": 3360,
+          "end": 3860,
+          "text": "turn special classes.\n\nTip\n\nNotice how each model's attribute with a type, default value and Field has the same structure as a path operation function's parameter, with Field instead of Path , Query and Body .\n\nAdd extra information\n\nYou can declare extra information in Field , Query , Body , etc. And it will be included in the generated JSON Schema.\n\nYou will learn more about adding extra information later in the docs, when learning to declare examples.\n\nWarning\n\nExtra keys passed to Field will",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/body-fields/",
+          "vector_score": 0.5530937860514555,
+          "fusion_score": 0.015625
+        },
+        {
+          "id": "official-v2-dependencies:c60006b30f:5040-5540",
+          "doc_id": "official-v2-dependencies",
+          "start": 5040,
+          "end": 5540,
+          "text": "way you use Body , Query , etc, Depends works a bit differently.\n\nYou only give Depends a single parameter.\n\nThis parameter must be something like a function.\n\nYou don't call it directly (don't add the parenthesis at the end), you just pass it as a parameter to Depends() .\n\nAnd that function takes parameters in the same way that path operation functions do.\n\nTip\n\nYou'll see what other \"things\", apart from functions, can be used as dependencies in the next chapter.\n\nWhenever a new request arrives",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "vector_score": 0.550676652880931,
+          "fusion_score": 0.015384615384615385
+        },
+        {
+          "id": "official-v2-path-params:155981889f:0-500",
+          "doc_id": "official-v2-path-params",
+          "start": 0,
+          "end": 500,
+          "text": "Path Parameters\n\nYou can declare path \"parameters\" or \"variables\" with the same syntax used by Python format strings:\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def read_item(item_id):\n    return {\"item_id\": item_id}\n\nThe value of the path parameter item_id will be passed to your function as the argument item_id .\n\nSo, if you run this example and go to http://127.0.0.1:8000/items/foo , you will see a response of:\n\n{\"item_id\":\"foo\"}\n\nPath parameters with ty",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5498443628801103,
+          "fusion_score": 0.015151515151515152
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:2940-3440",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 2940,
+          "end": 3440,
+          "text": "ue that doesn't have a \"default\".\n\nBut you can re-order them, and have the value without a default (the query parameter q ) first.\n\nIt doesn't matter for FastAPI . It will detect the parameters by their names, types and default declarations ( Query , Path , etc), it doesn't care about the order.\n\nSo, you can declare your function as:\n\nfrom fastapi import FastAPI, Path\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def read_items(q: str, item_id: int = Path(title=\"The ID of the item to get",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5486648402776966,
+          "fusion_score": 0.014925373134328358
+        },
+        {
+          "id": "official-v2-path-params:155981889f:2940-3440",
+          "doc_id": "official-v2-path-params",
+          "start": 2940,
+          "end": 3440,
+          "text": "u can use the same type declarations with str , float , bool and many other complex data types.\n\nSeveral of these are explored in the next chapters of the tutorial.\n\nOrder matters\n\nWhen creating path operations , you can find situations where you have a fixed path.\n\nLike /users/me , let's say that it's to get data about the current user.\n\nAnd then you can also have a path /users/{user_id} to get data about a specific user by some user ID.\n\nBecause path operations are evaluated in order, you need",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5462888603990314,
+          "fusion_score": 0.014705882352941176
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:4620-5120",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 4620,
+          "end": 5120,
+          "text": "lts.update({\"q\": q})\n    return results\n\nOrder the parameters as you need, tricks\n\nTip\n\nThis is probably not as important or necessary if you use Annotated .\n\nHere's a small trick that can be handy, but you won't need it often.\n\nIf you want to:\n\ndeclare the q query parameter without a Query nor any default value\n\ndeclare the path parameter item_id using Path\n\nhave them in a different order\n\nnot use Annotated\n\n...Python has a little special syntax for that.\n\nPass * , as the first parameter of the",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5421795361052881,
+          "fusion_score": 0.014492753623188406
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:2520-3020",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 2520,
+          "end": 3020,
+          "text": " as important or necessary if you use Annotated .\n\nLet's say that you want to declare the query parameter q as a required str .\n\nAnd you don't need to declare anything else for that parameter, so you don't really need to use Query .\n\nBut you still need to use Path for the item_id path parameter. And you don't want to use Annotated for some reason.\n\nPython will complain if you put a value with a \"default\" before a value that doesn't have a \"default\".\n\nBut you can re-order them, and have the value",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5407339431010649,
+          "fusion_score": 0.014285714285714285
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:2100-2600",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 2100,
+          "end": 2600,
+          "text": "   q: str | None = Query(default=None, alias=\"item-query\"),\n):\n    results = {\"item_id\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results\n\nNote\n\nA path parameter is always required as it has to be part of the path. Even if you declared it with None or set a default value, it would not affect anything, it would still be always required.\n\nOrder the parameters as you need\n\nTip\n\nThis is probably not as important or necessary if you use Annotated .\n\nLet's say that you want to de",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5381405020774244,
+          "fusion_score": 0.014084507042253521
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:3360-3860",
+          "doc_id": "official-v2-query-params",
+          "start": 3360,
+          "end": 3860,
+          "text": "def read_user_item(\n    user_id: int, item_id: str, q: str | None = None, short: bool = False\n):\n    item = {\"item_id\": item_id, \"owner_id\": user_id}\n    if q:\n        item.update({\"q\": q})\n    if not short:\n        item.update(\n            {\"description\": \"This is an amazing item that has a long description\"}\n        )\n    return item\n\nRequired query parameters\n\nWhen you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.\n\nIf y",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5374223340073848,
+          "fusion_score": 0.013888888888888888
+        },
+        {
+          "id": "official-v2-path-params:155981889f:8820-9320",
+          "doc_id": "official-v2-path-params",
+          "start": 8820,
+          "end": 9320,
+          "text": "for that file would be something like: /files/home/johndoe/myfile.txt .\n\nOpenAPI support\n\nOpenAPI doesn't support a way to declare a path parameter to contain a path inside, as that could lead to scenarios that are difficult to test and define.\n\nNevertheless, you can still do it in FastAPI , using one of the internal tools from Starlette.\n\nAnd the docs would still work, although not adding any documentation telling that the parameter should contain a path.\n\nPath convertor\n\nUsing an option direct",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5358200951488759,
+          "fusion_score": 0.0136986301369863
+        },
+        {
+          "id": "official-v2-path-params:155981889f:9240-9740",
+          "doc_id": "official-v2-path-params",
+          "start": 9240,
+          "end": 9740,
+          "text": "hat the parameter should contain a path.\n\nPath convertor\n\nUsing an option directly from Starlette you can declare a path parameter containing a path using a URL like:\n\n/files/{file_path:path}\n\nIn this case, the name of the parameter is file_path , and the last part, :path , tells it that the parameter should match any path .\n\nSo, you can use it with:\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/files/{file_path:path}\")\nasync def read_file(file_path: str):\n    return {\"file_path\": f",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params/",
+          "vector_score": 0.5334146146947628,
+          "fusion_score": 0.013513513513513514
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:3780-4280",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 3780,
+          "end": 4280,
+          "text": "\": item_id}\n    if q:\n        results.update({\"q\": q})\n    return results\n\nBut keep in mind that if you use Annotated , you won't have this problem, it won't matter as you're not using the function parameter default values for Query() or Path() .\n\nfrom typing import Annotated\n\nfrom fastapi import FastAPI, Path\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def read_items(\n    q: str, item_id: Annotated[int, Path(title=\"The ID of the item to get\")]\n):\n    results = {\"item_id\": item_id}\n   ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.5288095066826402,
+          "fusion_score": 0.013333333333333334
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 52.699500000017,
+        "rerank_ms": 0,
+        "generation_ms": 689.3151000003854,
+        "qa_ms": 742.05240000083
+      },
+      "evidence_coverage": 0.8
+    },
+    "judgement": {
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "标准答案明确指出未出现在路径模板中的普通参数默认解释为查询参数，且标准证据支持这一点。被评答案以知识库依据不足为由拒绝回答，但检索到的证据中虽未直接包含该信息，但标准证据明确存在，因此该拒答是错误的。",
+        "evidence_ids": []
+      },
+      "usage": {
+        "input_tokens": 1029,
+        "output_tokens": 112
+      },
+      "model": "deepseek-v4-pro",
+      "raw": "{\n  \"accuracy\": 1,\n  \"completeness\": 1,\n  \"refused\": true,\n  \"unsupported\": false,\n  \"factually_incorrect\": null,\n  \"reason\": \"标准答案明确指出未出现在路径模板中的普通参数默认解释为查询参数，且标准证据支持这一点。被评答案以知识库依据不足为由拒绝回答，但检索到的证据中虽未直接包含该信息，但标准证据明确存在，因此该拒答是错误的。\",\n  \"evidence_ids\": []\n}",
+      "judge_ms": 2623.7153000001854
+    },
+    "metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "fact",
+      "retrieval_ms": 52.699500000017,
+      "rerank_ms": 0,
+      "generation_ms": 689.3151000003854,
+      "qa_ms": 742.05240000083,
+      "judge_ms": 2623.7153000001854,
+      "generation_tokens": 643,
+      "judge_tokens": 1141,
+      "dialogue_cost": 0.0020019
+    },
+    "tags": [
+      "召回失败"
+    ],
+    "note": "",
+    "human_review": null,
+    "attempts": 1,
+    "error": null,
+    "mode": "cloud"
+  },
+  {
+    "id": "item-6a38ebedfc194222",
+    "case": {
+      "id": "AI-041",
+      "question": "函数参数limit不在路径模板里且默认20，客户端省略limit时，应从哪里取值、是否报缺失错误？",
+      "type": "reasoning",
+      "gold_answer": "它是查询参数；有默认值，因此不必传，使用20。",
+      "gold_doc": [
+        "official-v2-query-params"
+      ],
+      "gold_chunk_id": [
+        "official-v2-query-params:d6085563d4:0-500",
+        "official-v2-query-params:d6085563d4:3360-3860",
+        "official-v2-query-params:d6085563d4:3780-4280"
+      ],
+      "evidence": [
+        {
+          "doc_id": "official-v2-query-params",
+          "quote": "When you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.",
+          "start": 18,
+          "end": 160
+        },
+        {
+          "doc_id": "official-v2-query-params",
+          "quote": "When you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.",
+          "start": 3726,
+          "end": 3854
+        }
+      ],
+      "difficulty": "medium",
+      "status": "ai_reviewed",
+      "annotator": null,
+      "reviewed_at": null,
+      "annotation_note": "Codex逐项编写及来源定位；AI辅助核验，未经人工审核。条件组合/比较推导。"
+    },
+    "config_id": "cloud-v2-01",
+    "state": "succeeded",
+    "generation": {
+      "answer": "知识库依据不足，无法回答。\n\n现有证据只涉及查询参数默认值、`Query`/`Path` 的校验与 `Annotated` 中默认值写法，未说明“参数不在路径模板里且默认 20”时客户端省略该参数应从哪里取值、是否报缺失错误。",
+      "usage": {
+        "input_tokens": 682,
+        "output_tokens": 66
+      },
+      "model": "deepseek-flash",
+      "finish_reason": "stop",
+      "chunks": [
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.636516244962605,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:5040-5451",
+          "doc_id": "official-v2-query-params",
+          "start": 5040,
+          "end": 5451,
+          "text": "_id}\")\nasync def read_user_item(\n    item_id: str, needy: str, skip: int = 0, limit: int | None = None\n):\n    item = {\"item_id\": item_id, \"needy\": needy, \"skip\": skip, \"limit\": limit}\n    return item\n\nIn this case, there are 3 query parameters:\n\nneedy , a required str .\n\nskip , an int with a default value of 0 .\n\nlimit , an optional int .\n\nTip\n\nYou could also use Enum s the same way as with Path Parameters .",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.6054384227195817,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:5880-6380",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 5880,
+          "end": 6380,
+          "text": "error when the data is not valid, and document the parameter in the OpenAPI schema path operation .\n\nQuery as the default value or in Annotated\n\nKeep in mind that when using Query inside of Annotated you cannot use the default parameter for Query .\n\nInstead, use the actual default value of the function parameter. Otherwise, it would be inconsistent.\n\nFor example, this is not allowed:\n\nq: Annotated[str, Query(default=\"rick\")] = \"morty\"\n\n...because it's not clear if the default value should be \"ri",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.6044824917346666,
+          "fusion_score": null
+        }
+      ],
+      "candidates": [
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.636516244962605,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:5040-5451",
+          "doc_id": "official-v2-query-params",
+          "start": 5040,
+          "end": 5451,
+          "text": "_id}\")\nasync def read_user_item(\n    item_id: str, needy: str, skip: int = 0, limit: int | None = None\n):\n    item = {\"item_id\": item_id, \"needy\": needy, \"skip\": skip, \"limit\": limit}\n    return item\n\nIn this case, there are 3 query parameters:\n\nneedy , a required str .\n\nskip , an int with a default value of 0 .\n\nlimit , an optional int .\n\nTip\n\nYou could also use Enum s the same way as with Path Parameters .",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.6054384227195817,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:5880-6380",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 5880,
+          "end": 6380,
+          "text": "error when the data is not valid, and document the parameter in the OpenAPI schema path operation .\n\nQuery as the default value or in Annotated\n\nKeep in mind that when using Query inside of Annotated you cannot use the default parameter for Query .\n\nInstead, use the actual default value of the function parameter. Otherwise, it would be inconsistent.\n\nFor example, this is not allowed:\n\nq: Annotated[str, Query(default=\"rick\")] = \"morty\"\n\n...because it's not clear if the default value should be \"ri",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.6044824917346666,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:3360-3860",
+          "doc_id": "official-v2-query-params",
+          "start": 3360,
+          "end": 3860,
+          "text": "def read_user_item(\n    user_id: int, item_id: str, q: str | None = None, short: bool = False\n):\n    item = {\"item_id\": item_id, \"owner_id\": user_id}\n    if q:\n        item.update({\"q\": q})\n    if not short:\n        item.update(\n            {\"description\": \"This is an amazing item that has a long description\"}\n        )\n    return item\n\nRequired query parameters\n\nWhen you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.\n\nIf y",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.6017860111255978,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-dependencies:c60006b30f:2100-2600",
+          "doc_id": "official-v2-dependencies",
+          "start": 2100,
+          "end": 2600,
+          "text": "s(common_parameters)):\n    return commons\n\nThat's it.\n\n2 lines .\n\nAnd it has the same shape and structure that all your path operation functions have.\n\nYou can think of it as a path operation function without the \"decorator\" (without the @app.get(\"/some-path\") ).\n\nAnd it can return anything you want.\n\nIn this case, this dependency expects:\n\nAn optional query parameter q that is a str .\n\nAn optional query parameter skip that is an int , and by default is 0 .\n\nAn optional query parameter limit tha",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "vector_score": 0.5975150578463526,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:840-1340",
+          "doc_id": "official-v2-query-params",
+          "start": 840,
+          "end": 1340,
+          "text": "validated against it.\n\nAll the same processes that apply to path parameters also apply to query parameters:\n\nEditor support (obviously)\n\nData \"parsing\"\n\nData validation\n\nAutomatic documentation\n\nDefaults\n\nAs query parameters are not a fixed part of a path, they can be optional and can have default values.\n\nIn the example above they have default values of skip=0 and limit=10 .\n\nSo, going to the URL:\n\nhttp://127.0.0.1:8000/items/\n\nwould be the same as going to:\n\nhttp://127.0.0.1:8000/items/?skip=0",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5895220535303027,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:13440-13940",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 13440,
+          "end": 13940,
+          "text": "one)):\n    query_items = {\"q\": q}\n    return query_items\n\nThen, with a URL like:\n\nhttp://localhost:8000/items/?q=foo&q=bar\n\nyou would receive the multiple q query parameters' values ( foo and bar ) in a Python list inside your path operation function , in the function parameter q .\n\nSo, the response to that URL would be:\n\n{\n  \"q\": [\n    \"foo\",\n    \"bar\"\n  ]\n}\n\nTip\n\nTo declare a query parameter with a type of list , like in the example above, you need to explicitly use Query , otherwise it would ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.5878491269149071,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:1260-1760",
+          "doc_id": "official-v2-query-params",
+          "start": 1260,
+          "end": 1760,
+          "text": "8000/items/\n\nwould be the same as going to:\n\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n\nBut if you go to, for example:\n\nhttp://127.0.0.1:8000/items/?skip=20\n\nThe parameter values in your function will be:\n\nskip=20 : because you set it in the URL\n\nlimit=10 : because that was the default value\n\nOptional parameters\n\nThe same way, you can declare optional query parameters, by setting their default to None :\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def rea",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5851485901727759,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:840-1340",
+          "doc_id": "official-v2-response-model",
+          "start": 840,
+          "end": 1340,
+          "text": "he returned data. If the data is invalid (e.g. you are missing a field), it means that your app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.\n\nAdd a JSON Schema for the response, in the OpenAPI path operation . This will be used by the automatic docs . It will also be used by automatic client code generation tools.\n\nSeria",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.5722572556911548,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-body-fields:70f3fc18e3:3360-3860",
+          "doc_id": "official-v2-body-fields",
+          "start": 3360,
+          "end": 3860,
+          "text": "turn special classes.\n\nTip\n\nNotice how each model's attribute with a type, default value and Field has the same structure as a path operation function's parameter, with Field instead of Path , Query and Body .\n\nAdd extra information\n\nYou can declare extra information in Field , Query , Body , etc. And it will be included in the generated JSON Schema.\n\nYou will learn more about adding extra information later in the docs, when learning to declare examples.\n\nWarning\n\nExtra keys passed to Field will",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/body-fields/",
+          "vector_score": 0.5703092339982295,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:3780-4280",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 3780,
+          "end": 4280,
+          "text": "\nFastAPI will now:\n\nValidate the data making sure that the max length is 50 characters\n\nShow a clear error for the client when the data is not valid\n\nDocument the parameter in the OpenAPI schema path operation (so it will show up in the automatic docs UI )\n\nAlternative (old): Query as the default value\n\nPrevious versions of FastAPI (before 0.95.0 ) required you to use Query as the default value of your parameter, instead of putting it in Annotated , there's a high chance that you will see code u",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.5645648641305558,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:0-500",
+          "doc_id": "official-v2-query-params",
+          "start": 0,
+          "end": 500,
+          "text": "Query Parameters\n\nWhen you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\nfake_items_db = [{\"item_name\": \"Foo\"}, {\"item_name\": \"Bar\"}, {\"item_name\": \"Baz\"}]\n\n\n@app.get(\"/items/\")\nasync def read_item(skip: int = 0, limit: int = 10):\n    return fake_items_db[skip : skip + limit]\n\nThe query is the set of key-value pairs that go after the ? in a URL, separated by & ch",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5628455544806511,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-param-models:965a802b3a:2940-3440",
+          "doc_id": "official-v2-query-param-models",
+          "start": 2940,
+          "end": 3440,
+          "text": "sponse.\n\nFor example, if the client tries to send a tool query parameter with a value of plumbus , like:\n\nhttps://example.com/items/?limit=10&tool=plumbus\n\nThey will receive an error response telling them that the query parameter tool is not allowed:\n\n{\n    \"detail\": [\n        {\n            \"type\": \"extra_forbidden\",\n            \"loc\": [\"query\", \"tool\"],\n            \"msg\": \"Extra inputs are not permitted\",\n            \"input\": \"plumbus\"\n        }\n    ]\n}\n\nSummary\n\nYou can use Pydantic models to ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-param-models/",
+          "vector_score": 0.5628402698938987,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-param-models:965a802b3a:2520-3020",
+          "doc_id": "official-v2-query-param-models",
+          "start": 2520,
+          "end": 3020,
+          "text": "aseModel):\n    model_config = {\"extra\": \"forbid\"}\n\n    limit: int = Field(100, gt=0, le=100)\n    offset: int = Field(0, ge=0)\n    order_by: Literal[\"created_at\", \"updated_at\"] = \"created_at\"\n    tags: list[str] = []\n\n\n@app.get(\"/items/\")\nasync def read_items(filter_query: FilterParams = Query()):\n    return filter_query\n\nIf a client tries to send some extra data in the query parameters , they will receive an error response.\n\nFor example, if the client tries to send a tool query parameter with a ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-param-models/",
+          "vector_score": 0.5602739140064463,
+          "fusion_score": null
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:9240-9740",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 9240,
+          "end": 9740,
+          "text": "if q:\n        results.update({\"q\": q})\n    return results\n\nThis specific regular expression pattern checks that the received parameter value:\n\n^ : starts with the following characters, doesn't have characters before.\n\nfixedquery : has the exact value fixedquery .\n\n$ : ends there, doesn't have any more characters after fixedquery .\n\nIf you feel lost with all these \"regular expression\" ideas, don't worry. They are a hard topic for many people. You can still do a lot of stuff without needing regula",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.5579685951923941,
+          "fusion_score": null
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 358.6065999988932,
+        "rerank_ms": 0,
+        "generation_ms": 1036.8909999997413,
+        "qa_ms": 1395.5206999999064
+      },
+      "evidence_coverage": 0.8
+    },
+    "judgement": {
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "The answer refuses to answer, claiming insufficient evidence, but the provided gold evidence directly addresses the question: non-path parameters are query parameters, and default values make them not required. Therefore the refusal is incorrect.",
+        "evidence_ids": [
+          "official-v2-query-params:d6085563d4:5040-5451"
+        ]
+      },
+      "usage": {
+        "input_tokens": 1189,
+        "output_tokens": 114
+      },
+      "model": "deepseek-v4-pro",
+      "raw": "{\n  \"accuracy\": 1,\n  \"completeness\": 1,\n  \"refused\": true,\n  \"unsupported\": false,\n  \"factually_incorrect\": null,\n  \"reason\": \"The answer refuses to answer, claiming insufficient evidence, but the provided gold evidence directly addresses the question: non-path parameters are query parameters, and default values make them not required. Therefore the refusal is incorrect.\",\n  \"evidence_ids\": [\"official-v2-query-params:d6085563d4:5040-5451\"]\n}",
+      "judge_ms": 2576.704499999323
+    },
+    "metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "reasoning",
+      "retrieval_ms": 358.6065999988932,
+      "rerank_ms": 0,
+      "generation_ms": 1036.8909999997413,
+      "qa_ms": 1395.5206999999064,
+      "judge_ms": 2576.704499999323,
+      "generation_tokens": 748,
+      "judge_tokens": 1303,
+      "dialogue_cost": 0.00230472
+    },
+    "tags": [
+      "召回失败",
+      "排序问题"
+    ],
+    "note": "",
+    "human_review": null,
+    "attempts": 1,
+    "error": null,
+    "mode": "cloud"
+  },
+  {
+    "id": "item-0a5905a14e5e4759",
+    "case": {
+      "id": "AI-041",
+      "question": "函数参数limit不在路径模板里且默认20，客户端省略limit时，应从哪里取值、是否报缺失错误？",
+      "type": "reasoning",
+      "gold_answer": "它是查询参数；有默认值，因此不必传，使用20。",
+      "gold_doc": [
+        "official-v2-query-params"
+      ],
+      "gold_chunk_id": [
+        "official-v2-query-params:d6085563d4:0-500",
+        "official-v2-query-params:d6085563d4:3360-3860",
+        "official-v2-query-params:d6085563d4:3780-4280"
+      ],
+      "evidence": [
+        {
+          "doc_id": "official-v2-query-params",
+          "quote": "When you declare other function parameters that are not part of the path parameters, they are automatically interpreted as \"query\" parameters.",
+          "start": 18,
+          "end": 160
+        },
+        {
+          "doc_id": "official-v2-query-params",
+          "quote": "When you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.",
+          "start": 3726,
+          "end": 3854
+        }
+      ],
+      "difficulty": "medium",
+      "status": "ai_reviewed",
+      "annotator": null,
+      "reviewed_at": null,
+      "annotation_note": "Codex逐项编写及来源定位；AI辅助核验，未经人工审核。条件组合/比较推导。"
+    },
+    "config_id": "cloud-v2-05",
+    "state": "succeeded",
+    "generation": {
+      "answer": "知识库依据不足，无法回答。\n\n现有证据只说明：查询参数未在 URL 中提供时会使用默认值（如 `limit=10` 的示例），以及可选查询参数可设为 `None`；但没有提供“默认值为 20”且“客户端省略 limit”时具体取值来源与是否报缺失错误的规则。",
+      "usage": {
+        "input_tokens": 715,
+        "output_tokens": 71
+      },
+      "model": "deepseek-flash",
+      "finish_reason": "stop",
+      "chunks": [
+        {
+          "id": "official-v2-query-params:d6085563d4:1260-1760",
+          "doc_id": "official-v2-query-params",
+          "start": 1260,
+          "end": 1760,
+          "text": "8000/items/\n\nwould be the same as going to:\n\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n\nBut if you go to, for example:\n\nhttp://127.0.0.1:8000/items/?skip=20\n\nThe parameter values in your function will be:\n\nskip=20 : because you set it in the URL\n\nlimit=10 : because that was the default value\n\nOptional parameters\n\nThe same way, you can declare optional query parameters, by setting their default to None :\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def rea",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5851485901727759,
+          "fusion_score": 0.031099324975891997
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:5040-5451",
+          "doc_id": "official-v2-query-params",
+          "start": 5040,
+          "end": 5451,
+          "text": "_id}\")\nasync def read_user_item(\n    item_id: str, needy: str, skip: int = 0, limit: int | None = None\n):\n    item = {\"item_id\": item_id, \"needy\": needy, \"skip\": skip, \"limit\": limit}\n    return item\n\nIn this case, there are 3 query parameters:\n\nneedy , a required str .\n\nskip , an int with a default value of 0 .\n\nlimit , an optional int .\n\nTip\n\nYou could also use Enum s the same way as with Path Parameters .",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.6054384227195817,
+          "fusion_score": 0.030621785881252923
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.636516244962605,
+          "fusion_score": 0.01639344262295082
+        }
+      ],
+      "candidates": [
+        {
+          "id": "official-v2-query-params:d6085563d4:1260-1760",
+          "doc_id": "official-v2-query-params",
+          "start": 1260,
+          "end": 1760,
+          "text": "8000/items/\n\nwould be the same as going to:\n\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n\nBut if you go to, for example:\n\nhttp://127.0.0.1:8000/items/?skip=20\n\nThe parameter values in your function will be:\n\nskip=20 : because you set it in the URL\n\nlimit=10 : because that was the default value\n\nOptional parameters\n\nThe same way, you can declare optional query parameters, by setting their default to None :\n\nfrom fastapi import FastAPI\n\napp = FastAPI()\n\n\n@app.get(\"/items/{item_id}\")\nasync def rea",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5851485901727759,
+          "fusion_score": 0.031099324975891997
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:5040-5451",
+          "doc_id": "official-v2-query-params",
+          "start": 5040,
+          "end": 5451,
+          "text": "_id}\")\nasync def read_user_item(\n    item_id: str, needy: str, skip: int = 0, limit: int | None = None\n):\n    item = {\"item_id\": item_id, \"needy\": needy, \"skip\": skip, \"limit\": limit}\n    return item\n\nIn this case, there are 3 query parameters:\n\nneedy , a required str .\n\nskip , an int with a default value of 0 .\n\nlimit , an optional int .\n\nTip\n\nYou could also use Enum s the same way as with Path Parameters .",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.6054384227195817,
+          "fusion_score": 0.030621785881252923
+        },
+        {
+          "id": "official-v2-path-params-numeric-validations:ea84a4f809:9660-10160",
+          "doc_id": "official-v2-path-params-numeric-validations",
+          "start": 9660,
+          "end": 10160,
+          "text": "  results.update({\"size\": size})\n    return results\n\nRecap\n\nWith Query , Path (and others you haven't seen yet) you can declare metadata and string validations in the same ways as with Query Parameters and String Validations .\n\nAnd you can also declare numeric validations:\n\ngt : g reater t han\n\nge : g reater than or e qual\n\nlt : l ess t han\n\nle : l ess than or e qual\n\nNote\n\nQuery , Path , and other classes you will see later are subclasses of a common Param class.\n\nAll of them share the same par",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/path-params-numeric-validations/",
+          "vector_score": 0.636516244962605,
+          "fusion_score": 0.01639344262295082
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:18480-18980",
+          "doc_id": "official-v2-response-model",
+          "start": 18480,
+          "end": 18980,
+          "text": "5\n\n\nitems = {\n    \"foo\": {\"name\": \"Foo\", \"price\": 50.2},\n    \"bar\": {\"name\": \"Bar\", \"description\": \"The Bar fighters\", \"price\": 62, \"tax\": 20.2},\n    \"baz\": {\n        \"name\": \"Baz\",\n        \"description\": \"There goes my baz\",\n        \"price\": 50.2,\n        \"tax\": 10.5,\n    },\n}\n\n\n@app.get(\n    \"/items/{item_id}/name\",\n    response_model=Item,\n    response_model_include={\"name\", \"description\"},\n)\nasync def read_item_name(item_id: str):\n    return items[item_id]\n\n\n@app.get(\"/items/{item_id}/public",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.44294921244925667,
+          "fusion_score": 0.016129032258064516
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:5880-6380",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 5880,
+          "end": 6380,
+          "text": "error when the data is not valid, and document the parameter in the OpenAPI schema path operation .\n\nQuery as the default value or in Annotated\n\nKeep in mind that when using Query inside of Annotated you cannot use the default parameter for Query .\n\nInstead, use the actual default value of the function parameter. Otherwise, it would be inconsistent.\n\nFor example, this is not allowed:\n\nq: Annotated[str, Query(default=\"rick\")] = \"morty\"\n\n...because it's not clear if the default value should be \"ri",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.6044824917346666,
+          "fusion_score": 0.015873015873015872
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:14280-14780",
+          "doc_id": "official-v2-response-model",
+          "start": 14280,
+          "end": 14780,
+          "text": "stAPI application. 🤓\n\nResponse Model encoding parameters\n\nYour response model could have default values, like:\n\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\n\nclass Item(BaseModel):\n    name: str\n    description: str | None = None\n    price: float\n    tax: float = 10.5\n    tags: list[str] = []\n\n\nitems = {\n    \"foo\": {\"name\": \"Foo\", \"price\": 50.2},\n    \"bar\": {\"name\": \"Bar\", \"description\": \"The bartenders\", \"price\": 62, \"tax\": 20.2},\n    \"baz\": {\"name\": \"Baz\", \"desc",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.3873693700085529,
+          "fusion_score": 0.015873015873015872
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:3360-3860",
+          "doc_id": "official-v2-query-params",
+          "start": 3360,
+          "end": 3860,
+          "text": "def read_user_item(\n    user_id: int, item_id: str, q: str | None = None, short: bool = False\n):\n    item = {\"item_id\": item_id, \"owner_id\": user_id}\n    if q:\n        item.update({\"q\": q})\n    if not short:\n        item.update(\n            {\"description\": \"This is an amazing item that has a long description\"}\n        )\n    return item\n\nRequired query parameters\n\nWhen you declare a default value for non-path parameters (for now, we have only seen query parameters), then it is not required.\n\nIf y",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.6017860111255978,
+          "fusion_score": 0.015625
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:15540-16040",
+          "doc_id": "official-v2-response-model",
+          "start": 15540,
+          "end": 16040,
+          "text": "_model_exclude_unset=True :\n\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\n\nclass Item(BaseModel):\n    name: str\n    description: str | None = None\n    price: float\n    tax: float = 10.5\n    tags: list[str] = []\n\n\nitems = {\n    \"foo\": {\"name\": \"Foo\", \"price\": 50.2},\n    \"bar\": {\"name\": \"Bar\", \"description\": \"The bartenders\", \"price\": 62, \"tax\": 20.2},\n    \"baz\": {\"name\": \"Baz\", \"description\": None, \"price\": 50.2, \"tax\": 10.5, \"tags\": []},\n}\n\n\n@app.get(\"/items/{item",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.34590969446592734,
+          "fusion_score": 0.015625
+        },
+        {
+          "id": "official-v2-dependencies:c60006b30f:2100-2600",
+          "doc_id": "official-v2-dependencies",
+          "start": 2100,
+          "end": 2600,
+          "text": "s(common_parameters)):\n    return commons\n\nThat's it.\n\n2 lines .\n\nAnd it has the same shape and structure that all your path operation functions have.\n\nYou can think of it as a path operation function without the \"decorator\" (without the @app.get(\"/some-path\") ).\n\nAnd it can return anything you want.\n\nIn this case, this dependency expects:\n\nAn optional query parameter q that is a str .\n\nAn optional query parameter skip that is an int , and by default is 0 .\n\nAn optional query parameter limit tha",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+          "vector_score": 0.5975150578463526,
+          "fusion_score": 0.015384615384615385
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:19320-19820",
+          "doc_id": "official-v2-response-model",
+          "start": 19320,
+          "end": 19820,
+          "text": "e instead, FastAPI will still convert it to a set and it will work correctly:\n\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\n\nclass Item(BaseModel):\n    name: str\n    description: str | None = None\n    price: float\n    tax: float = 10.5\n\n\nitems = {\n    \"foo\": {\"name\": \"Foo\", \"price\": 50.2},\n    \"bar\": {\"name\": \"Bar\", \"description\": \"The Bar fighters\", \"price\": 62, \"tax\": 20.2},\n    \"baz\": {\n        \"name\": \"Baz\",\n        \"description\": \"There goes my baz\",\n        ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.35687693317428015,
+          "fusion_score": 0.015384615384615385
+        },
+        {
+          "id": "official-v2-query-params:d6085563d4:840-1340",
+          "doc_id": "official-v2-query-params",
+          "start": 840,
+          "end": 1340,
+          "text": "validated against it.\n\nAll the same processes that apply to path parameters also apply to query parameters:\n\nEditor support (obviously)\n\nData \"parsing\"\n\nData validation\n\nAutomatic documentation\n\nDefaults\n\nAs query parameters are not a fixed part of a path, they can be optional and can have default values.\n\nIn the example above they have default values of skip=0 and limit=10 .\n\nSo, going to the URL:\n\nhttp://127.0.0.1:8000/items/\n\nwould be the same as going to:\n\nhttp://127.0.0.1:8000/items/?skip=0",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params/",
+          "vector_score": 0.5895220535303027,
+          "fusion_score": 0.015151515151515152
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:16380-16880",
+          "doc_id": "official-v2-response-model",
+          "start": 16380,
+          "end": 16880,
+          "text": " be:\n\n{\n    \"name\": \"Foo\",\n    \"price\": 50.2\n}\n\nNote\n\nYou can also use:\n\nresponse_model_exclude_defaults=True\n\nresponse_model_exclude_none=True\n\nas described in the Pydantic docs for exclude_defaults and exclude_none .\n\nData with values for fields with defaults\n\nBut if your data has values for the model's fields with default values, like the item with ID bar :\n\n{\n    \"name\": \"Bar\",\n    \"description\": \"The bartenders\",\n    \"price\": 62,\n    \"tax\": 20.2\n}\n\nthey will be included in the response.\n\nDa",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.4600700946338565,
+          "fusion_score": 0.015151515151515152
+        },
+        {
+          "id": "official-v2-query-params-str-validations:5e64d09084:13440-13940",
+          "doc_id": "official-v2-query-params-str-validations",
+          "start": 13440,
+          "end": 13940,
+          "text": "one)):\n    query_items = {\"q\": q}\n    return query_items\n\nThen, with a URL like:\n\nhttp://localhost:8000/items/?q=foo&q=bar\n\nyou would receive the multiple q query parameters' values ( foo and bar ) in a Python list inside your path operation function , in the function parameter q .\n\nSo, the response to that URL would be:\n\n{\n  \"q\": [\n    \"foo\",\n    \"bar\"\n  ]\n}\n\nTip\n\nTo declare a query parameter with a type of list , like in the example above, you need to explicitly use Query , otherwise it would ",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/query-params-str-validations/",
+          "vector_score": 0.5878491269149071,
+          "fusion_score": 0.014925373134328358
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:14700-15200",
+          "doc_id": "official-v2-response-model",
+          "start": 14700,
+          "end": 15200,
+          "text": "\": \"The bartenders\", \"price\": 62, \"tax\": 20.2},\n    \"baz\": {\"name\": \"Baz\", \"description\": None, \"price\": 50.2, \"tax\": 10.5, \"tags\": []},\n}\n\n\n@app.get(\"/items/{item_id}\", response_model=Item, response_model_exclude_unset=True)\nasync def read_item(item_id: str):\n    return items[item_id]\n\ndescription: Union[str, None] = None (or str | None = None in Python 3.10) has a default of None .\n\ntax: float = 10.5 has a default of 10.5 .\n\ntags: List[str] = [] has a default of an empty list: [] .\n\nbut you mi",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.41976923779978204,
+          "fusion_score": 0.014925373134328358
+        },
+        {
+          "id": "official-v2-response-model:0f3c988f4c:16800-17300",
+          "doc_id": "official-v2-response-model",
+          "start": 16800,
+          "end": 17300,
+          "text": ",\n    \"price\": 62,\n    \"tax\": 20.2\n}\n\nthey will be included in the response.\n\nData with the same values as the defaults\n\nIf the data has the same values as the default ones, like the item with ID baz :\n\n{\n    \"name\": \"Baz\",\n    \"description\": None,\n    \"price\": 50.2,\n    \"tax\": 10.5,\n    \"tags\": []\n}\n\nFastAPI is smart enough (actually, Pydantic is smart enough) to realize that, even though description , tax , and tags have the same values as the defaults, they were set explicitly (instead of tak",
+          "source_url": "https://fastapi.tiangolo.com/tutorial/response-model/",
+          "vector_score": 0.4384022803806916,
+          "fusion_score": 0.014705882352941176
+        }
+      ],
+      "timings": {
+        "retrieval_ms": 41.417600001295796,
+        "rerank_ms": 0,
+        "generation_ms": 1277.2409999997762,
+        "qa_ms": 1318.6906000009913
+      },
+      "evidence_coverage": 0.8
+    },
+    "judgement": {
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "答案以知识库依据不足为由拒绝回答，但标准答案明确说明limit是查询参数且有默认值20，客户端省略时使用默认值，不报缺失错误。检索到的证据中已包含相关规则（如默认值使用示例），因此拒答不正确。",
+        "evidence_ids": [
+          "official-v2-query-params:d6085563d4:1260-1760"
+        ]
+      },
+      "usage": {
+        "input_tokens": 1243,
+        "output_tokens": 130
+      },
+      "model": "deepseek-v4-pro",
+      "raw": "{\n  \"accuracy\": 1,\n  \"completeness\": 1,\n  \"refused\": true,\n  \"unsupported\": false,\n  \"factually_incorrect\": null,\n  \"reason\": \"答案以知识库依据不足为由拒绝回答，但标准答案明确说明limit是查询参数且有默认值20，客户端省略时使用默认值，不报缺失错误。检索到的证据中已包含相关规则（如默认值使用示例），因此拒答不正确。\",\n  \"evidence_ids\": [\"official-v2-query-params:d6085563d4:1260-1760\"]\n}",
+      "judge_ms": 2758.6966999988363
+    },
+    "metrics": {
+      "recall": 0.0,
+      "hit": 0.0,
+      "all_evidence": 0.0,
+      "mrr": 0,
+      "hit1": 0.0,
+      "correct": 0.0,
+      "refusal_correct": null,
+      "task_success": 0.0,
+      "hallucination": 0.0,
+      "unsupported": 0.0,
+      "type": "reasoning",
+      "retrieval_ms": 41.417600001295796,
+      "rerank_ms": 0,
+      "generation_ms": 1277.2409999997762,
+      "qa_ms": 1318.6906000009913,
+      "judge_ms": 2758.6966999988363,
+      "generation_tokens": 786,
+      "judge_tokens": 1373,
+      "dialogue_cost": 0.00245526
+    },
+    "tags": [
+      "召回失败",
+      "排序问题"
+    ],
+    "note": "",
+    "human_review": null,
+    "attempts": 1,
+    "error": null,
+    "mode": "cloud"
+  }
+]
