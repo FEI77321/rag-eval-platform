@@ -63,11 +63,17 @@ def create_run(data: RunInput):
         if not questions:
             raise ValueError('评测集没有题目')
         documents = db.scalars(select(Document)).all()
+        if data.document_ids:
+            wanted = set(data.document_ids)
+            documents = [d for d in documents if d.id in wanted]
+            if len(documents) != len(wanted):
+                raise ValueError('所选语料文档不存在')
         if not documents:
             raise ValueError('知识库没有文档')
         if data.mode == 'cloud':
-            if any(q.payload['status'] != 'reviewed' for q in questions):
-                raise ValueError('正式云评测只接受逐题人工审核的reviewed题集')
+            accepted = {'reviewed', 'ai_reviewed'} if data.allow_ai_reviewed else {'reviewed'}
+            if any(q.payload['status'] not in accepted for q in questions):
+                raise ValueError('正式云评测只接受逐题人工审核的reviewed题集；AI辅助预评测须显式允许且题目状态为ai_reviewed')
             referenced = {e['doc_id'] for q in questions for e in q.payload['evidence']}
             if any(d.kind != 'real' for d in documents if d.id in referenced):
                 raise ValueError('正式题目引用了模拟语料，请改用真实来源')
@@ -106,7 +112,10 @@ def create_run(data: RunInput):
         rest = [c['id'] for c in cases if c['id'] not in sampled]
         sampled.extend(rng.sample(rest, sample_n - len(sampled)))
         snapshot = {'dataset_name': dataset.name, 'cases': cases, 'documents': docs, 'configs': configs,
+                    'evaluation_level': 'ai_preliminary' if data.mode == 'cloud' and any(c['status'] != 'reviewed' for c in cases) else 'human_reviewed' if data.mode == 'cloud' else 'demo',
+                    'human_reviewed_count': sum(c['status']=='reviewed' for c in cases),
                     'dataset_hash': digest(cases), 'corpus_hash': digest(docs), 'prices': prices,
+                    'cost_reference_note': settings.cost_reference_note,
                     'sample_seed': data.sample_seed, 'human_sample': sampled,
                     'prompt_version': PROMPT_VERSION, 'generation_prompt': GENERATION_PROMPT, 'judge_prompt': JUDGE_PROMPT,
                     'judge_model': settings.judge_model, 'embedding_model': settings.embedding_model,

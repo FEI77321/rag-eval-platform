@@ -132,3 +132,21 @@ async def test_transient_rate_limit_is_retried(monkeypatch):
         return 'success'
     assert await gateway.call(action)=='success'
     assert calls==2 and gateway.retries==1
+
+
+@pytest.mark.asyncio
+async def test_quota_failure_pauses_queue_and_keeps_saved_generation():
+    from app.providers import QuotaExhausted
+    small_dataset()
+    run_id=create_run(RunInput(dataset_id='small',config_ids=['config-c01'],concurrency=1))
+    claim_run('quota-test')
+    class NoBalanceJudge(Gateway):
+        async def judge(self,*args):
+            raise QuotaExhausted('云API返回HTTP 402；账户余额不足，请充值后断点续跑')
+    await execute_run(run_id,'quota-test',NoBalanceJudge('demo'))
+    with Session() as db:
+        assert db.get(Run,run_id).state=='paused'
+        items=db.scalars(select(Item).where(Item.run_id==run_id)).all()
+        failed=[i for i in items if i.state=='failed']
+        assert len(failed)==1 and failed[0].generation
+        assert sum(i.state=='pending' for i in items)==3

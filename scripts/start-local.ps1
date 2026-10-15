@@ -1,4 +1,4 @@
-param([string]$Python = 'python', [string]$ExistingPython = '', [switch]$SkipInstall)
+﻿param([string]$Python = 'python', [string]$ExistingPython = '', [switch]$SkipInstall)
 $ErrorActionPreference = 'Stop'
 $projectRoot = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $projectRoot

@@ -1,0 +1,3 @@
+﻿config_id,name,total,succeeded,success_coverage,recall,mrr,hit1,correct,refusal_correct,hallucination,hallucination_n,qa_ms,p95_ms,generation_tokens,judge_tokens,dialogue_cost,currency,cost_reference_note,score_agreement,agreement_n
+cloud-v2-01,R01 向量 K3,10,10,1.0,0.3888888888888889,0.14814814814814814,0.0,0.5555555555555556,1.0,0.0,10,1322.6820400006545,2170.5702900015235,759.2,1266.3,0.002285886,USD,配置单价×API实际用量的参考估算，不是账户账单；不含Embedding/Rerank及失败尝试。,,0
+cloud-v2-05,R05 混合检索,10,10,1.0,0.3333333333333333,0.18518518518518517,0.1111111111111111,0.4444444444444444,1.0,0.0,10,1190.1196900002105,1712.7227600019978,758.1,1297.8,0.0023394,USD,配置单价×API实际用量的参考估算，不是账户账单；不含Embedding/Rerank及失败尝试。,,0

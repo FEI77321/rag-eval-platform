@@ -44,3 +44,33 @@ def test_missing_and_invalid_records_have_unified_errors(client):
     assert client.get('/api/items/does-not-exist').status_code==404
     result=client.post('/api/configs',json={'name':'invalid','parameters':{'top_k':0}})
     assert result.status_code==422 and result.json()['code']==422
+
+
+def test_ai_preliminary_mode_is_explicit_and_never_claims_human_review(client,seeded,monkeypatch):
+    from app.models import Dataset,Question,Run
+    from app.settings import settings
+    from app.service import create_run
+    from app.schemas import RunInput
+    from sqlalchemy import select
+    from app.rag import digest
+    monkeypatch.setattr(settings,'generation_api_key','fixture-not-a-real-key')
+    monkeypatch.setattr(settings,'embedding_api_key','fixture-not-a-real-key')
+    with Session() as db:
+        text='This is a real-source test fixture used only in the isolated test database.'
+        db.add(Document(id='fixture-real',title='Source fixture',source_url='https://example.invalid',content=text,content_hash=digest(text),kind='real'))
+        db.add(Dataset(id='fixture-ai',name='AI fixture',description=''))
+        db.flush()
+        db.add(Question(id='fixture-ai-q',dataset_id='fixture-ai',case_id='Q',payload={
+            'id':'Q','question':'What is this source?','type':'fact','gold_answer':'test fixture',
+            'gold_doc':[],'gold_chunk_id':[],'evidence':[{'doc_id':'fixture-real','quote':text}],
+            'difficulty':'easy','status':'ai_reviewed','annotator':None,'reviewed_at':None,'annotation_note':'AI only'}))
+        db.commit()
+    import pytest
+    with pytest.raises(ValueError,match='人工审核'):
+        create_run(RunInput(dataset_id='fixture-ai',config_ids=['config-c01'],mode='cloud'))
+    run_id=create_run(RunInput(dataset_id='fixture-ai',config_ids=['config-c01'],mode='cloud',
+        allow_ai_reviewed=True,document_ids=['fixture-real']))
+    with Session() as db:
+        snapshot=db.get(Run,run_id).snapshot
+        assert snapshot['evaluation_level']=='ai_preliminary'
+        assert snapshot['human_reviewed_count']==0

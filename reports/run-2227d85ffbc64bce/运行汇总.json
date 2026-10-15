@@ -1,0 +1,251 @@
+{
+  "run": {
+    "id": "run-2227d85ffbc64bce",
+    "name": "10题×2配置 · Prompt v2回归",
+    "state": "completed",
+    "mode": "cloud",
+    "evaluation_level": "ai_preliminary",
+    "dataset_id": "dataset-ai-pilot-v2",
+    "dataset_name": "10题真实云试跑 · AI题集",
+    "total": 20,
+    "done": 20,
+    "counts": {
+      "succeeded": 20
+    },
+    "eta_seconds": 0.0,
+    "current_configs": [],
+    "created_at": "2026-10-15T07:05:15.895863Z",
+    "error": null,
+    "heartbeat": null,
+    "configs": [
+      {
+        "id": "cloud-v2-01",
+        "name": "R01 向量 K3",
+        "parameters": {
+          "chunk_strategy": "fixed",
+          "chunk_size": 500,
+          "chunk_overlap": 80,
+          "semantic_threshold": 0.55,
+          "retrieval": "vector",
+          "top_k": 3,
+          "candidate_k": 15,
+          "similarity_threshold": 0,
+          "rerank": false,
+          "rerank_top_n": 5,
+          "rrf_k": 60,
+          "model": "deepseek-flash",
+          "thinking": false,
+          "input_price": null,
+          "output_price": null,
+          "temperature": 0,
+          "max_tokens": 500,
+          "evidence_coverage": 0.8
+        }
+      },
+      {
+        "id": "cloud-v2-05",
+        "name": "R05 混合检索",
+        "parameters": {
+          "chunk_strategy": "fixed",
+          "chunk_size": 500,
+          "chunk_overlap": 80,
+          "semantic_threshold": 0.55,
+          "retrieval": "hybrid",
+          "top_k": 3,
+          "candidate_k": 15,
+          "similarity_threshold": 0,
+          "rerank": false,
+          "rerank_top_n": 5,
+          "rrf_k": 60,
+          "model": "deepseek-flash",
+          "thinking": false,
+          "input_price": null,
+          "output_price": null,
+          "temperature": 0,
+          "max_tokens": 500,
+          "evidence_coverage": 0.8
+        }
+      }
+    ],
+    "dataset_hash": "1b90bb780e4bdc742a6e9079dc43d68f58e2e9d59ca378f1383f90ba2884d093",
+    "human_sample": [
+      "AI-002",
+      "AI-001"
+    ],
+    "sample_seed": 42
+  },
+  "metrics": {
+    "mode": "cloud",
+    "evaluation_level": "ai_preliminary",
+    "rows": [
+      {
+        "config_id": "cloud-v2-01",
+        "total": 10,
+        "succeeded": 10,
+        "failed": 0,
+        "success_coverage": 1.0,
+        "p95_ms": 2170.5702900015235,
+        "recall": 0.3888888888888889,
+        "recall_n": 9,
+        "hit": 0.4444444444444444,
+        "hit_n": 9,
+        "all_evidence": 0.3333333333333333,
+        "all_evidence_n": 9,
+        "mrr": 0.14814814814814814,
+        "mrr_n": 9,
+        "hit1": 0.0,
+        "hit1_n": 9,
+        "correct": 0.5555555555555556,
+        "correct_n": 9,
+        "refusal_correct": 1.0,
+        "refusal_correct_n": 1,
+        "task_success": 0.6,
+        "task_success_n": 10,
+        "hallucination": 0.0,
+        "hallucination_n": 10,
+        "unsupported": 0.0,
+        "unsupported_n": 10,
+        "qa_ms": 1322.6820400006545,
+        "qa_ms_n": 10,
+        "judge_ms": 2471.0101799999393,
+        "judge_ms_n": 10,
+        "generation_tokens": 759.2,
+        "generation_tokens_n": 10,
+        "judge_tokens": 1266.3,
+        "judge_tokens_n": 10,
+        "dialogue_cost": 0.002285886,
+        "dialogue_cost_n": 10,
+        "agreement_n": 0,
+        "score_agreement": null,
+        "classification_agreement": null,
+        "per_type": {
+          "fact": {
+            "n": 4,
+            "success": 0.75
+          },
+          "reasoning": {
+            "n": 3,
+            "success": 0.3333333333333333
+          },
+          "multihop": {
+            "n": 2,
+            "success": 0.5
+          },
+          "refusal": {
+            "n": 1,
+            "success": 1.0
+          }
+        },
+        "name": "R01 向量 K3",
+        "parameters": {
+          "chunk_strategy": "fixed",
+          "chunk_size": 500,
+          "chunk_overlap": 80,
+          "semantic_threshold": 0.55,
+          "retrieval": "vector",
+          "top_k": 3,
+          "candidate_k": 15,
+          "similarity_threshold": 0,
+          "rerank": false,
+          "rerank_top_n": 5,
+          "rrf_k": 60,
+          "model": "deepseek-flash",
+          "thinking": false,
+          "input_price": null,
+          "output_price": null,
+          "temperature": 0,
+          "max_tokens": 500,
+          "evidence_coverage": 0.8
+        }
+      },
+      {
+        "config_id": "cloud-v2-05",
+        "total": 10,
+        "succeeded": 10,
+        "failed": 0,
+        "success_coverage": 1.0,
+        "p95_ms": 1712.7227600019978,
+        "recall": 0.3333333333333333,
+        "recall_n": 9,
+        "hit": 0.3333333333333333,
+        "hit_n": 9,
+        "all_evidence": 0.3333333333333333,
+        "all_evidence_n": 9,
+        "mrr": 0.18518518518518517,
+        "mrr_n": 9,
+        "hit1": 0.1111111111111111,
+        "hit1_n": 9,
+        "correct": 0.4444444444444444,
+        "correct_n": 9,
+        "refusal_correct": 1.0,
+        "refusal_correct_n": 1,
+        "task_success": 0.5,
+        "task_success_n": 10,
+        "hallucination": 0.0,
+        "hallucination_n": 10,
+        "unsupported": 0.0,
+        "unsupported_n": 10,
+        "qa_ms": 1190.1196900002105,
+        "qa_ms_n": 10,
+        "judge_ms": 2430.23490999949,
+        "judge_ms_n": 10,
+        "generation_tokens": 758.1,
+        "generation_tokens_n": 10,
+        "judge_tokens": 1297.8,
+        "judge_tokens_n": 10,
+        "dialogue_cost": 0.0023394,
+        "dialogue_cost_n": 10,
+        "agreement_n": 0,
+        "score_agreement": null,
+        "classification_agreement": null,
+        "per_type": {
+          "fact": {
+            "n": 4,
+            "success": 0.75
+          },
+          "reasoning": {
+            "n": 3,
+            "success": 0.3333333333333333
+          },
+          "multihop": {
+            "n": 2,
+            "success": 0.0
+          },
+          "refusal": {
+            "n": 1,
+            "success": 1.0
+          }
+        },
+        "name": "R05 混合检索",
+        "parameters": {
+          "chunk_strategy": "fixed",
+          "chunk_size": 500,
+          "chunk_overlap": 80,
+          "semantic_threshold": 0.55,
+          "retrieval": "hybrid",
+          "top_k": 3,
+          "candidate_k": 15,
+          "similarity_threshold": 0,
+          "rerank": false,
+          "rerank_top_n": 5,
+          "rrf_k": 60,
+          "model": "deepseek-flash",
+          "thinking": false,
+          "input_price": null,
+          "output_price": null,
+          "temperature": 0,
+          "max_tokens": 500,
+          "evidence_coverage": 0.8
+        }
+      }
+    ],
+    "currency": "USD",
+    "cost_reference_note": "配置单价×API实际用量的参考估算，不是账户账单；不含Embedding/Rerank及失败尝试。",
+    "api_calls": {
+      "embedding": 8,
+      "generation": 20,
+      "judge": 22
+    },
+    "failed_api_attempts": 2
+  }
+}

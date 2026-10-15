@@ -1,0 +1,40 @@
+{
+  "dataset_id": "dataset-ai-verified-v2",
+  "document_ids": [
+    "official-v2-first-steps",
+    "official-v2-path-params",
+    "official-v2-query-params",
+    "official-v2-body",
+    "official-v2-body-fields",
+    "official-v2-response-model",
+    "official-v2-handling-errors",
+    "official-v2-dependencies",
+    "official-v2-background-tasks",
+    "official-v2-testing",
+    "official-v2-query-params-str-validations",
+    "official-v2-body-nested-models",
+    "official-v2-body-multiple-params",
+    "official-v2-path-params-numeric-validations",
+    "official-v2-extra-data-types",
+    "official-v2-header-params",
+    "official-v2-cookie-params",
+    "official-v2-query-param-models",
+    "official-v2-response-status-code",
+    "official-v2-request-forms",
+    "official-v2-request-files",
+    "official-v2-debugging",
+    "official-v2-sql-databases"
+  ],
+  "config_ids": [
+    "cloud-v2-01",
+    "cloud-v2-02",
+    "cloud-v2-03",
+    "cloud-v2-04",
+    "cloud-v2-05",
+    "cloud-v2-06",
+    "cloud-v2-07"
+  ],
+  "human_reviewed": 0,
+  "status": "ai_reviewed",
+  "created_at": "2026-10-15T07:04:15.310438+00:00"
+}

@@ -53,11 +53,12 @@ def export(run_id, base='http://127.0.0.1:8010'):
                 text+='此次运行未观察到已归入本类的案例；正式验收案例待人工确认，未补造结果。\n\n'
             for d in examples:
                 text+=f"- `{d['case']['id']}` / `{d['config_id']}`：{d['case']['question']}；任务成功：{d['metrics']['task_success']}；Judge理由：{d['judgement']['scores']['reason']}\n"
-        (folder/'BadCase分析报告.md').write_text(text,encoding='utf-8')
+        (folder/'BadCase分析报告.md').write_text(text.rstrip()+'\n',encoding='utf-8')
         (folder/'BadCase样本.json').write_text(json.dumps(selected,ensure_ascii=False,indent=2),encoding='utf-8')
         text=f'# Judge一致性报告\n\n运行：{run_id}；随机种子：{run["sample_seed"]}；抽样题数：{len(run["human_sample"])}。\n\n'
+        rate=lambda value:'N/A' if value is None else f'{value:.4%}'
         for row in metrics['rows']:
-            text+=f"- {row['name']}：已配对评分{row['agreement_n']}条；分数完全一致率{row['score_agreement']}；二分类一致率{row['classification_agreement']}。\n"
+            text+=f"- {row['name']}：已配对评分{row['agreement_n']}条；分数完全一致率{rate(row['score_agreement'])}；二分类一致率{rate(row['classification_agreement'])}。\n"
         text+='\n尚无人工评分时一致率为N/A（JSON为null），不是0或100%。不一致案例需人工写明证据、规则与最终判断。\n'
         (folder/'Judge一致性报告.md').write_text(text,encoding='utf-8')
     print(folder)

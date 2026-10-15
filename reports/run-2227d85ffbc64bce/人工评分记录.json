@@ -1,0 +1,67 @@
+[
+  {
+    "case_id": "AI-001",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出FastAPI使用OpenAPI标准描述整套API结构，并提供了正确的证据引用。",
+      "evidence_ids": [
+        "official-v2-first-steps:299dfe78a0:3780-4280",
+        "official-v2-first-steps:299dfe78a0:4620-5120"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-002",
+    "config_id": "cloud-v2-01",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "The answer refuses to answer, claiming insufficient knowledge base evidence. However, the gold evidence clearly states that non-path parameters are automatically interpreted as query parameters, so the refusal is incorrect.",
+      "evidence_ids": []
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-001",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "答案准确指出FastAPI使用OpenAPI标准描述API结构，并正确说明会生成包含路径和参数的schema，与标准答案和证据一致。",
+      "evidence_ids": [
+        "official-v2-first-steps:299dfe78a0:3780-4280"
+      ]
+    },
+    "sampled": true
+  },
+  {
+    "case_id": "AI-002",
+    "config_id": "cloud-v2-05",
+    "human_review": null,
+    "judge": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reason": "标准答案明确指出未出现在路径模板中的普通参数默认解释为查询参数，且标准证据支持这一点。被评答案以知识库依据不足为由拒绝回答，但检索到的证据中虽未直接包含该信息，但标准证据明确存在，因此该拒答是错误的。",
+      "evidence_ids": []
+    },
+    "sampled": true
+  }
+]
