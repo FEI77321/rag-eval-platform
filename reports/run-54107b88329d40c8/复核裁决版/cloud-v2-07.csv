@@ -1,0 +1,2 @@
+﻿config_id,name,total,succeeded,task_success,correct,recall,mrr,refusal_correct,qa_ms,p95_ms,adjudication_count
+cloud-v2-07,R07 混合 + 百炼重排,100,100,0.74,0.7111111111111111,0.5,0.5314814814814816,1.0,5171.4302780000435,20297.534610000002,0

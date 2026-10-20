@@ -83,6 +83,14 @@ class IndexCache(Base):
     created_at: Mapped[object] = mapped_column(DateTime, default=utcnow)
 
 
+class Adjudication(Base):
+    """Append-only AI audit, separate from original Judge and human scores."""
+    __tablename__ = 'adjudications'
+    item_id: Mapped[str] = mapped_column(ForeignKey('run_items.id'), primary_key=True)
+    payload: Mapped[dict] = mapped_column(JSON)
+    created_at: Mapped[object] = mapped_column(DateTime, default=utcnow)
+
+
 class ApiCall(Base):
     __tablename__ = 'api_calls'
     id: Mapped[str] = mapped_column(String(64), primary_key=True)

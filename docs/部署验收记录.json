@@ -1,0 +1,52 @@
+{
+  "verified_at": "2026-10-20",
+  "deployment": "windows_native_local",
+  "url": "http://127.0.0.1:8010",
+  "health": "ok",
+  "database": "sqlite",
+  "api_and_worker": "running",
+  "existing_database_preserved": true,
+  "cloud_run_id": "run-54107b88329d40c8",
+  "original_judge_passes": 452,
+  "ai_adjudicated_passes": 447,
+  "original_bad_cases": 248,
+  "ai_adjudicated_bad_cases": 253,
+  "ai_adjudications": 5,
+  "adjudication_reviewer_kind": "ai",
+  "original_human_reviews": 140,
+  "human_vs_original_judge_classification_agreement": "135/140",
+  "human_review_data_preserved": true,
+  "clean_install_backend_tests": "24 passed",
+  "clean_install_frontend_tests": "3 passed",
+  "production_frontend_build": "passed",
+  "isolated_demo_run": {
+    "base": "http://127.0.0.1:8011",
+    "cases": 10,
+    "configs": 2,
+    "completed": 20,
+    "succeeded": 20,
+    "paid_api_calls": 0,
+    "restart_persistence_verified": true,
+    "attempts_after_restart": 1
+  },
+  "docker_compose_runtime": "not_verified_engine_unavailable",
+  "physical_second_computer": "not_verified",
+  "public_internet_deployment": "not_requested",
+  "api_verification": "passed",
+  "original_run_items_unchanged": 700,
+  "run_snapshot_unchanged": true,
+  "separate_ai_audit_rows": 5,
+  "original_vs_adjudicated_passes": [
+    452,
+    447
+  ],
+  "original_vs_adjudicated_bad_cases": [
+    248,
+    253
+  ],
+  "original_human_judge_classification_agreement": [
+    135,
+    140
+  ],
+  "detail_preserves_original_human_review": true
+}

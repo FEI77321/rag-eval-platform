@@ -2,13 +2,15 @@
 
 面向RAG配置对比的独立开发项目：知识库来源 → 人工标注题集 → 配置化检索与生成 → 批量评测 → 指标 / 证据 / Bad Case / 人工核验。
 
-**当前状态（2026-10-15）：工程已运行，23项测试通过，真实云服务全部连通；两轮10题×2配置试跑完成，100题×7配置真实云预评测700/700成功。** 候选R07与R03非拒答正确率均71.11%，按MRR选择R07；题集为AI辅助核验，尚需真实人工审核与评分。MySQL实测、远程PR和他人评审未完成。最新交付入口见`docs/交付入口.md`，不得把demo或AI审核记录当作正式验收。
+**当前状态（2026-10-20）：本机Windows部署已启动于`http://127.0.0.1:8010`；真实云端历史跑批700/700成功；FastAPI正式题集登记100/100 reviewed，题型为40/30/20/10。** 历史跑批早于题集审核登记，仍为`ai_preliminary`。140条原人工抽样评分保留；5条Judge分歧另有独立AI证据裁决，均判为错误拒答，未覆盖原人工或Judge记录。原Judge通过452/700，裁决后447/700；原人工对原Judge分类一致135/140。源码、复核记录和本机部署证据见`docs/交付入口.md`及`docs/验收状态.md`。课程不需要MySQL。
 
 ## 快速启动
 
-环境：Python 3.10+；Node 20.19+或22.12+（Vite 7）；正式部署MySQL 8。无需GPU。
+环境：Python 3.10+；Node 20.19+或22.12+（Vite 7）；默认使用SQLite，无需MySQL或GPU。
 
 Windows PowerShell，在项目目录执行：
+
+已完成部署时，可直接双击项目根目录的`打开平台.cmd`。首次自行安装可使用下方命令：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\start-local.ps1
@@ -16,7 +18,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\start-local.ps1
 
 脚本创建项目`.venv`、安装依赖、构建前端、复制`.env.example`（仅在`.env`不存在时）、初始化演示题集，并后台启动API与Worker。浏览器访问 `http://127.0.0.1:8010`，接口文档访问 `/docs`。脚本不写入云API密钥。
 
-停止：`powershell -ExecutionPolicy Bypass -File .\scripts\stop-local.ps1`。日志、SQLite数据库与PID记录都在忽略的`runtime/`。
+停止：双击`停止平台.cmd`，或执行`powershell -ExecutionPolicy Bypass -File .\scripts\stop-local.ps1`。日志、SQLite数据库与PID记录都在忽略的`runtime/`。
 
 手动启动（Windows）：
 
@@ -42,7 +44,8 @@ Linux/macOS使用`python -m venv .venv`、`.venv/bin/python`、`npm`及`cp .env.
 
 - 演示：12份合成办事文档、100道demo题（40/30/20/10）、9套候选配置。Hash向量、抽取式答案、规则Judge均明确标为demo。
 - 真实语料v2：`data/corpus_v2/`中的23份FastAPI官方教程，固定500/重叠80的基线共714块，详情见`docs/数据来源清单.md`。旧v1保留历史复现，运行使用document_ids明确隔离。
-- `data/eval_set_ai_verified.json`：100题来源约束的AI辅助核验题集，40事实/30推理/20多跳/10拒答；人工审核0题。`docs/AI题集核验记录.json`记录100题坐标检查与全文泄漏检查，`docs/人工标注复核底稿.csv`保留空白人工记录栏。
+- `data/eval_set.json`：截至2026-10-20从已审核题集导出的当前版本，100题状态均为reviewed；审核状态、人员和时间见`docs/题集人工审核记录.json`，质量检查见`docs/已审核题集质量统计.json`。逐题备注现说明人工审核已完成。
+- `data/eval_set_ai_verified.json`：原始AI辅助题集基线，保留作版本对照，不代表当前审核状态。`docs/AI题集核验记录.json`是早期自动校验记录，不等同于人工审核签署。
 - `data/eval_candidates.json`：100题待审核底稿。规则提取可能不自然或不符合推理/多跳定义，**每题须人工重写问题、提炼答案要点、检查题型和全部来源**。没有任何伪造审核人/时间。
 - 实际题集以数据库/界面为准；用题集导出接口取得正式`eval_set.json`与真实审核记录。草稿文件不是验收题集。
 
@@ -103,4 +106,4 @@ reports/      运行汇总与有限样本，完整原始结果保存在数据库
 runtime/      本地数据库、日志（不提交）
 ```
 
-验证：`python -m pytest -q`；`npm --prefix frontend run build`。MySQL部署见`docs/部署说明.md`，验收完成情况见`docs/验收状态.md`。版本控制使用main/dev/feature分支与Conventional Commits；独立开发不能虚构他人PR评审。
+验证：`python -m pytest -q`；`npm --prefix frontend run build`。部署与验收完成情况见`docs/部署说明.md`和`docs/验收状态.md`。版本控制使用main/dev/feature分支与Conventional Commits；独立开发不能虚构他人PR评审。

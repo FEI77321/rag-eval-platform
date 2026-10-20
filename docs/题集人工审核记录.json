@@ -1,0 +1,777 @@
+{
+  "dataset_id": "dataset-ai-verified-v2",
+  "recorded_at": "2026-10-20T02:04:29.597995+00:00",
+  "status_counts": {
+    "reviewed": 100
+  },
+  "type_counts": {
+    "fact": 40,
+    "reasoning": 30,
+    "multihop": 20,
+    "refusal": 10
+  },
+  "reviewer_counts": {
+    "张腾飞": 25,
+    "曹索拉": 25,
+    "段鹤鸣": 25,
+    "王一博": 25
+  },
+  "quality": {
+    "total": 100,
+    "types": {
+      "fact": 40,
+      "reasoning": 30,
+      "multihop": 20,
+      "refusal": 10
+    },
+    "statuses": {
+      "reviewed": 100
+    },
+    "average_question_length": 37.22,
+    "sources": {
+      "official-v2-first-steps": 2,
+      "official-v2-query-params": 11,
+      "official-v2-body": 16,
+      "official-v2-body-fields": 3,
+      "official-v2-response-model": 15,
+      "official-v2-handling-errors": 7,
+      "official-v2-dependencies": 7,
+      "official-v2-background-tasks": 10,
+      "official-v2-body-nested-models": 10,
+      "official-v2-request-forms": 10,
+      "official-v2-request-files": 7,
+      "official-v2-header-params": 8,
+      "official-v2-extra-data-types": 10,
+      "official-v2-path-params-numeric-validations": 3,
+      "official-v2-response-status-code": 5,
+      "official-v2-path-params": 7,
+      "official-v2-body-multiple-params": 5,
+      "official-v2-query-params-str-validations": 4
+    },
+    "leakage_matches": [],
+    "leakage_method": "去除空白、casefold后完整题目字符串包含检查；不是语义泄漏证明"
+  },
+  "content_comparison": {
+    "baseline": "data/eval_set_ai_verified.json",
+    "current_export": "data/eval_set.json",
+    "substantive_fields_unchanged": true,
+    "fields_compared": [
+      "id",
+      "question",
+      "type",
+      "gold_answer",
+      "gold_doc",
+      "gold_chunk_id",
+      "evidence",
+      "difficulty"
+    ]
+  },
+  "annotation_note_update": {
+    "updated_count": 100,
+    "note": "人工审核已完成，具体审核人及时间见本题审核字段。",
+    "authorized_by_user": true,
+    "conflict_resolved": true
+  },
+  "questions": [
+    {
+      "id": "AI-001",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:33:57.065Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-002",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:34:16.430Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-003",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:34:25.163Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-004",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:35:39.594Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-005",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:14.551937Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-006",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:35:56.547Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-007",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:36:22.744Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-008",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:36:32.073Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-009",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:44.601Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-010",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:44.736Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-011",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:44.875Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-012",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.035Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-013",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.190Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-014",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.326Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-015",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.473Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-016",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.629Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-017",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.792Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-018",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:45.949Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-019",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:46.106Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-020",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:46.265Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-021",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:46.422Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-022",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:46.580Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-023",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:46.734Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-024",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:46.873Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-025",
+      "status": "reviewed",
+      "annotator": "张腾飞",
+      "reviewed_at": "2026-10-20T01:37:47.033Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-026",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:47.195Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-027",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:47.352Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-028",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:47.507Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-029",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:47.662Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-030",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:47.801Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-031",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:47.942Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-032",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:48.104Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-033",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:48.243Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-034",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:48.399Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-035",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:48.538Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-036",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:48.702Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-037",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:48.861Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-038",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.017Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-039",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.170Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-040",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.326Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-041",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.486Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-042",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.645Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-043",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.781Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-044",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:49.919Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-045",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:50.070Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-046",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:50.207Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-047",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:50.355Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-048",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:50.512Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-049",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:50.668Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-050",
+      "status": "reviewed",
+      "annotator": "曹索拉",
+      "reviewed_at": "2026-10-20T01:37:50.828Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-051",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:50.984Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-052",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:51.126Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-053",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:51.268Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-054",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:51.409Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-055",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:51.572Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-056",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:51.729Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-057",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:51.870Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-058",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.026Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-059",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.167Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-060",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.326Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-061",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.467Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-062",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.610Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-063",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.751Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-064",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:52.894Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-065",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.035Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-066",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.176Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-067",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.317Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-068",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.475Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-069",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.631Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-070",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.786Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-071",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:53.949Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-072",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:54.103Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-073",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:54.245Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-074",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:54.400Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-075",
+      "status": "reviewed",
+      "annotator": "段鹤鸣",
+      "reviewed_at": "2026-10-20T01:37:54.561Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-076",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:54.717Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-077",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:54.875Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-078",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.032Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-079",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.173Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-080",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.314Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-081",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.478Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-082",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.631Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-083",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.775Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-084",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:55.919Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-085",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.084Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-086",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.240Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-087",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.381Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-088",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.523Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-089",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.663Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-090",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.805Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-091",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:56.964Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-092",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:57.122Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-093",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:57.262Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-094",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:57.417Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-095",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:57.556Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-096",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:57.691Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-097",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:57.858Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-098",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:58.002Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-099",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:58.153Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    },
+    {
+      "id": "AI-100",
+      "status": "reviewed",
+      "annotator": "王一博",
+      "reviewed_at": "2026-10-20T01:37:58.310Z",
+      "annotation_note": "人工审核已完成，具体审核人及时间见本题审核字段。"
+    }
+  ]
+}

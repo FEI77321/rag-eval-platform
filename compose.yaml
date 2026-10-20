@@ -1,39 +1,32 @@
+x-runtime: &runtime
+  image: rag-eval-platform:local
+  build: .
+  env_file: .env
+  environment:
+    DATABASE_URL: sqlite:////app/runtime/platform.db
+    MYSQL_HOST: ''
+    PROVIDER_MODE: demo
+  volumes:
+    - rag_runtime:/app/runtime
+
 services:
-  mysql:
-    image: mysql:8.0
-    environment:
-      MYSQL_DATABASE: ${MYSQL_DATABASE:-rag_eval}
-      MYSQL_USER: ${MYSQL_USER:-rag}
-      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?请在.env填写MYSQL_PASSWORD}
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?请在.env填写MYSQL_ROOT_PASSWORD}
-    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    volumes:
-      - mysql_data:/var/lib/mysql
-    healthcheck:
-      test: [CMD-SHELL, 'mysqladmin ping -h localhost --silent']
-      interval: 5s
-      timeout: 5s
-      retries: 30
+  init:
+    <<: *runtime
+    command: [python, -m, app.seed]
   api:
-    build: .
-    env_file: .env
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_PORT: '3306'
+    <<: *runtime
+    depends_on:
+      init:
+        condition: service_completed_successfully
     ports:
       - '127.0.0.1:8010:8010'
-    depends_on:
-      mysql:
-        condition: service_healthy
+    restart: unless-stopped
   worker:
-    build: .
+    <<: *runtime
     command: [python, -m, app.worker]
-    env_file: .env
-    environment:
-      MYSQL_HOST: mysql
-      MYSQL_PORT: '3306'
     depends_on:
-      mysql:
-        condition: service_healthy
+      init:
+        condition: service_completed_successfully
+    restart: unless-stopped
 volumes:
-  mysql_data:
+  rag_runtime:

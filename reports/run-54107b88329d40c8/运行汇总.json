@@ -253,9 +253,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.0022935024,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 0.9,
         "per_type": {
           "fact": {
             "n": 40,
@@ -333,9 +333,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.0013930410000000002,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 1.0,
         "per_type": {
           "fact": {
             "n": 40,
@@ -413,9 +413,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.0031058976,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 1.0,
         "per_type": {
           "fact": {
             "n": 40,
@@ -493,9 +493,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.002269512,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 0.95,
         "per_type": {
           "fact": {
             "n": 40,
@@ -573,9 +573,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.0023438352,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 0.95,
         "per_type": {
           "fact": {
             "n": 40,
@@ -653,9 +653,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.0022029066,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 0.95,
         "per_type": {
           "fact": {
             "n": 40,
@@ -733,9 +733,9 @@
         "judge_tokens_n": 100,
         "dialogue_cost": 0.0025173228000000005,
         "dialogue_cost_n": 100,
-        "agreement_n": 0,
-        "score_agreement": null,
-        "classification_agreement": null,
+        "agreement_n": 20,
+        "score_agreement": 1.0,
+        "classification_agreement": 1.0,
         "per_type": {
           "fact": {
             "n": 40,

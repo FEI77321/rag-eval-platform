@@ -1,0 +1,2 @@
+﻿config_id,name,total,succeeded,task_success,correct,recall,mrr,refusal_correct,qa_ms,p95_ms,adjudication_count
+cloud-v2-04,R04 递归分块,100,100,0.66,0.6222222222222222,0.37222222222222223,0.34444444444444444,1.0,3069.4219480000543,20229.199645000153,1
