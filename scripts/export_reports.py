@@ -59,7 +59,7 @@ def export(run_id, base='http://127.0.0.1:8010'):
         rate=lambda value:'N/A' if value is None else f'{value:.4%}'
         for row in metrics['rows']:
             text+=f"- {row['name']}：已配对评分{row['agreement_n']}条；分数完全一致率{rate(row['score_agreement'])}；二分类一致率{rate(row['classification_agreement'])}。\n"
-        text+='\n尚无人工评分时一致率为N/A（JSON为null），不是0或100%。不一致案例需人工写明证据、规则与最终判断。\n'
+        text+='\n一致率按各配置下实际配对的人工评分计算；N/A表示没有配对评分。分歧案例仍需人工记录证据、评分规则与最终裁决。\n'
         (folder/'Judge一致性报告.md').write_text(text,encoding='utf-8')
     print(folder)
 

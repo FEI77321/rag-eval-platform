@@ -1,0 +1,2 @@
+﻿config_id,name,total,succeeded,task_success,correct,recall,mrr,refusal_correct,qa_ms,p95_ms,adjudication_count
+cloud-v2-05,R05 混合检索,100,100,0.62,0.5777777777777777,0.4,0.4129629629629629,1.0,2899.8521719999912,18429.1641850019,1

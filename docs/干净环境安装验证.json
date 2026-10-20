@@ -1,0 +1,94 @@
+{
+  "kind": "same_machine_clean_isolated_install",
+  "target": "C:\\Users\\21922\\Documents\\Codex\\2026-10-14\\new-chat\\work\\clean-deploy-20261020-r1",
+  "fresh_venv": true,
+  "fresh_node_modules": true,
+  "new_database": true,
+  "credentials_copied": false,
+  "steps": [
+    {
+      "name": "create_venv",
+      "command": [
+        "C:\\Users\\21922\\Documents\\Codex\\2026-10-14\\new-chat\\work\\rag-venv\\Scripts\\python.exe",
+        "-m",
+        "venv",
+        "C:\\Users\\21922\\Documents\\Codex\\2026-10-14\\new-chat\\work\\clean-deploy-20261020-r1\\.venv"
+      ],
+      "returncode": 0,
+      "seconds": 21.0
+    },
+    {
+      "name": "pip_install",
+      "command": [
+        "C:\\Users\\21922\\Documents\\Codex\\2026-10-14\\new-chat\\work\\clean-deploy-20261020-r1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "requirements-lock.txt",
+        "--disable-pip-version-check"
+      ],
+      "returncode": 0,
+      "seconds": 188.49
+    },
+    {
+      "name": "pip_check",
+      "command": [
+        "C:\\Users\\21922\\Documents\\Codex\\2026-10-14\\new-chat\\work\\clean-deploy-20261020-r1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "returncode": 0,
+      "seconds": 1.79
+    },
+    {
+      "name": "backend_tests",
+      "command": [
+        "C:\\Users\\21922\\Documents\\Codex\\2026-10-14\\new-chat\\work\\clean-deploy-20261020-r1\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "seconds": 29.38
+    },
+    {
+      "name": "npm_ci",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "npm.cmd",
+        "ci"
+      ],
+      "returncode": 0,
+      "seconds": 42.08
+    },
+    {
+      "name": "frontend_tests",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "npm.cmd",
+        "test"
+      ],
+      "returncode": 0,
+      "seconds": 0.92
+    },
+    {
+      "name": "frontend_build",
+      "command": [
+        "cmd.exe",
+        "/d",
+        "/c",
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "returncode": 0,
+      "seconds": 8.31
+    }
+  ]
+}

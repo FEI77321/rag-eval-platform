@@ -1,0 +1,2 @@
+﻿config_id,name,total,succeeded,task_success,correct,recall,mrr,refusal_correct,qa_ms,p95_ms,adjudication_count
+cloud-v2-06,R06 向量阈值0.4,100,100,0.61,0.5666666666666667,0.4444444444444444,0.42592592592592593,1.0,1922.9886189998797,2902.219279997553,1

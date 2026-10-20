@@ -1,0 +1,2 @@
+﻿config_id,name,total,succeeded,task_success,correct,recall,mrr,refusal_correct,qa_ms,p95_ms,adjudication_count
+cloud-v2-01,R01 向量 K3,100,100,0.65,0.6111111111111112,0.4444444444444444,0.42592592592592593,1.0,4031.157815999977,14528.779419997225,2

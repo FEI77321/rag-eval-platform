@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "message": "ok",
+  "data": {
+    "total": 100,
+    "types": {
+      "fact": 40,
+      "reasoning": 30,
+      "multihop": 20,
+      "refusal": 10
+    },
+    "statuses": {
+      "reviewed": 100
+    },
+    "average_question_length": 37.22,
+    "sources": {
+      "official-v2-first-steps": 2,
+      "official-v2-query-params": 11,
+      "official-v2-body": 16,
+      "official-v2-body-fields": 3,
+      "official-v2-response-model": 15,
+      "official-v2-handling-errors": 7,
+      "official-v2-dependencies": 7,
+      "official-v2-background-tasks": 10,
+      "official-v2-body-nested-models": 10,
+      "official-v2-request-forms": 10,
+      "official-v2-request-files": 7,
+      "official-v2-header-params": 8,
+      "official-v2-extra-data-types": 10,
+      "official-v2-path-params-numeric-validations": 3,
+      "official-v2-response-status-code": 5,
+      "official-v2-path-params": 7,
+      "official-v2-body-multiple-params": 5,
+      "official-v2-query-params-str-validations": 4
+    },
+    "leakage_matches": [],
+    "leakage_method": "去除空白、casefold后完整题目字符串包含检查；不是语义泄漏证明"
+  }
+}

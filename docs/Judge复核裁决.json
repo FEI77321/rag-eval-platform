@@ -1,0 +1,1260 @@
+{
+  "run_id": "run-54107b88329d40c8",
+  "reviewer_kind": "ai",
+  "count": 5,
+  "records": [
+    {
+      "item_id": "item-e0a81b3ddbce4095",
+      "run_id": "run-54107b88329d40c8",
+      "case_id": "AI-057",
+      "config_id": "cloud-v2-01",
+      "reviewer": "Codex（AI复核裁决）",
+      "reviewer_kind": "ai",
+      "method": "ai_evidence_adjudication",
+      "reviewed_at": "2026-10-20T02:39:10.260380Z",
+      "source_hash": "1b70ea66bcab17590c4169abb09b1444d01ce56a773572ca17c14f7d29c76eaa",
+      "question": "给删除接口声明status_code=204之后，还返回一个JSON说明对象是否合适？",
+      "gold_answer": "不合适，204表示无内容，响应不应有body。",
+      "evidence": [
+        {
+          "doc_id": "official-v2-response-status-code",
+          "quote": "The same way you can specify a response model, you can also declare the HTTP status code used for the response with the parameter status_code in any of the path operations :",
+          "start": 22,
+          "end": 195
+        },
+        {
+          "doc_id": "official-v2-response-status-code",
+          "quote": "200 - 299 are for \"Successful\" responses. These are the ones you would use the most. 200 is the default status code, which means everything was \"OK\". Another example would be 201 , \"Created\". It is commonly used after creating a new record in the database. A special case is 204 , \"No Content\".  This response is used when there is no content to return to the client, and so the response must not have a body.",
+          "start": 1473,
+          "end": 1882
+        }
+      ],
+      "answer": "知识库依据不足，无法回答。",
+      "original_judge": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": false,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "标准答案明确指出204表示无内容，响应不应有body，因此返回JSON不合适。标准证据中明确说明204响应必须没有body。被评答案与标准答案一致，且完全基于标准证据。",
+        "evidence_ids": [
+          "official-v2-response-status-code:3592b8e56a:0-500",
+          "official-v2-response-status-code:3592b8e56a:420-920"
+        ]
+      },
+      "original_human_review": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reviewer": "曹索拉",
+        "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+        "reviewed_at": "2026-10-20T02:10:10.890385Z"
+      },
+      "original_metrics": {
+        "recall": 0.5,
+        "hit": 1.0,
+        "all_evidence": 0.0,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "correct": 1.0,
+        "refusal_correct": null,
+        "task_success": 1.0,
+        "hallucination": 0.0,
+        "unsupported": 0.0,
+        "type": "reasoning",
+        "retrieval_ms": 152.83780000027036,
+        "rerank_ms": 0,
+        "generation_ms": 974.1813000000548,
+        "qa_ms": 1127.0500999999058,
+        "judge_ms": 3690.4069000011077,
+        "generation_tokens": 654,
+        "judge_tokens": 1278,
+        "dialogue_cost": 0.0022494000000000004
+      },
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": false,
+        "reason": "原始回答仅为“知识库依据不足，无法回答。”，没有给出标准答案所要求的事实或推理。题目有可追溯官方证据，因此属于错误拒答，准确性与完整性均为1分。Judge理由声称回答了具体内容，与保存的原答不匹配。"
+      },
+      "decision": "incorrect_refusal",
+      "task_success": false,
+      "scope": "独立AI裁决层；不改写原始Judge、人工评分或任务快照。"
+    },
+    {
+      "item_id": "item-07de00ea8ed7416c",
+      "run_id": "run-54107b88329d40c8",
+      "case_id": "AI-057",
+      "config_id": "cloud-v2-06",
+      "reviewer": "Codex（AI复核裁决）",
+      "reviewer_kind": "ai",
+      "method": "ai_evidence_adjudication",
+      "reviewed_at": "2026-10-20T02:39:10.262107Z",
+      "source_hash": "78236e9dd429fe2291fed23b7b0ce604143eaba2a10b66378cde520ac9894dad",
+      "question": "给删除接口声明status_code=204之后，还返回一个JSON说明对象是否合适？",
+      "gold_answer": "不合适，204表示无内容，响应不应有body。",
+      "evidence": [
+        {
+          "doc_id": "official-v2-response-status-code",
+          "quote": "The same way you can specify a response model, you can also declare the HTTP status code used for the response with the parameter status_code in any of the path operations :",
+          "start": 22,
+          "end": 195
+        },
+        {
+          "doc_id": "official-v2-response-status-code",
+          "quote": "200 - 299 are for \"Successful\" responses. These are the ones you would use the most. 200 is the default status code, which means everything was \"OK\". Another example would be 201 , \"Created\". It is commonly used after creating a new record in the database. A special case is 204 , \"No Content\".  This response is used when there is no content to return to the client, and so the response must not have a body.",
+          "start": 1473,
+          "end": 1882
+        }
+      ],
+      "answer": "知识库依据不足，无法回答。",
+      "original_judge": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": false,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "标准答案明确指出204表示无内容，响应不应有body，因此返回JSON不合适。标准证据支持这一点。被评答案正确回答了问题，且与标准答案一致。",
+        "evidence_ids": [
+          "official-v2-response-status-code:3592b8e56a:0-500",
+          "official-v2-response-status-code:3592b8e56a:420-920"
+        ]
+      },
+      "original_human_review": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reviewer": "曹索拉",
+        "note": "",
+        "reviewed_at": "2026-10-20T02:02:04.497556Z"
+      },
+      "original_metrics": {
+        "recall": 0.5,
+        "hit": 1.0,
+        "all_evidence": 0.0,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "correct": 1.0,
+        "refusal_correct": null,
+        "task_success": 1.0,
+        "hallucination": 0.0,
+        "unsupported": 0.0,
+        "type": "reasoning",
+        "retrieval_ms": 1.6163000000233296,
+        "rerank_ms": 0,
+        "generation_ms": 542.2451999984332,
+        "qa_ms": 543.8904000002367,
+        "judge_ms": 2795.3568999982963,
+        "generation_tokens": 654,
+        "judge_tokens": 1271,
+        "dialogue_cost": 0.00222168
+      },
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": false,
+        "reason": "原始回答仅为“知识库依据不足，无法回答。”，没有给出标准答案所要求的事实或推理。题目有可追溯官方证据，因此属于错误拒答，准确性与完整性均为1分。Judge理由声称回答了具体内容，与保存的原答不匹配。"
+      },
+      "decision": "incorrect_refusal",
+      "task_success": false,
+      "scope": "独立AI裁决层；不改写原始Judge、人工评分或任务快照。"
+    },
+    {
+      "item_id": "item-906a569ff89a4d42",
+      "run_id": "run-54107b88329d40c8",
+      "case_id": "AI-067",
+      "config_id": "cloud-v2-01",
+      "reviewer": "Codex（AI复核裁决）",
+      "reviewer_kind": "ai",
+      "method": "ai_evidence_adjudication",
+      "reviewed_at": "2026-10-20T02:39:10.262996Z",
+      "source_hash": "aed10c7b5bfc90a82d8f9dec030238448e257d6bc61717953dafddce8ac57903",
+      "question": "请求字段错误与返回模型字段错误，都应描述为“客户端没传对参数”吗？",
+      "gold_answer": "不能。请求错误是输入校验；返回模型错误表明服务端代码返回了无效数据。",
+      "evidence": [
+        {
+          "doc_id": "official-v2-response-model",
+          "quote": "Validate the returned data. If the data is invalid (e.g. you are missing a field), it means that your app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.",
+          "start": 830,
+          "end": 1158
+        },
+        {
+          "doc_id": "official-v2-body",
+          "quote": "Validate the data. If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.",
+          "start": 2867,
+          "end": 3006
+        }
+      ],
+      "answer": "知识库依据不足，无法回答。",
+      "original_judge": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": false,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "答案正确区分了请求字段错误（客户端输入校验）与返回模型字段错误（服务端代码问题），与标准答案一致，并引用了相关证据。",
+        "evidence_ids": [
+          "official-v2-response-model:0f3c988f4c:840-1340"
+        ]
+      },
+      "original_human_review": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reviewer": "曹索拉",
+        "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+        "reviewed_at": "2026-10-20T02:10:10.923662Z"
+      },
+      "original_metrics": {
+        "recall": 0.5,
+        "hit": 1.0,
+        "all_evidence": 0.0,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "correct": 1.0,
+        "refusal_correct": null,
+        "task_success": 1.0,
+        "hallucination": 0.0,
+        "unsupported": 0.0,
+        "type": "reasoning",
+        "retrieval_ms": 143.37850000083563,
+        "rerank_ms": 0,
+        "generation_ms": 761.7491999990307,
+        "qa_ms": 905.1532999983465,
+        "judge_ms": 1895.5818000031286,
+        "generation_tokens": 608,
+        "judge_tokens": 1181,
+        "dialogue_cost": 0.00203364
+      },
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": false,
+        "reason": "原始回答仅为“知识库依据不足，无法回答。”，没有给出标准答案所要求的事实或推理。题目有可追溯官方证据，因此属于错误拒答，准确性与完整性均为1分。Judge理由声称回答了具体内容，与保存的原答不匹配。"
+      },
+      "decision": "incorrect_refusal",
+      "task_success": false,
+      "scope": "独立AI裁决层；不改写原始Judge、人工评分或任务快照。"
+    },
+    {
+      "item_id": "item-95f80d2a50da46ab",
+      "run_id": "run-54107b88329d40c8",
+      "case_id": "AI-067",
+      "config_id": "cloud-v2-05",
+      "reviewer": "Codex（AI复核裁决）",
+      "reviewer_kind": "ai",
+      "method": "ai_evidence_adjudication",
+      "reviewed_at": "2026-10-20T02:39:10.263886Z",
+      "source_hash": "1513b4e37dcccd3546bdedc3b8f89a91976f323b0e9a027720f501877a478163",
+      "question": "请求字段错误与返回模型字段错误，都应描述为“客户端没传对参数”吗？",
+      "gold_answer": "不能。请求错误是输入校验；返回模型错误表明服务端代码返回了无效数据。",
+      "evidence": [
+        {
+          "doc_id": "official-v2-response-model",
+          "quote": "Validate the returned data. If the data is invalid (e.g. you are missing a field), it means that your app code is broken, not returning what it should, and it will return a server error instead of returning incorrect data. This way you and your clients can be certain that they will receive the data and the data shape expected.",
+          "start": 830,
+          "end": 1158
+        },
+        {
+          "doc_id": "official-v2-body",
+          "quote": "Validate the data. If the data is invalid, it will return a nice and clear error, indicating exactly where and what was the incorrect data.",
+          "start": 2867,
+          "end": 3006
+        }
+      ],
+      "answer": "知识库依据不足，无法回答。",
+      "original_judge": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": false,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "答案正确区分了请求字段错误（客户端输入校验）与返回模型字段错误（服务端代码问题），与标准答案一致。",
+        "evidence_ids": [
+          "official-v2-response-model:0f3c988f4c:840-1340"
+        ]
+      },
+      "original_human_review": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reviewer": "段鹤鸣",
+        "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+        "reviewed_at": "2026-10-20T02:10:10.943989Z"
+      },
+      "original_metrics": {
+        "recall": 0.5,
+        "hit": 1.0,
+        "all_evidence": 0.0,
+        "mrr": 0.5,
+        "hit1": 0.0,
+        "correct": 1.0,
+        "refusal_correct": null,
+        "task_success": 1.0,
+        "hallucination": 0.0,
+        "unsupported": 0.0,
+        "type": "reasoning",
+        "retrieval_ms": 8.663199998409254,
+        "rerank_ms": 0,
+        "generation_ms": 784.3117999982496,
+        "qa_ms": 792.9848999992828,
+        "judge_ms": 1887.2918000015488,
+        "generation_tokens": 608,
+        "judge_tokens": 1199,
+        "dialogue_cost": 0.00204156
+      },
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": false,
+        "reason": "原始回答仅为“知识库依据不足，无法回答。”，没有给出标准答案所要求的事实或推理。题目有可追溯官方证据，因此属于错误拒答，准确性与完整性均为1分。Judge理由声称回答了具体内容，与保存的原答不匹配。"
+      },
+      "decision": "incorrect_refusal",
+      "task_success": false,
+      "scope": "独立AI裁决层；不改写原始Judge、人工评分或任务快照。"
+    },
+    {
+      "item_id": "item-0e6eedf96d6d4b8a",
+      "run_id": "run-54107b88329d40c8",
+      "case_id": "AI-078",
+      "config_id": "cloud-v2-04",
+      "reviewer": "Codex（AI复核裁决）",
+      "reviewer_kind": "ai",
+      "method": "ai_evidence_adjudication",
+      "reviewed_at": "2026-10-20T02:39:10.264620Z",
+      "source_hash": "aef85f70fbb0191e89b336f5fff6301da5918e1380390c22a406cd44b892cbe1",
+      "question": "接口响应模型会过滤内部字段，开发者以为返回空字典就能满足204。沿着“输出模型→HTTP状态语义”的链条，这个判断为什么不充分？",
+      "gold_answer": "响应模型过滤仍是在组织响应数据；204要求根本没有响应体，空JSON对象也不是无body。",
+      "evidence": [
+        {
+          "doc_id": "official-v2-response-status-code",
+          "quote": "200 - 299 are for \"Successful\" responses. These are the ones you would use the most. 200 is the default status code, which means everything was \"OK\". Another example would be 201 , \"Created\". It is commonly used after creating a new record in the database. A special case is 204 , \"No Content\".  This response is used when there is no content to return to the client, and so the response must not have a body.",
+          "start": 1473,
+          "end": 1882
+        },
+        {
+          "doc_id": "official-v2-response-model",
+          "quote": "It will limit and filter the output data to what is defined in the return type. This is particularly important for security , we'll see more of that below.",
+          "start": 1466,
+          "end": 1621
+        }
+      ],
+      "answer": "知识库依据不足，无法回答。",
+      "original_judge": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": false,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reason": "答案准确指出响应模型过滤仍是在组织响应数据，而204要求无响应体，空JSON对象也不是无body，与标准答案一致。",
+        "evidence_ids": [
+          "official-v2-response-status-code:8da628ef71:791-1237",
+          "official-v2-response-model:e59eaeab55:807-1270"
+        ]
+      },
+      "original_human_review": {
+        "accuracy": 5,
+        "completeness": 5,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": null,
+        "reviewer": "段鹤鸣",
+        "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+        "reviewed_at": "2026-10-20T02:10:11.067040Z"
+      },
+      "original_metrics": {
+        "recall": 0.0,
+        "hit": 0.0,
+        "all_evidence": 0.0,
+        "mrr": 0,
+        "hit1": 0.0,
+        "correct": 1.0,
+        "refusal_correct": null,
+        "task_success": 1.0,
+        "hallucination": 0.0,
+        "unsupported": 0.0,
+        "type": "multihop",
+        "retrieval_ms": 0.6469999971159268,
+        "rerank_ms": 0,
+        "generation_ms": 768.0887000024086,
+        "qa_ms": 768.7442999995255,
+        "judge_ms": 2621.4518999986467,
+        "generation_tokens": 593,
+        "judge_tokens": 1212,
+        "dialogue_cost": 0.0021043800000000003
+      },
+      "scores": {
+        "accuracy": 1,
+        "completeness": 1,
+        "refused": true,
+        "unsupported": false,
+        "factually_incorrect": false,
+        "reason": "原始回答仅为“知识库依据不足，无法回答。”，没有给出标准答案所要求的事实或推理。题目有可追溯官方证据，因此属于错误拒答，准确性与完整性均为1分。Judge理由声称回答了具体内容，与保存的原答不匹配。"
+      },
+      "decision": "incorrect_refusal",
+      "task_success": false,
+      "scope": "独立AI裁决层；不改写原始Judge、人工评分或任务快照。"
+    }
+  ],
+  "original_metrics": [
+    {
+      "config_id": "cloud-v2-01",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 14528.779419997225,
+      "recall": 0.4444444444444444,
+      "recall_n": 90,
+      "hit": 0.5555555555555556,
+      "hit_n": 90,
+      "all_evidence": 0.3333333333333333,
+      "all_evidence_n": 90,
+      "mrr": 0.42592592592592593,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.6333333333333333,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.67,
+      "task_success_n": 100,
+      "hallucination": 0.010101010101010102,
+      "hallucination_n": 99,
+      "unsupported": 0.02,
+      "unsupported_n": 100,
+      "qa_ms": 4031.157815999977,
+      "qa_ms_n": 100,
+      "judge_ms": 3630.300844000085,
+      "judge_ms_n": 100,
+      "generation_tokens": 742.26,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1260.15,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0022935024,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.9,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.825
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.5333333333333333
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.4
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 2
+    },
+    {
+      "config_id": "cloud-v2-02",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 30464.981445000012,
+      "recall": 0.2611111111111111,
+      "recall_n": 90,
+      "hit": 0.3333333333333333,
+      "hit_n": 90,
+      "all_evidence": 0.18888888888888888,
+      "all_evidence_n": 90,
+      "mrr": 0.3333333333333333,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.3888888888888889,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.45,
+      "task_success_n": 100,
+      "hallucination": 0.0,
+      "hallucination_n": 100,
+      "unsupported": 0.0,
+      "unsupported_n": 100,
+      "qa_ms": 4693.1339920000755,
+      "qa_ms_n": 100,
+      "judge_ms": 3782.2716290000244,
+      "judge_ms_n": 100,
+      "generation_tokens": 374.1,
+      "generation_tokens_n": 100,
+      "judge_tokens": 740.97,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0013930410000000002,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 1.0,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.7
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.16666666666666666
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.1
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 0
+    },
+    {
+      "config_id": "cloud-v2-03",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 3353.4989250027124,
+      "recall": 0.5,
+      "recall_n": 90,
+      "hit": 0.6333333333333333,
+      "hit_n": 90,
+      "all_evidence": 0.36666666666666664,
+      "all_evidence_n": 90,
+      "mrr": 0.44370370370370366,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.7111111111111111,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.74,
+      "task_success_n": 100,
+      "hallucination": 0.020202020202020204,
+      "hallucination_n": 99,
+      "unsupported": 0.03,
+      "unsupported_n": 100,
+      "qa_ms": 2432.824522999981,
+      "qa_ms_n": 100,
+      "judge_ms": 2803.17804899998,
+      "judge_ms_n": 100,
+      "generation_tokens": 1095.52,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1753.65,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0031058976,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 1.0,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.9
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.6
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.5
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 0
+    },
+    {
+      "config_id": "cloud-v2-04",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 20229.199645000153,
+      "recall": 0.37222222222222223,
+      "recall_n": 90,
+      "hit": 0.45555555555555555,
+      "hit_n": 90,
+      "all_evidence": 0.28888888888888886,
+      "all_evidence_n": 90,
+      "mrr": 0.34444444444444444,
+      "mrr_n": 90,
+      "hit1": 0.26666666666666666,
+      "hit1_n": 90,
+      "correct": 0.6333333333333333,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.67,
+      "task_success_n": 100,
+      "hallucination": 0.01,
+      "hallucination_n": 100,
+      "unsupported": 0.01,
+      "unsupported_n": 100,
+      "qa_ms": 3069.4219480000543,
+      "qa_ms_n": 100,
+      "judge_ms": 3333.213027999809,
+      "judge_ms_n": 100,
+      "generation_tokens": 718.51,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1238.66,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.002269512,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.95,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.9
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.4666666666666667
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.35
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 1
+    },
+    {
+      "config_id": "cloud-v2-05",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 18429.1641850019,
+      "recall": 0.4,
+      "recall_n": 90,
+      "hit": 0.5222222222222223,
+      "hit_n": 90,
+      "all_evidence": 0.2777777777777778,
+      "all_evidence_n": 90,
+      "mrr": 0.4129629629629629,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.5888888888888889,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.63,
+      "task_success_n": 100,
+      "hallucination": 0.0,
+      "hallucination_n": 100,
+      "unsupported": 0.0,
+      "unsupported_n": 100,
+      "qa_ms": 2899.8521719999912,
+      "qa_ms_n": 100,
+      "judge_ms": 3368.5978550000436,
+      "judge_ms_n": 100,
+      "generation_tokens": 753.75,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1297.67,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0023438352,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.95,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.8
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.5
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.3
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 1
+    },
+    {
+      "config_id": "cloud-v2-06",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 2902.219279997553,
+      "recall": 0.4444444444444444,
+      "recall_n": 90,
+      "hit": 0.5555555555555556,
+      "hit_n": 90,
+      "all_evidence": 0.3333333333333333,
+      "all_evidence_n": 90,
+      "mrr": 0.42592592592592593,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.5777777777777777,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.62,
+      "task_success_n": 100,
+      "hallucination": 0.020202020202020204,
+      "hallucination_n": 99,
+      "unsupported": 0.03,
+      "unsupported_n": 100,
+      "qa_ms": 1922.9886189998797,
+      "qa_ms_n": 100,
+      "judge_ms": 3347.656700999869,
+      "judge_ms_n": 100,
+      "generation_tokens": 706.39,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1209.32,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0022029066,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.95,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.825
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.4
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.35
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 1
+    },
+    {
+      "config_id": "cloud-v2-07",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 20297.534610000002,
+      "recall": 0.5,
+      "recall_n": 90,
+      "hit": 0.6333333333333333,
+      "hit_n": 90,
+      "all_evidence": 0.36666666666666664,
+      "all_evidence_n": 90,
+      "mrr": 0.5314814814814816,
+      "mrr_n": 90,
+      "hit1": 0.4444444444444444,
+      "hit1_n": 90,
+      "correct": 0.7111111111111111,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.74,
+      "task_success_n": 100,
+      "hallucination": 0.01,
+      "hallucination_n": 100,
+      "unsupported": 0.01,
+      "unsupported_n": 100,
+      "qa_ms": 5171.4302780000435,
+      "qa_ms_n": 100,
+      "judge_ms": 4144.756977999859,
+      "judge_ms_n": 100,
+      "generation_tokens": 798.3,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1392.21,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0025173228000000005,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 1.0,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.875
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.6666666666666666
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.45
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 0
+    }
+  ],
+  "adjudicated_metrics": [
+    {
+      "config_id": "cloud-v2-01",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 14528.779419997225,
+      "recall": 0.4444444444444444,
+      "recall_n": 90,
+      "hit": 0.5555555555555556,
+      "hit_n": 90,
+      "all_evidence": 0.3333333333333333,
+      "all_evidence_n": 90,
+      "mrr": 0.42592592592592593,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.6111111111111112,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.65,
+      "task_success_n": 100,
+      "hallucination": 0.010101010101010102,
+      "hallucination_n": 99,
+      "unsupported": 0.02,
+      "unsupported_n": 100,
+      "qa_ms": 4031.157815999977,
+      "qa_ms_n": 100,
+      "judge_ms": 3630.300844000085,
+      "judge_ms_n": 100,
+      "generation_tokens": 742.26,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1260.15,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0022935024,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.9,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.825
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.4666666666666667
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.4
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 2
+    },
+    {
+      "config_id": "cloud-v2-02",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 30464.981445000012,
+      "recall": 0.2611111111111111,
+      "recall_n": 90,
+      "hit": 0.3333333333333333,
+      "hit_n": 90,
+      "all_evidence": 0.18888888888888888,
+      "all_evidence_n": 90,
+      "mrr": 0.3333333333333333,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.3888888888888889,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.45,
+      "task_success_n": 100,
+      "hallucination": 0.0,
+      "hallucination_n": 100,
+      "unsupported": 0.0,
+      "unsupported_n": 100,
+      "qa_ms": 4693.1339920000755,
+      "qa_ms_n": 100,
+      "judge_ms": 3782.2716290000244,
+      "judge_ms_n": 100,
+      "generation_tokens": 374.1,
+      "generation_tokens_n": 100,
+      "judge_tokens": 740.97,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0013930410000000002,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 1.0,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.7
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.16666666666666666
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.1
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 0
+    },
+    {
+      "config_id": "cloud-v2-03",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 3353.4989250027124,
+      "recall": 0.5,
+      "recall_n": 90,
+      "hit": 0.6333333333333333,
+      "hit_n": 90,
+      "all_evidence": 0.36666666666666664,
+      "all_evidence_n": 90,
+      "mrr": 0.44370370370370366,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.7111111111111111,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.74,
+      "task_success_n": 100,
+      "hallucination": 0.020202020202020204,
+      "hallucination_n": 99,
+      "unsupported": 0.03,
+      "unsupported_n": 100,
+      "qa_ms": 2432.824522999981,
+      "qa_ms_n": 100,
+      "judge_ms": 2803.17804899998,
+      "judge_ms_n": 100,
+      "generation_tokens": 1095.52,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1753.65,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0031058976,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 1.0,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.9
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.6
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.5
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 0
+    },
+    {
+      "config_id": "cloud-v2-04",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 20229.199645000153,
+      "recall": 0.37222222222222223,
+      "recall_n": 90,
+      "hit": 0.45555555555555555,
+      "hit_n": 90,
+      "all_evidence": 0.28888888888888886,
+      "all_evidence_n": 90,
+      "mrr": 0.34444444444444444,
+      "mrr_n": 90,
+      "hit1": 0.26666666666666666,
+      "hit1_n": 90,
+      "correct": 0.6222222222222222,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.66,
+      "task_success_n": 100,
+      "hallucination": 0.01,
+      "hallucination_n": 100,
+      "unsupported": 0.01,
+      "unsupported_n": 100,
+      "qa_ms": 3069.4219480000543,
+      "qa_ms_n": 100,
+      "judge_ms": 3333.213027999809,
+      "judge_ms_n": 100,
+      "generation_tokens": 718.51,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1238.66,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.002269512,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.95,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.9
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.4666666666666667
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.3
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 1
+    },
+    {
+      "config_id": "cloud-v2-05",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 18429.1641850019,
+      "recall": 0.4,
+      "recall_n": 90,
+      "hit": 0.5222222222222223,
+      "hit_n": 90,
+      "all_evidence": 0.2777777777777778,
+      "all_evidence_n": 90,
+      "mrr": 0.4129629629629629,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.5777777777777777,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.62,
+      "task_success_n": 100,
+      "hallucination": 0.0,
+      "hallucination_n": 100,
+      "unsupported": 0.0,
+      "unsupported_n": 100,
+      "qa_ms": 2899.8521719999912,
+      "qa_ms_n": 100,
+      "judge_ms": 3368.5978550000436,
+      "judge_ms_n": 100,
+      "generation_tokens": 753.75,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1297.67,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0023438352,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.95,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.8
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.4666666666666667
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.3
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 1
+    },
+    {
+      "config_id": "cloud-v2-06",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 2902.219279997553,
+      "recall": 0.4444444444444444,
+      "recall_n": 90,
+      "hit": 0.5555555555555556,
+      "hit_n": 90,
+      "all_evidence": 0.3333333333333333,
+      "all_evidence_n": 90,
+      "mrr": 0.42592592592592593,
+      "mrr_n": 90,
+      "hit1": 0.3333333333333333,
+      "hit1_n": 90,
+      "correct": 0.5666666666666667,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.61,
+      "task_success_n": 100,
+      "hallucination": 0.020202020202020204,
+      "hallucination_n": 99,
+      "unsupported": 0.03,
+      "unsupported_n": 100,
+      "qa_ms": 1922.9886189998797,
+      "qa_ms_n": 100,
+      "judge_ms": 3347.656700999869,
+      "judge_ms_n": 100,
+      "generation_tokens": 706.39,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1209.32,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0022029066,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 0.95,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.825
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.36666666666666664
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.35
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 1
+    },
+    {
+      "config_id": "cloud-v2-07",
+      "total": 100,
+      "succeeded": 100,
+      "failed": 0,
+      "success_coverage": 1.0,
+      "p95_ms": 20297.534610000002,
+      "recall": 0.5,
+      "recall_n": 90,
+      "hit": 0.6333333333333333,
+      "hit_n": 90,
+      "all_evidence": 0.36666666666666664,
+      "all_evidence_n": 90,
+      "mrr": 0.5314814814814816,
+      "mrr_n": 90,
+      "hit1": 0.4444444444444444,
+      "hit1_n": 90,
+      "correct": 0.7111111111111111,
+      "correct_n": 90,
+      "refusal_correct": 1.0,
+      "refusal_correct_n": 10,
+      "task_success": 0.74,
+      "task_success_n": 100,
+      "hallucination": 0.01,
+      "hallucination_n": 100,
+      "unsupported": 0.01,
+      "unsupported_n": 100,
+      "qa_ms": 5171.4302780000435,
+      "qa_ms_n": 100,
+      "judge_ms": 4144.756977999859,
+      "judge_ms_n": 100,
+      "generation_tokens": 798.3,
+      "generation_tokens_n": 100,
+      "judge_tokens": 1392.21,
+      "judge_tokens_n": 100,
+      "dialogue_cost": 0.0025173228000000005,
+      "dialogue_cost_n": 100,
+      "agreement_n": 20,
+      "score_agreement": 1.0,
+      "classification_agreement": 1.0,
+      "per_type": {
+        "fact": {
+          "n": 40,
+          "success": 0.875
+        },
+        "reasoning": {
+          "n": 30,
+          "success": 0.6666666666666666
+        },
+        "multihop": {
+          "n": 20,
+          "success": 0.45
+        },
+        "refusal": {
+          "n": 10,
+          "success": 1.0
+        }
+      },
+      "adjudication_count": 0
+    }
+  ],
+  "human_agreement_note": "一致率仍是原人工评分对原Judge；AI裁决不作为新增真人评分。"
+}

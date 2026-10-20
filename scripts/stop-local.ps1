@@ -1,5 +1,7 @@
-﻿$projectRoot = Split-Path -Parent $PSScriptRoot
-$pidFile = Join-Path $projectRoot 'runtime\local-processes.json'
+﻿param([ValidateRange(1024,65535)][int]$Port = 8010)
+$projectRoot = Split-Path -Parent $PSScriptRoot
+$processFile = if ($Port -eq 8010) { 'runtime\local-processes.json' } else { "runtime\local-processes-$Port.json" }
+$pidFile = Join-Path $projectRoot $processFile
 if (Test-Path -LiteralPath $pidFile) {
     $taskPids = Get-Content -LiteralPath $pidFile -Raw | ConvertFrom-Json
     foreach ($taskProcessId in @($taskPids.api, $taskPids.worker)) {

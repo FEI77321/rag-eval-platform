@@ -15,12 +15,13 @@ from pydantic import BaseModel, Field
 from sqlalchemy import select, update, delete
 from sqlalchemy.exc import IntegrityError
 from .db import Session, init_db, utcnow, engine
-from .models import Document, Dataset, Question, Config, Run, Item, ApiCall
+from .models import Document, Dataset, Question, Config, Run, Item, ApiCall, Adjudication
 from .schemas import Case, Parameters, RunInput, HumanReview
 from .service import uid, validate_case, create_run, dataset_quality, TAGS
 from .rag import digest, fixed_spans
 from .metrics import aggregate
 from .settings import settings, ROOT
+from .adjudication import review_view, reviewed_aggregate
 
 
 @asynccontextmanager
@@ -349,10 +350,10 @@ def resume(run_id: str):
 
 
 @app.get('/api/runs/{run_id}/metrics')
-def run_metrics(run_id: str):
+def run_metrics(run_id: str, adjudicated: bool = False):
     with Session() as db:
         run = required(db, Run, run_id)
-        summaries = aggregate(db.scalars(select(Item).where(Item.run_id == run_id)).all())
+        summaries, reviews = reviewed_aggregate(db, run, adjudicated)
         configs_by_id = {c['id']: c for c in run.snapshot['configs']}
         for row in summaries:
             row['name'] = configs_by_id[row['config_id']]['name']
@@ -360,17 +361,28 @@ def run_metrics(run_id: str):
         calls = db.scalars(select(ApiCall).where(ApiCall.run_id==run_id)).all()
         return ok({'mode': run.mode, 'evaluation_level':run.snapshot.get('evaluation_level'), 'rows': summaries, 'currency': run.snapshot['prices']['currency'],
                    'cost_reference_note':run.snapshot.get('cost_reference_note','配置单价×API实际用量的参考估算，不是账户账单；不含Embedding/Rerank及失败尝试。'),
-                   'api_calls':dict(Counter(c.role for c in calls)), 'failed_api_attempts':sum(c.status=='failed' for c in calls)})
+                   'api_calls':dict(Counter(c.role for c in calls)), 'failed_api_attempts':sum(c.status=='failed' for c in calls),
+                   'metrics_basis':'ai_adjudicated' if adjudicated and reviews else 'original_judge',
+                   'adjudication_count':len(reviews), 'agreement_basis':'original_human_vs_original_judge'})
+
+
+@app.get('/api/runs/{run_id}/adjudications')
+def run_adjudications(run_id: str):
+    with Session() as db:
+        run = required(db, Run, run_id)
+        _, reviews = review_view(db, run)
+        return ok({'run_id': run.id, 'count': len(reviews), 'reviewer_kind': 'ai',
+                   'records': [{'item_id': key, **value} for key, value in reviews.items()]})
 
 
 @app.get('/api/runs/{run_id}/items')
 def run_items(run_id: str, config_id: str | None = None, type: str | None = None,
-              bad_only: bool = False, sampled_only: bool = False, tag: str | None = None,
+              bad_only: bool = False, sampled_only: bool = False, tag: str | None = None, adjudicated: bool = False,
               page: int = Query(1, ge=1), page_size: int = Query(25, ge=1, le=200)):
     with Session() as db:
         run = required(db, Run, run_id)
         cases = {c['id']: c for c in run.snapshot['cases']}
-        items = db.scalars(select(Item).where(Item.run_id == run_id).order_by(Item.case_id, Item.config_id)).all()
+        items, reviews = review_view(db, run, adjudicated)
         filtered = [i for i in items if (not config_id or i.config_id == config_id)
                     and (not type or cases[i.case_id]['type'] == type)
                     and (not bad_only or i.state == 'failed' or i.metrics and not i.metrics['task_success'])
@@ -379,7 +391,7 @@ def run_items(run_id: str, config_id: str | None = None, type: str | None = None
         rows = [{'id': i.id, 'config_id': i.config_id, 'case_id': i.case_id, 'question': cases[i.case_id]['question'],
                  'type': cases[i.case_id]['type'], 'state': i.state, 'metrics': i.metrics, 'tags': i.tags,
                  'note': i.note, 'reviewed': bool(i.human_review), 'sampled': i.case_id in run.snapshot['human_sample'],
-                 'error': i.error} for i in filtered[(page - 1) * page_size:page * page_size]]
+                 'error': i.error, 'adjudicated': adjudicated and i.id in reviews} for i in filtered[(page - 1) * page_size:page * page_size]]
         return ok({'rows': rows, 'total': len(filtered), 'page': page, 'page_size': page_size})
 
 
@@ -389,10 +401,12 @@ def detail(item_id: str):
         item = required(db, Item, item_id)
         run = required(db, Run, item.run_id)
         case = next(c for c in run.snapshot['cases'] if c['id'] == item.case_id)
+        review = db.get(Adjudication, item_id)
         return ok({'id': item.id, 'case': case, 'config_id': item.config_id, 'state': item.state,
                    'generation': item.generation, 'judgement': item.judgement, 'metrics': item.metrics,
                    'tags': item.tags, 'note': item.note, 'human_review': item.human_review,
-                   'attempts': item.attempts, 'error': item.error, 'mode': run.mode})
+                   'attempts': item.attempts, 'error': item.error, 'mode': run.mode,
+                   'adjudication': review.payload if review else None})
 
 
 @app.put('/api/items/{item_id}/tags')
@@ -418,10 +432,10 @@ def human_review(item_id: str, data: HumanReview):
 
 
 @app.get('/api/runs/{run_id}/bad-cases')
-def bad_cases(run_id: str):
+def bad_cases(run_id: str, adjudicated: bool = False):
     with Session() as db:
         run = required(db, Run, run_id)
-        rows = db.scalars(select(Item).where(Item.run_id == run_id)).all()
+        rows, reviews = review_view(db, run, adjudicated)
         failed = [i for i in rows if i.state == 'failed' or i.metrics and not i.metrics['task_success']]
         tags = Counter(t for i in failed for t in i.tags)
         cases = {c['id']: c for c in run.snapshot['cases']}
@@ -463,27 +477,30 @@ def call_records(run_id: str):
 
 
 @app.get('/api/runs/{run_id}/export')
-def export_run(run_id: str, format: str = 'csv'):
+def export_run(run_id: str, format: str = 'csv', adjudicated: bool = False):
     with Session() as db:
         run = required(db, Run, run_id)
-        items = db.scalars(select(Item).where(Item.run_id == run_id)).all()
-        summaries = aggregate(items)
+        items, reviews = review_view(db, run, adjudicated)
+        summaries, _ = reviewed_aggregate(db, run, adjudicated)
         names = {c['id']: c['name'] for c in run.snapshot['configs']}
         if format == 'csv':
             columns = ['config_id', 'name', 'total', 'succeeded', 'success_coverage', 'recall', 'mrr', 'hit1',
                        'correct', 'refusal_correct', 'hallucination', 'hallucination_n', 'qa_ms', 'p95_ms',
-                       'generation_tokens', 'judge_tokens', 'dialogue_cost', 'currency', 'cost_reference_note', 'score_agreement', 'agreement_n']
+                       'generation_tokens', 'judge_tokens', 'dialogue_cost', 'currency', 'cost_reference_note', 'score_agreement', 'agreement_n', 'adjudication_count', 'metrics_basis']
             buffer = io.StringIO()
             writer = csv.DictWriter(buffer, fieldnames=columns, extrasaction='ignore')
             writer.writeheader()
             writer.writerows({**row, 'name': names[row['config_id']], 'currency':run.snapshot['prices']['currency'],
-                              'cost_reference_note':run.snapshot.get('cost_reference_note','参考估算，不是账户账单。')} for row in summaries)
+                              'cost_reference_note':run.snapshot.get('cost_reference_note','参考估算，不是账户账单。'),
+                              'metrics_basis':'ai_adjudicated' if adjudicated and reviews else 'original_judge'} for row in summaries)
             text = '\ufeff' + buffer.getvalue()
             media = 'text/csv; charset=utf-8'
         elif format == 'markdown':
             text = f"# 配置对比报告：{run.name}\n\n运行ID：{run.id}；模式：{run.mode}；状态：{run.state}。\n"
             if run.snapshot.get('evaluation_level')=='ai_preliminary':
-                text += '\n> 真实云端AI辅助预评测：题集由AI编写核验，尚未完成人工审核；不满足作业人工标注验收要求。\n'
+                text += '\n> 真实云端AI辅助预评测：本次运行使用的是审核前题集快照。当前题集审核状态请查看评测集管理；历史运行保留创建时等级。\n'
+            if adjudicated and reviews:
+                text += f'\n> 统计口径：应用{len(reviews)}条Codex AI复核裁决；原始Judge与人工评分保持独立记录。一致率仍按原始人工/Judge计算。\n'
             text += '\n> 模拟数据仅验证工程流程，不证明真实模型效果。\n' if run.mode == 'demo' else '\n'
             text += '\n|配置|成功/总数|Recall|MRR|正确率|拒答率|平均ms|P95ms|\n|---|---|---|---|---|---|---|---|\n'
             fmt = lambda x: 'N/A' if x is None else f'{x:.4f}'

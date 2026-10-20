@@ -2,7 +2,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": false,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T08:21:02.716069Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -20,7 +29,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:18:52.791744Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -38,7 +56,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.744841Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -53,7 +80,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:26:03.955273Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -70,7 +106,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.809883Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -85,7 +130,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:31:35.428390Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -102,7 +156,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:34:34.833030Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -119,7 +182,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:36:39.473560Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -136,7 +208,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:38:51.926352Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -153,7 +234,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.854612Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -171,7 +261,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.890385Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -189,7 +288,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.923662Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -206,7 +314,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.959667Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -221,7 +338,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.994487Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -236,7 +362,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.033723Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -255,7 +390,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.088657Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -270,7 +414,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.115612Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -287,7 +440,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:44:12.675981Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -305,7 +467,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-20T02:01:35.404285Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -320,7 +491,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-01",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.189338Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -335,7 +515,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": false,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-20T01:49:54.829542Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -352,7 +541,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-20T01:50:27.688251Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -369,7 +567,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.787724Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -384,7 +591,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:26:19.358538Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -401,7 +617,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.816074Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -416,7 +641,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:32:23.233870Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -433,7 +667,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:34:47.109098Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -450,7 +693,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:37:10.591880Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -467,7 +719,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:39:01.879781Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -484,7 +745,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.861675Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -499,7 +769,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.896043Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -514,7 +793,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.928913Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -529,7 +817,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.964913Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -544,7 +841,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.999494Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -559,7 +865,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.061160Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -574,7 +889,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.093994Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -589,7 +913,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.120743Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -604,7 +937,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.131646Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -619,7 +961,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.157123Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -634,7 +985,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-02",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.194338Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -649,7 +1009,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": false,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T08:23:09.678155Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -668,7 +1037,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:19:23.715605Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -687,7 +1065,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:22:57.247768Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -705,7 +1092,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:26:47.706189Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -722,7 +1118,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.822003Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -737,7 +1142,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:32:39.276778Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -755,7 +1169,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:35:04.273914Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -772,7 +1195,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:37:35.093718Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -789,7 +1221,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:39:16.124938Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -806,7 +1247,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.867714Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -824,7 +1274,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.901089Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -841,7 +1300,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.934265Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -860,7 +1328,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.969947Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -875,7 +1352,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.004364Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -890,7 +1376,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:39:36.253853Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -909,7 +1404,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.099318Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -924,7 +1428,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:43:48.568610Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -943,7 +1456,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.136634Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -961,7 +1483,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.162176Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -976,7 +1507,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-03",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.199065Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -991,7 +1531,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:12:57.526852Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1010,7 +1559,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:19:36.210740Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1028,7 +1586,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:23:11.451533Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1047,7 +1614,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:27:02.252826Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1064,7 +1640,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.828731Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1081,7 +1666,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:32:58.055375Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1098,7 +1692,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:35:26.616149Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1115,7 +1718,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:37:50.379927Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1132,7 +1744,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:39:38.556871Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1150,7 +1771,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.873260Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1168,7 +1798,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.906646Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1183,7 +1822,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.939173Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1201,7 +1849,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.974723Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1216,7 +1873,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.009351Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1231,7 +1897,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.067040Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1249,7 +1924,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.105204Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1264,7 +1948,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 4,
+      "completeness": 4,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:44:01.894424Z"
+    },
     "judge": {
       "accuracy": 4,
       "completeness": 4,
@@ -1283,7 +1976,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.142026Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1298,7 +2000,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.167313Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1313,7 +2024,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-04",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.204670Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1328,7 +2048,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:17:10.420839Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1346,7 +2075,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:20:02.050132Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1363,7 +2101,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.795181Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1378,7 +2125,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:27:19.891739Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1396,7 +2152,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.835558Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1414,7 +2179,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:33:11.738812Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1431,7 +2205,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:35:44.889337Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1448,7 +2231,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:38:04.250672Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1465,7 +2257,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:40:04.184423Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1482,7 +2283,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.878636Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1500,7 +2310,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.913161Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1515,7 +2334,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.943989Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1532,7 +2360,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.979703Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1550,7 +2387,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.014495Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1568,7 +2414,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.072250Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1583,7 +2438,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:42:08.765237Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1602,7 +2466,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:44:51.993553Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1620,7 +2493,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.147098Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1638,7 +2520,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.172671Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1653,7 +2544,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-05",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.209921Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1668,7 +2568,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:18:12.589909Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1686,7 +2595,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:20:14.386917Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1704,7 +2622,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.801502Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1719,7 +2646,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:27:50.867471Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1736,7 +2672,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.842335Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1751,7 +2696,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:33:42.609319Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1768,7 +2722,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:35:56.858373Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1785,7 +2748,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:38:18.238058Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1802,7 +2774,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:40:14.444395Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1819,7 +2800,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.883701Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1836,7 +2826,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-20T02:02:04.497556Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1854,7 +2853,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.948583Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1869,7 +2877,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.984575Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1884,7 +2901,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.019351Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1899,7 +2925,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.078107Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1914,7 +2949,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.110559Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1929,7 +2973,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.126129Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -1946,7 +2999,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:48:23.714410Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1964,7 +3026,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.178456Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1979,7 +3050,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-06",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.214488Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -1994,7 +3074,16 @@
   {
     "case_id": "AI-004",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:18:38.248537Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2013,7 +3102,16 @@
   {
     "case_id": "AI-005",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:21:44.999732Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2032,7 +3130,16 @@
   {
     "case_id": "AI-008",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:24:36.303933Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2051,7 +3158,16 @@
   {
     "case_id": "AI-013",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "张腾飞",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:28:02.611998Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2068,7 +3184,16 @@
   {
     "case_id": "AI-015",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.848508Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -2085,7 +3210,16 @@
   {
     "case_id": "AI-019",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:34:16.094110Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2103,7 +3237,16 @@
   {
     "case_id": "AI-029",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:36:26.292488Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2120,7 +3263,16 @@
   {
     "case_id": "AI-030",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:38:41.623869Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2137,7 +3289,16 @@
   {
     "case_id": "AI-031",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:40:24.191716Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2154,7 +3315,16 @@
   {
     "case_id": "AI-041",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "",
+      "reviewed_at": "2026-10-15T09:42:34.068815Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2172,7 +3342,16 @@
   {
     "case_id": "AI-057",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "曹索拉",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.918879Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -2190,7 +3369,16 @@
   {
     "case_id": "AI-067",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.953868Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2209,7 +3397,16 @@
   {
     "case_id": "AI-072",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:10.989291Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -2224,7 +3421,16 @@
   {
     "case_id": "AI-074",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.024502Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -2242,7 +3448,16 @@
   {
     "case_id": "AI-078",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "段鹤鸣",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.083763Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -2257,7 +3472,16 @@
   {
     "case_id": "AI-079",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:42:49.053380Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2275,7 +3499,16 @@
   {
     "case_id": "AI-081",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": false,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "",
+      "reviewed_at": "2026-10-19T01:44:25.380620Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2294,7 +3527,16 @@
   {
     "case_id": "AI-090",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 1,
+      "completeness": 1,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.152173Z"
+    },
     "judge": {
       "accuracy": 1,
       "completeness": 1,
@@ -2309,7 +3551,16 @@
   {
     "case_id": "AI-094",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.183617Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
@@ -2324,7 +3575,16 @@
   {
     "case_id": "AI-099",
     "config_id": "cloud-v2-07",
-    "human_review": null,
+    "human_review": {
+      "accuracy": 5,
+      "completeness": 5,
+      "refused": true,
+      "unsupported": false,
+      "factually_incorrect": null,
+      "reviewer": "王一博",
+      "note": "拒答标记于2026-10-20按原始回答文本校准；其余评分字段保持原值。",
+      "reviewed_at": "2026-10-20T02:10:11.219163Z"
+    },
     "judge": {
       "accuracy": 5,
       "completeness": 5,
